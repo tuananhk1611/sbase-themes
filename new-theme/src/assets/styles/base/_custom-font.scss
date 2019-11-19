@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Harmony';
+  src: url('#{$asset_path}/fonts/harmony/Harmony.eot');
+  src: url('#{$asset_path}/fonts/harmony/Harmony.eot?#iefix') format('embedded-opentype'),
+  url('#{$asset_path}/fonts/harmony/Harmony.woff2') format('woff2'),
+  url('#{$asset_path}/fonts/harmony/Harmony.woff') format('woff'),
+  url('#{$asset_path}/fonts/harmony/Harmony.ttf') format('truetype'),
+  url('#{$asset_path}/fonts/harmony/Harmony.svg#besom_2regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

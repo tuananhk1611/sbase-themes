@@ -129,6 +129,12 @@ h6 {
   font-size: emBase(floor($type_header_base_size * 0.25));
 }
 
+h1, h2, h3, h4, h5, h6 {
+  &.heading-section-midsleek {
+    font-family: 'PlayfairDisplay-Regular', sans-serif;
+  }
+}
+
 
 // Reset margins on paragraphs
 //

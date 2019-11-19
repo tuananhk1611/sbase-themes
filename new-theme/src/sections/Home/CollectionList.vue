@@ -1,7 +1,7 @@
 <template>
   <section class="section collection-list text-align-center">
     <div class="container">
-      <h2 v-if="settings.heading" class="h3 mb40">
+      <h2 v-if="settings.heading" class="h3 mb40 heading-section-midsleek">
         {{ settings.heading }}
       </h2>
       <div v-if="collections.length > 0" class="row">
