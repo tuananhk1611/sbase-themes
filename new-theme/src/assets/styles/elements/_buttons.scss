@@ -76,6 +76,19 @@
     border-color: transparent;
     text-decoration: underline;
   }
+  &.is-text-midsleek {
+    background-color: transparent;
+    border-color: transparent;
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: bold;
+    border-bottom: 1px solid $color_buttons;
+    &:hover {
+      text-decoration: none;
+    }
+  }
   // Modifiers
 
   &.fullwidth {

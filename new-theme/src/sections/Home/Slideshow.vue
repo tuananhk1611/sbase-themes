@@ -52,15 +52,15 @@
             <div class="content">
               <p
                 v-if="block.preheading"
-                class="is-uppercase ls-2 mt0 mb12"
+                class="is-capitalized ls-2 mt0 mb12 slideshow-preheading-midsleek"
                 v-html="block.preheading"
               ></p>
-              <h2 v-if="block.heading" class="h2 mt0 mb12">
+              <h2 v-if="block.heading" class="h2 mt0 mb12 slideshow-heading-midsleek">
                 {{ block.heading }}
               </h2>
               <p
                 v-if="block.subheading"
-                class="is-uppercase ls-2 mt0 mb24"
+                class="ls-2 mt0 mb24 slideshow-subheading-midsleek"
                 v-html="block.subheading"
               ></p>
               <LinkFormatter
@@ -68,7 +68,7 @@
                 :link="block.first_button_link"
                 class="btn carousel__first-link mb12"
                 :class="{
-                  'btn-outline': !block.highlight_first_button_link,
+                  'is-text-midsleek': !block.highlight_first_button_link,
                   'btn-primary banner-button':
                     block.highlight_first_button_link,
                 }"
@@ -80,7 +80,7 @@
                 :link="block.second_button_link"
                 class="btn carousel__second-link"
                 :class="{
-                  'btn-outline': !block.highlight_second_button_link,
+                  'is-text-midsleek': !block.highlight_second_button_link,
                   'btn-primary banner-button':
                     block.highlight_second_button_link,
                 }"
