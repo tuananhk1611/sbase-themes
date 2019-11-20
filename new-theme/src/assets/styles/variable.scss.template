@@ -55,3 +55,8 @@ $checkout_sidebar_background_color: {{checkout_sidebar_background_color}};
 $checkout_sidebar_background_image: "{{{checkout_sidebar_background_image}}}";
 $checkout_input_background_color_mode: {{checkout_input_background_color_mode}};
 $checkout_accent_color: {{checkout_accent_color}};
+
+//Banner
+$color_preheading_banner: {{{color_preheading_banner}}};
+$preheading_banner_size: {{{preheading_banner_size}}};
+

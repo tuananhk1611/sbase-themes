@@ -139,7 +139,6 @@
                   :srcset="urlSrcSet(getLogo)"
                   :style="`width: ${sectionSettings.width}px;`"
                 />
-
                 <div v-else ref="logo" class="items-center flex m0">
                   {{ $shop.name }}
                 </div>
@@ -503,6 +502,18 @@ export default {
       }
     },
     urlSrcSet(img) {
+      // For local
+      if (true) {
+        let url = `${this.$resizeImage(img, '0', '180', '')} 1x, ${this.$resizeImage(
+          img,
+          '0',
+          '180',
+          '',
+          'x2'
+        )} 2x`
+        url = url.replace('https://img', 'https://dev-img')
+        return url
+      }
       return `${this.$resizeImage(img, '0', '180', '')} 1x, ${this.$resizeImage(
         img,
         '0',

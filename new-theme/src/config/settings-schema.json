@@ -35,6 +35,13 @@
               "type": "textarea"
             },
             {
+              "comment": "this private for midsleek",
+              "default": true,
+              "id": "preheading_font_private",
+              "label": "Using Preheading Private Font",
+              "type": "checkbox"
+            },
+            {
               "default": "roller shopbase theme",
               "id": "heading",
               "label": "Heading",
@@ -1980,6 +1987,17 @@
           "id": "color_mini_cart_button_label",
           "label": "Mini cart button label",
           "type": "color"
+        },
+        {
+          "content": "For Banner Section",
+          "type": "heading",
+          "comment": "This private for midsleek"
+        },
+        {
+          "default": "#ffffff",
+          "id": "color_preheading_banner",
+          "label": "Color for preheading of banner",
+          "type": "color"
         }
       ],
       "type": "colors"
@@ -2742,6 +2760,19 @@
           "id": "capitalize_buttons_text",
           "label": "Capitalize buttons text",
           "type": "checkbox"
+        },
+        {
+          "content": "For Banner Section",
+          "type": "heading"
+        },
+        {
+          "default": 64,
+          "id": "preheading_banner_size",
+          "label": "Preheading size",
+          "max": 72,
+          "min": 36,
+          "type": "slider",
+          "unit": "px"
         }
       ],
       "type": "typography"
