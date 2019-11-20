@@ -59,4 +59,9 @@ $checkout_accent_color: {{checkout_accent_color}};
 //Banner
 $color_preheading_banner: {{{color_preheading_banner}}};
 $preheading_banner_size: {{{preheading_banner_size}}};
+$color_heading_banner: {{{color_heading_banner}}};
+$heading_banner_size: {{{heading_banner_size}}};
+$color_subheading_banner: {{{color_subheading_banner}}};
+$subheading_banner_size: {{{subheading_banner_size}}};
+
 

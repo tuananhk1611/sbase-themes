@@ -511,7 +511,7 @@ export default {
           '',
           'x2'
         )} 2x`
-        url = url.replace('https://img', 'https://dev-img')
+        url = url.replace('https://img', 'https://stag-img')
         return url
       }
       return `${this.$resizeImage(img, '0', '180', '')} 1x, ${this.$resizeImage(

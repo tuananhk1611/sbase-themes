@@ -48,6 +48,13 @@
               "type": "text"
             },
             {
+              "comment": "this private for midsleek",
+              "default": true,
+              "id": "heading_font_private",
+              "label": "Using Heading Private Font",
+              "type": "checkbox"
+            },
+            {
               "default": "exclusively from shopbase",
               "id": "subheading",
               "label": "Subheading",
@@ -1994,9 +2001,21 @@
           "comment": "This private for midsleek"
         },
         {
-          "default": "#ffffff",
+          "default": "#eb6449",
           "id": "color_preheading_banner",
           "label": "Color for preheading of banner",
+          "type": "color"
+        },
+        {
+          "default": "#ffffff",
+          "id": "color_heading_banner",
+          "label": "Color for heading of banner",
+          "type": "color"
+        },
+        {
+          "default": "#ffffff",
+          "id": "color_subheading_banner",
+          "label": "Color for subheading of banner",
           "type": "color"
         }
       ],
@@ -2769,8 +2788,26 @@
           "default": 64,
           "id": "preheading_banner_size",
           "label": "Preheading size",
+          "max": 172,
+          "min": 56,
+          "type": "slider",
+          "unit": "px"
+        },
+        {
+          "default": 56,
+          "id": "heading_banner_size",
+          "label": "Preheading size",
           "max": 72,
-          "min": 36,
+          "min": 48,
+          "type": "slider",
+          "unit": "px"
+        },
+        {
+          "default": 12,
+          "id": "subheading_banner_size",
+          "label": "Preheading size",
+          "max": 36,
+          "min": 12,
           "type": "slider",
           "unit": "px"
         }
