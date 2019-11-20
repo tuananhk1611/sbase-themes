@@ -18,7 +18,8 @@
             <div class="content">
               <p
                 v-if="settings.preheading"
-                class="is-uppercase ls-2 mt0 mb12"
+                class="is-uppercase ls-2 mt0 mb12 midsleek-banner-preheading"
+                :style="stylePreheading"
                 v-html="settings.preheading"
               ></p>
               <h2 v-if="settings.heading" class="h2 mt0 mb12">
@@ -112,6 +113,18 @@ export default {
           return 'text-align-left'
       }
     },
+    stylePreheading() {
+      return {
+        fontFamily: this.settings.preheading_font_private ? 'Harmony' : 'inherit',
+      }
+    }
   },
+  mounted() {
+    console.log(9999, this.settings, this)
+    console.log(8888, this.$getThemeSettings())
+    console.log(77777, this.$getForceSettings('header'))
+    console.log(66666, this.$getFixedSettings('header'))
+    console.log(55555, this.$getPageSettings('homepage'))
+  }
 }
 </script>

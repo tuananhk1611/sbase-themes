@@ -163,11 +163,11 @@
       justify-content: center;
     }
     p {
-      &.slideshow-preheading-midsleek {
-        font-family: 'Harmony';
-        font-size: 64px;
+      &.midsleek-banner-preheading {
+        font-size: font-size($preheading_banner_size);
         letter-spacing: 0;
-        line-height: 70px;
+        line-height: normal;
+        color: $color_preheading_banner;
       }
       &.slideshow-subheading-midsleek {
         font-size: 12px;
