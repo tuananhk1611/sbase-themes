@@ -102,7 +102,7 @@ export default {
         // For local
         if (true) {
           let url = this.$resizeImage(this.src, height, width, this.crop, scale)
-          url = url.replace('https://img', 'https://dev-img')
+          url = url.replace('https://img', 'https://stag-img')
           return url
         }
         return this.$resizeImage(this.src, height, width, this.crop, scale)

@@ -22,12 +22,12 @@
                 :style="stylePreheading"
                 v-html="settings.preheading"
               ></p>
-              <h2 v-if="settings.heading" class="h2 mt0 mb12">
+              <h2 v-if="settings.heading" :style="styleHeading" class="h2 mt0 mb12 midsleek-banner-heading">
                 {{ settings.heading }}
               </h2>
               <p
                 v-if="settings.subheading"
-                class="is-uppercase ls-2 mt0 mb24"
+                class="is-uppercase ls-2 mt0 mb24 midsleek-banner-subheading"
                 v-html="settings.subheading"
               ></p>
               <LinkFormatter
@@ -111,6 +111,11 @@ export default {
           return 'text-align-right'
         default:
           return 'text-align-left'
+      }
+    },
+    styleHeading() {
+      return {
+        fontFamily: this.settings.heading_font_private ? 'Playfair Display' : 'inherit',
       }
     },
     stylePreheading() {

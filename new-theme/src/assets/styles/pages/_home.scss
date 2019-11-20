@@ -165,24 +165,25 @@
     p {
       &.midsleek-banner-preheading {
         font-size: font-size($preheading_banner_size);
+        text-transform: unset;
         letter-spacing: 0;
         line-height: normal;
         color: $color_preheading_banner;
       }
-      &.slideshow-subheading-midsleek {
-        font-size: 12px;
+      &.midsleek-banner-subheading {
+        font-size: font-size($subheading_banner_size);
         letter-spacing: 0;
-        line-height: 18px;
+        line-height: normal;
+        color: $color_subheading_banner;
       }
     }
-    .slideshow-heading-midsleek {
-      font-family: 'PlayfairDisplay-Regular', sans-serif;
-      font-size: 56px;
+    .midsleek-banner-heading {
+      font-size: font-size($heading_banner_size);
       font-weight: normal;
-      height: 58px;
       letter-spacing: 0;
-      line-height: 64px;
+      line-height: normal;
       text-transform: unset;
+      color: $color_heading_banner;
     }
   }
 
