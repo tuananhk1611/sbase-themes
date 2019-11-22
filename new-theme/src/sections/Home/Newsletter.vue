@@ -2,9 +2,9 @@
   <section class="section subscribe special-block">
     <div class="container-fluid text-align-center">
       <div class="subscribe-wrap">
-        <h2 class="h3 mb8">{{ settings.heading }}</h2>
+        <h2 class="h3 mb16 heading-section-midsleek is-capitalized newsletter-text-color">{{ settings.heading }}</h2>
         <no-ssr>
-          <div class="announce-text mb24" v-html="settings.subheading"></div>
+          <div class="announce-text mb40 newsletter-text-color" v-html="settings.subheading"></div>
         </no-ssr>
         <div class="form-wrapper">
           <form
@@ -23,7 +23,7 @@
             <button
               type="submit"
               :class="[
-                'link-initial btn btn-primary',
+                'link-initial btn',
                 { 'is-loading': isSubscribing },
               ]"
               @click="handleSubscribe"

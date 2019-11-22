@@ -37,7 +37,9 @@
                 :class="{
                   'btn-outline': !settings.highlight_first_button_link,
                   'btn-primary banner-button':
-                    settings.highlight_first_button_link,
+                    settings.highlight_first_button_link && highlightButtonType === 'primary',
+                  'btn-subline banner-button':
+                    settings.highlight_first_button_link && highlightButtonType === 'subline',
                 }"
               >
                 {{ settings.first_button_label }}
@@ -51,7 +53,9 @@
                 :class="{
                   'btn-outline': !settings.highlight_second_button_link,
                   'btn-primary banner-button':
-                    settings.highlight_second_button_link,
+                    settings.highlight_second_button_link && highlightButtonType === 'primary',
+                  'btn-subline banner-button':
+                    settings.highlight_second_button_link && highlightButtonType === 'subline',
                 }"
               >
                 {{ settings.second_button_label }}
@@ -122,14 +126,17 @@ export default {
       return {
         fontFamily: this.settings.preheading_font_private ? 'Harmony' : 'inherit',
       }
+    },
+    highlightButtonType() {
+      return this.settings.banner_button_highlight_type ? this.settings.banner_button_highlight_type : 'subline'
     }
   },
   mounted() {
-    console.log(9999, this.settings, this)
-    console.log(8888, this.$getThemeSettings())
-    console.log(77777, this.$getForceSettings('header'))
-    console.log(66666, this.$getFixedSettings('header'))
-    console.log(55555, this.$getPageSettings('homepage'))
+    // console.log(9999, this.settings, this)
+    // console.log(8888, this.$getThemeSettings())
+    // console.log(77777, this.$getForceSettings('header'))
+    // console.log(66666, this.$getFixedSettings('header'))
+    // console.log(55555, this.$getPageSettings('homepage'))
   }
 }
 </script>

@@ -64,4 +64,12 @@ $heading_banner_size: {{{heading_banner_size}}};
 $color_subheading_banner: {{{color_subheading_banner}}};
 $subheading_banner_size: {{{subheading_banner_size}}};
 
+//Testimonial
+$testimonial_text_color: {{{testimonial_text_color}}};
+
+//Newsletter
+$color_newsletter: {{{color_newsletter}}}
+$color_bg_input_newsletter: {{{color_bg_input_newsletter}}}
+$color_text_input_newsletter: {{{color_text_input_newsletter}}}
+
 

@@ -76,7 +76,7 @@
     border-color: transparent;
     text-decoration: underline;
   }
-  &.is-text-midsleek {
+  &.btn-subline {
     background-color: transparent;
     border-color: transparent;
     text-transform: uppercase;
@@ -84,6 +84,7 @@
     font-size: 13px;
     line-height: 19px;
     font-weight: bold;
+    color: $color_buttons;
     border-bottom: 1px solid $color_buttons;
     &:hover {
       text-decoration: none;

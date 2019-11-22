@@ -5,7 +5,7 @@
   >
     <div class="container testimonial-container">
       <div class="container-wrap">
-        <p class="h3 text-align-center mb24">{{ settings.title }}</p>
+        <p class="h3 text-align-center mb24 heading-section-midsleek is-capitalized">{{ settings.title }}</p>
         <Carousel
           ref="carousel"
           :autoplay="isAutoPlay"
@@ -54,9 +54,12 @@
                 :class="[textPosition(block.text_position)]"
               >
                 <h2 class="h3">{{ settings.title }}</h2>
-                <div v-html="block.content"></div>
-                <p class="testimonial-name is-uppercase">
-                  {{ block.customer_name }}
+                <span class="testimonial-head-icon">“</span>
+                <div v-html="block.content" :style="`fontSize: ${testimonialFontSize}px`" :class="{'using-font-private' : settings.testimonial_font_private}"></div>
+                <p class="testimonial-name is-uppercase mt16 mb32">
+                  <span>
+                    {{ block.customer_name }}
+                  </span>
                 </p>
                 <LinkFormatter
                   v-if="block.store_link"
@@ -117,6 +120,9 @@ export default {
         ? 3
         : this.settings.blocks.length
     },
+    testimonialFontSize() {
+      return this.settings.testimonial_font_size ? this.settings.testimonial_font_size : null
+    }
   },
   watch: {
     forceSettings: {
@@ -180,5 +186,8 @@ export default {
       }
     },
   },
+  mounted() {
+    console.log(9999, this.settings, this)
+  }
 }
 </script>

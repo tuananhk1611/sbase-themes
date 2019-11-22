@@ -13,6 +13,7 @@ $type_button_text_style: regular;
 $capitalize_buttons_text: false;
 
 // Colors
+$private_main_color: #202756;
 $color_header_background: #ffffff;
 $color_header_link: #222222;
 
@@ -30,7 +31,6 @@ $color_button_text: #FFFFFF;
 
 $color_product_background: #F3F3F3;
 $color_input: #FFFFFF;
-$color_newsletter: #F3F3F3;
 $color_sale_tag: #a62b0d;
 
 $color_footer_background: #FFFFFF;
@@ -47,8 +47,8 @@ $color_background: #ffffff;
 $color_top_bar_background: #f4f4f4;
 $color_menu_background: #f7f5f0;
 $menu_background_opacity: 100;
-$color_announcement_bar_background: #202756;
-$color_newsletter_section_background: #f4f4f4;
+$color_announcement_bar_background: $private_main_color;
+$color_newsletter_section_background: $private_main_color;
 $color_product_description_background: #f4f4f4;
 $color_mini_cart_background: #ffffff;
 $color_footer_background: #ffffff;
@@ -99,7 +99,15 @@ $checkout_sidebar_background_image: none;
 // For banner
 $color_preheading_banner: #EB6449;
 $preheading_banner_size: 64;
-$color_heading_banner: #fff;
+$color_heading_banner: #ffffff;
 $heading_banner_size: 56;
-$color_subheading_banner: #fff;
+$color_subheading_banner: #ffffff;
 $subheading_banner_size: 12;
+
+// For testimonial
+$testimonial_text_color: #2d387a;
+
+// For newsletter
+$color_newsletter: #ffffff;
+$color_bg_input_newsletter: #2d3879;
+$color_text_input_newsletter: #4e60bd;
