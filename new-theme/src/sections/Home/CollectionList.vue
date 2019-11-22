@@ -1,7 +1,7 @@
 <template>
   <section class="section collection-list text-align-center">
     <div class="container">
-      <h2 v-if="settings.heading" class="h3 mb40 heading-section-midsleek">
+      <h2 v-if="settings.heading" class="h3 mb40 heading-section-midsleek is-capitalized">
         {{ settings.heading }}
       </h2>
       <div v-if="collections.length > 0" class="row">
@@ -20,7 +20,7 @@
               height="0"
             />
           </div>
-          <p class="collection-name is-uppercase mt8">
+          <p class="collection-name is-uppercase mt16">
             {{ collection.title }}
           </p>
         </router-link>

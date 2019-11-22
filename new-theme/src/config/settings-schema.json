@@ -101,6 +101,23 @@
               "type": "select"
             },
             {
+              "comment": "this private for midsleek",
+              "default": "subline",
+              "id": "banner_button_highlight_type",
+              "label": "Choose highlight type",
+              "type": "select",
+              "options": [
+                {
+                  "label": "Button Primary",
+                  "value": "primary"
+                },
+                {
+                  "label": "Button Subline",
+                  "value": "subline"
+                }
+              ]
+            },
+            {
               "default": "Shop Women",
               "id": "first_button_label",
               "label": "First button label",
@@ -236,6 +253,23 @@
               "min": 4,
               "type": "slider",
               "unit": "sec"
+            },
+            {
+              "comment": "This private for midsleek",
+              "default": 32,
+              "id": "testimonial_font_size",
+              "label": "Testimonial font size",
+              "max": 48,
+              "min": 20,
+              "type": "slider",
+              "unit": "px"
+            },
+            {
+              "comment": "this private for midsleek",
+              "default": true,
+              "id": "testimonial_font_private",
+              "label": "Using Testimonial Private Font",
+              "type": "checkbox"
             }
           ],
           "label": "Settings"
@@ -243,26 +277,6 @@
         {
           "children": {
             "default": [
-              {
-                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.",
-                "customer_name": "John Doe",
-                "darken_background_image": true,
-                "position": "centre",
-                "store_name": "Shopbase",
-                "alignment": "centre",
-                "title": "Customer Testimonial",
-                "use_image": false
-              },
-              {
-                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.",
-                "customer_name": "John Doe",
-                "darken_background_image": true,
-                "position": "centre",
-                "store_name": "Shopbase",
-                "alignment": "centre",
-                "title": "Customer Testimonial",
-                "use_image": false
-              },
               {
                 "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.",
                 "customer_name": "John Doe",
@@ -365,7 +379,7 @@
               }
             ],
             "label": "Settings",
-            "number_default_items": 3
+            "number_default_items": 1
           },
           "label": "Content",
           "options": {
@@ -1845,7 +1859,7 @@
           "type": "color"
         },
         {
-          "default": "#f4f4f4",
+          "default": "#202756",
           "id": "color_newsletter_section_background",
           "label": "Newsletter section background",
           "type": "color"
@@ -2016,6 +2030,40 @@
           "default": "#ffffff",
           "id": "color_subheading_banner",
           "label": "Color for subheading of banner",
+          "type": "color"
+        },
+        {
+          "comment": "This private for midsleek",
+          "type": "heading",
+          "content": "For Testimonial Section"
+        },
+        {
+          "default": "#2d387a",
+          "id": "testimonial_text_color",
+          "label": "Testimonial text color",
+          "type": "color"
+        },
+        {
+          "comment": "This private for midsleek",
+          "type": "heading",
+          "content": "For Newsletter Section"
+        },
+        {
+          "default": "#ffffff",
+          "id": "color_newsletter",
+          "label": "Newsletter text color",
+          "type": "color"
+        },
+        {
+          "default": "#2d3879",
+          "id": "color_bg_input_newsletter",
+          "label": "Newsletter input background color",
+          "type": "color"
+        },
+        {
+          "default": "#4e60bd",
+          "id": "color_text_input_newsletter",
+          "label": "Newsletter input text color",
           "type": "color"
         }
       ],
@@ -3619,7 +3667,7 @@
           "color_mini_cart_background": "#ffffff",
           "color_mini_cart_button": "#285f8a",
           "color_mini_cart_button_label": "#ffffff",
-          "color_newsletter_section_background": "#f4f4f4",
+          "color_newsletter_section_background": "#202756",
           "color_page_content_text": "#1a1a1a",
           "color_page_headings": "#1a1a1a",
           "color_product_description_background": "#f4f4f4",
@@ -3723,7 +3771,7 @@
           "color_mini_cart_background": "#ffffff",
           "color_mini_cart_button": "#d2ab2d",
           "color_mini_cart_button_label": "#ffffff",
-          "color_newsletter_section_background": "#f4f4f4",
+          "color_newsletter_section_background": "#202756",
           "color_page_content_text": "#1a1a1a",
           "color_page_headings": "#1a1a1a",
           "color_product_description_background": "#f4f4f4",
@@ -3827,7 +3875,7 @@
           "color_mini_cart_background": "#f4f4f4",
           "color_mini_cart_button": "#a68859",
           "color_mini_cart_button_label": "#ffffff",
-          "color_newsletter_section_background": "#f4f4f4",
+          "color_newsletter_section_background": "#202756",
           "color_page_content_text": "#212121",
           "color_page_headings": "#856d47",
           "color_product_description_background": "#f7f7f7",
@@ -3931,7 +3979,7 @@
           "color_mini_cart_background": "#fafafa",
           "color_mini_cart_button": "#252e5a",
           "color_mini_cart_button_label": "#ffffff",
-          "color_newsletter_section_background": "#ffffff",
+          "color_newsletter_section_background": "#202756",
           "color_page_content_text": "#252e5a",
           "color_page_headings": "#252e5a",
           "color_product_description_background": "#ffffff",

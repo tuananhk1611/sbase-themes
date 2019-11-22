@@ -131,7 +131,7 @@ h6 {
 
 h1, h2, h3, h4, h5, h6 {
   &.heading-section-midsleek {
-    font-family: 'PlayfairDisplay-Regular', sans-serif;
+    font-family: "Playfair Display";
   }
 }
 
@@ -226,7 +226,7 @@ sup { top: -.5em; }
 //
 
 a {
-  color: $color_buttons;
+  color: $color_links;
   text-decoration: $link-decoration;
   background-color: transparent; // Remove the gray background on active links in IE 10.
 

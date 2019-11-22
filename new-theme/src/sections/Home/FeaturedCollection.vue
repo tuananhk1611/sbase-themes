@@ -4,7 +4,7 @@
       <div class="row justify-center">
         <h2
           v-if="settings.heading"
-          class="h3 text-align-center product-carousel__heading"
+          class="h3 text-align-center product-carousel__heading heading-section-midsleek is-capitalized"
         >
           {{ settings.heading }}
         </h2>

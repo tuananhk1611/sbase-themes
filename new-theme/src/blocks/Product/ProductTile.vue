@@ -46,7 +46,7 @@
           :data-id="product.id"
         ></div>
         <span class="d-block mt16 price">
-          <span class="has-text-weight-medium money">
+          <span class="has-text-weight-bold money" :class="isOnSale(product.variants[0]) ? 'sale-price' : ''">
             {{ product.variants[0].price | price }}
           </span>
           <span v-if="isOnSale(product.variants[0])" class="was_price ml12">

@@ -1,7 +1,7 @@
 .collection-product-wrap {
   .price {
     .money {
-      font-size: 1.143em;
+      font-size: 15px;
     }
     .sale-price {
       color: $color_sale_price;
@@ -15,7 +15,7 @@
   }
   .title {
     color: $color_links;
-    font-size: 0.857rem;
+    font-size: 14px;
     font-weight: $font-weight-medium;
     &:hover {
       color: adaptive-color($color_background, $color_links, 20%);

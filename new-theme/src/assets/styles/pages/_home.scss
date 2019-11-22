@@ -36,6 +36,7 @@
     &.subscribe {
       @include res(sm) {
         margin: 64px 0;
+        padding: 56px 0;
       }
 
       @include res(xs) {
@@ -605,6 +606,30 @@
       left: 0;
       right: 0;
       padding: 0 13%;
+      color: $testimonial_text_color;
+      top: 50%;
+      transform: translate(0, -50%);
+      .using-font-private {
+        font-family: "Playfair Display";
+      }
+      .testimonial-head-icon {
+        font-family: "Playfair Display";
+        font-size: 80px;
+        line-height: normal;
+      }
+      .testimonial-name {
+        span {
+          display: inline-block;
+          padding-bottom: 16px;
+          border-bottom: 1px solid;
+          border-color: inherit;
+          font-weight: 600;
+          letter-spacing: 1px;
+        }
+      }
+      .testimonial-company {
+        color: $testimonial_text_color;
+      }
       .h3 {
         display: none;
         @include res(xs) {
@@ -807,18 +832,55 @@
   padding: 64px 0;
   .subscribe-wrap {
     .form-wrapper {
-      max-width: 450px;
+      max-width: 362px;
       margin: 0 auto;
+      position: relative;
       > input {
-        height: 40px;
+        height: 56px;
         flex: 1 1 auto;
+        background: $color_bg_input_newsletter;
+        border: none;
+        color: $color_text_input_newsletter;
+      }
+      /* Placeholder text color -- selectors need to be separate to work. */
+
+      ::-webkit-input-placeholder {
+        color: $color_text_input_newsletter;
+      }
+
+      :-moz-placeholder {
+        color: $color_text_input_newsletter;
+      }
+
+      ::-moz-placeholder {
+        color: $color_text_input_newsletter;
+        opacity: 1; /* Since FF19 lowers the opacity of the placeholder by default */
+      }
+
+      :-ms-input-placeholder {
+        color: $color_text_input_newsletter;
+      }
+      *[type="submit"] {
+        position: absolute;
+        right: 0;
+        background: transparent;
+        border: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: "HelveticaNeue", sans-serif;
+        color: #Fff;
+        padding: 0 16px;
       }
     }
   }
   .announce-text {
+    font-size: 12px;
     @include res(xs) {
       text-align: justify;
     }
+  }
+  .newsletter-text-color {
+    color: $color_newsletter;
   }
   .btn {
     position: relative;
