@@ -37,6 +37,14 @@
                   enableBackground(settings.display_solid_text_background)
                 "
               ></div>
+              <div class="text-desktop">
+                <div
+                  class="is-uppercase has-text-white mt24 has-text-weight-bold"
+                  v-html="settings.preheading"
+                ></div>
+                <h2 class="h3 has-text-white mt12 is-capitalized heading-section-midsleek">{{ settings.heading }}</h2>
+                <p class="has-text-white has-text-weight-bold is-uppercase">{{ settings.subheading }}</p>
+              </div>
               <LinkFormatter
                 v-if="
                   settings.first_button_label &&
@@ -48,7 +56,7 @@
                 :class="highlightButton(settings.highlight_first_button_link)"
                 :link="settings.first_button_link"
               >
-                {{ settings.first_button_label }}
+                <span class="play-icon">&#8227</span> {{ settings.first_button_label }}
               </LinkFormatter>
               <button
                 v-else-if="
@@ -60,7 +68,7 @@
                 :class="highlightButton(settings.highlight_first_button_link)"
                 @click.prevent="handleClick"
               >
-                {{ settings.first_button_label }}
+                <span class="play-icon">&#8227</span> {{ settings.first_button_label }}
               </button>
               <LinkFormatter
                 v-if="
@@ -85,16 +93,8 @@
                 :class="highlightButton(settings.highlight_second_button_link)"
                 @click.prevent="handleClick"
               >
-                {{ settings.second_button_label }}
+                 {{ settings.second_button_label }}
               </button>
-              <div class="text-desktop">
-                <div
-                  class="is-uppercase has-text-white mt24"
-                  v-html="settings.preheading"
-                ></div>
-                <h2 class="h3 has-text-white mt12">{{ settings.heading }}</h2>
-                <p class="has-text-white">{{ settings.subheading }}</p>
-              </div>
             </div>
           </div>
           <div
@@ -106,7 +106,7 @@
               class="is-uppercase has-text-black mt24"
               v-html="settings.preheading"
             ></div>
-            <h2 class="h3 has-text-black mt12">{{ settings.heading }}</h2>
+            <h2 class="h3 has-text-black mt12 is-capitalized heading-section-midsleek">{{ settings.heading }}</h2>
             <p class="has-text-black">{{ settings.subheading }}</p>
           </div>
         </div>

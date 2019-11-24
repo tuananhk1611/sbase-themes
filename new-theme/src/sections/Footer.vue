@@ -6,6 +6,29 @@
     >
       <div class="container">
         <div class="row">
+          <div class="col-8 col-sm-2">
+            <!-- logo in footer -->
+            <div class="logo mb32">
+              <router-link
+                to="/"
+                class="logo-text justify-center items-center flex"
+              >
+                <img
+                  v-if="getLogo"
+                  class="fit-logo"
+                  :src="$resizeImage(getLogo, '0', '180', '')"
+                  :alt="$shop.name"
+                  :srcset="urlSrcSet(getLogo)"
+                  :style="`width: ${sectionSettings.width}px;`"
+                />
+                <div v-else ref="logo" class="items-center flex m0">
+                  {{ $shop.name }}
+                </div>
+              </router-link>
+            </div>
+          </div>
+        </div>
+        <div class="row">
           <div
             v-for="(block, index) in blocks"
             :key="index"
@@ -13,7 +36,7 @@
           >
             <div
               :class="[
-                `mb32 ${
+                `mb40 ${
                   block.element_type === 'menu'
                     ? 'footer_menu'
                     : 'footer_content'
@@ -21,7 +44,7 @@
               ]"
             >
               <h6
-                class="h5 has-text-weight-medium is-uppercase has-text-gray-nero site-footer__header flex items-center"
+                class="h5 has-text-weight-medium is-capitalized has-text-gray-nero site-footer__header flex items-center mb16"
                 @click.prevent="actives[index] = !actives[index]"
               >
                 <span v-if="block.element_type !== 'page'" class="flex-grow">
@@ -67,93 +90,99 @@
               </SCollapseTransition>
             </div>
           </div>
-          <div class="col-sm-12">
-            <div class="flex flex-wrap align-center pt40 footer-before">
-              <div
-                v-if="sectionSettings.show_social_media_icons"
-                class="footer-social mb24"
-              >
-                <ul class="list-style-none m0 p0 flex">
-                  <li v-if="sectionSettings.facebook_link" class="mr24">
-                    <a
-                      class="footer-social__icon footer-social__icon--fb"
-                      :href="sectionSettings.facebook_link"
-                      target="_blank"
-                      title="Facebook"
-                    ></a>
-                  </li>
-                  <li v-if="sectionSettings.twitter_link" class="mr24">
-                    <a
-                      class="footer-social__icon footer-social__icon--tw"
-                      :href="sectionSettings.twitter_link"
-                      target="_blank"
-                      title="Twitter"
-                    ></a>
-                  </li>
-                  <li v-if="sectionSettings.pinterest_link" class="mr24">
-                    <a
-                      class="footer-social__icon footer-social__icon--pin"
-                      :href="sectionSettings.pinterest_link"
-                      target="_blank"
-                      title="Pinterest"
-                    ></a>
-                  </li>
-                  <li v-if="sectionSettings.youtube_link" class="mr24">
-                    <a
-                      class="footer-social__icon footer-social__icon--you"
-                      :href="sectionSettings.youtube_link"
-                      target="_blank"
-                      title="Youtube"
-                    ></a>
-                  </li>
-                  <li v-if="sectionSettings.instagram_link" class="mr24">
-                    <a
-                      class="footer-social__icon footer-social__icon--ins"
-                      :href="sectionSettings.instagram_link"
-                      target="_blank"
-                      title="Instagram"
-                    ></a>
-                  </li>
-                  <li v-if="sectionSettings.blog_link">
-                    <a
-                      class="footer-social__icon footer-social__icon--blog"
-                      :href="sectionSettings.blog_link"
-                      target="_blank"
-                      title="Blog"
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="footer-copyright mb24 text-align-right-sm">
-                <p class="display-7 is-uppercase m0">
-                  © 2019 {{ $shop.name }}.
-                  {{ sectionSettings.copyright_text }}
-                </p>
-              </div>
-            </div>
-            <div class="flex flex-wrap align-center mb40 footer-after">
-              <div class="footer-powered-by mb24">
-                <a
-                  v-if="sectionSettings.show_powered_by !== false"
-                  class="powered-by"
-                  :href="poweredByLink"
-                  target="_blank"
-                ></a>
-              </div>
-              <div class="footer-credits mb24">
-                <ul
-                  v-if="sectionSettings.show_payment_method_icons"
-                  class="list-style-none m0 p0 flex"
+        </div>
+      </div>
+      <div class="footer-second-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="flex flex-wrap align-center pt40 footer-before">
+                <div
+                  v-if="sectionSettings.show_social_media_icons"
+                  class="footer-social mb24"
                 >
-                  <li
-                    v-for="(payment, index) in paymentMethods"
-                    :key="index"
-                    :class="[
+                  <ul class="list-style-none m0 p0 flex">
+                    <li v-if="sectionSettings.facebook_link" class="mr24">
+                      <a
+                        class="footer-social__icon footer-social__icon--fb"
+                        :href="sectionSettings.facebook_link"
+                        target="_blank"
+                        title="Facebook"
+                      ></a>
+                    </li>
+                    <li v-if="sectionSettings.twitter_link" class="mr24">
+                      <a
+                        class="footer-social__icon footer-social__icon--tw"
+                        :href="sectionSettings.twitter_link"
+                        target="_blank"
+                        title="Twitter"
+                      ></a>
+                    </li>
+                    <li v-if="sectionSettings.pinterest_link" class="mr24">
+                      <a
+                        class="footer-social__icon footer-social__icon--pin"
+                        :href="sectionSettings.pinterest_link"
+                        target="_blank"
+                        title="Pinterest"
+                      ></a>
+                    </li>
+                    <li v-if="sectionSettings.youtube_link" class="mr24">
+                      <a
+                        class="footer-social__icon footer-social__icon--you"
+                        :href="sectionSettings.youtube_link"
+                        target="_blank"
+                        title="Youtube"
+                      ></a>
+                    </li>
+                    <li v-if="sectionSettings.instagram_link" class="mr24">
+                      <a
+                        class="footer-social__icon footer-social__icon--ins"
+                        :href="sectionSettings.instagram_link"
+                        target="_blank"
+                        title="Instagram"
+                      ></a>
+                    </li>
+                    <li v-if="sectionSettings.blog_link">
+                      <a
+                        class="footer-social__icon footer-social__icon--blog"
+                        :href="sectionSettings.blog_link"
+                        target="_blank"
+                        title="Blog"
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-copyright mb24 text-align-right-sm">
+                  <p class="display-7 is-capitalized m0">
+                    © 2019 {{ $shop.name }}.
+                    {{ sectionSettings.copyright_text }}
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-wrap align-center mb8 footer-after">
+                <div class="footer-powered-by mb24">
+                  <a
+                    v-if="sectionSettings.show_powered_by !== false"
+                    class="powered-by"
+                    :href="poweredByLink"
+                    target="_blank"
+                  ></a>
+                </div>
+                <div class="footer-credits mb24 hidden-xs">
+                  <ul
+                    v-if="sectionSettings.show_payment_method_icons"
+                    class="list-style-none m0 p0 flex"
+                  >
+                    <li
+                      v-for="(payment, index) in paymentMethods"
+                      :key="index"
+                      :class="[
                       `footer-credits__icon footer-credits__icon--${payment}`,
                       { ml16: index !== 0 },
                     ]"
-                  ></li>
-                </ul>
+                    ></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -167,6 +196,7 @@
 import { getCoreMixin } from '../shared/mixin'
 import SCollapseTransition from '../utils/collapse'
 import { FOOTER } from '../constants'
+import { HEADER } from '../constants'
 import LinkFormatter from '../components/LinkFormatter'
 export default {
   name: 'Footer',
@@ -180,10 +210,23 @@ export default {
         2: false,
         3: false,
       },
-      paymentMethods: ['visa', 'master', 'amex', 'paypal'],
+      paymentMethods: ['visa', 'master', 'amex', 'paypal', 'amazon'],
     }
   },
   computed: {
+    sectionHeaderSettings() {
+      return Object.assign({}, HEADER, this.$getFixedSettings('header'))
+    },
+    getLogo() {
+      if (
+        (this.isPreview && this.previewDevice === 'mobile') ||
+        (!this.isPreview && this.$isMobile())
+      ) {
+        return this.sectionHeaderSettings.mobile_logo || this.sectionHeaderSettings.logo
+      }
+
+      return this.sectionHeaderSettings.logo || this.sectionHeaderSettings.mobile_logo
+    },
     sectionSettings() {
       return Object.assign({}, FOOTER, this.$getFixedSettings('footer'))
     },
@@ -203,6 +246,29 @@ export default {
       return `https://shopbase.com?utm_source=pm&utm_medium=poweredby&utm_name=storefooter&shopname=${
         this.$shop.name
       }`
+    },
+  },
+  methods: {
+    urlSrcSet(img) {
+      // For local
+      if (true) {
+        let url = `${this.$resizeImage(img, '0', '180', '')} 1x, ${this.$resizeImage(
+          img,
+          '0',
+          '180',
+          '',
+          'x2'
+        )} 2x`
+        url = url.replace('https://img', 'https://stag-img')
+        return url
+      }
+      return `${this.$resizeImage(img, '0', '180', '')} 1x, ${this.$resizeImage(
+        img,
+        '0',
+        '180',
+        '',
+        'x2'
+      )} 2x`
     },
   },
 }

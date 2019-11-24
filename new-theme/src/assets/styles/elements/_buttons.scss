@@ -10,13 +10,22 @@
   height: inherit;
   line-height: 18px;
   letter-spacing: 2px;
-  padding: 10px 22px;
+  padding: 18px 22px;
   position: relative;
   transition: .3s all;
   text-align: center;
   text-decoration: none;
   &.btn-primary {
-    @include button-styles($color_background, $color_buttons, $color_buttons_label, 10%);
+    font-weight: 600;
+    @include button-styles(#000, $color_bg_buttons, $color_buttons_label, 20%);
+    &:active, &.actived {
+      background-color: adaptive-color(#fff, $color_bg_buttons, 5%);
+      border-color: transparent;
+    }
+    &.disabled {
+      background-color: adaptive-color(#000, $color_bg_buttons, 50%);
+      color: adaptive-color(#000, $color_bg_buttons, 30%);
+    }
   }
   &.btn-outline-gray {
     background-color: $white;
@@ -56,18 +65,34 @@
     }
   }
   &.btn-outline {
+    font-weight: 600;
     background-color: transparent;
-    border: 1px solid color-control($color_background);
-    color: color-control($color_background);
-    &:focus,
-    &.focused,
-    &:active,
+    border: 1px solid $color_bg_buttons;
+    color: $color_bg_buttons;
+    text-decoration: none !important;
     &:hover,
-    &.hovered,
-    &.active {
-      border: 1px solid adaptive-color(color-control($color_background), color-control($color_background), 20%);
-      color: adaptive-color(color-control($color_background), color-control($color_background), 20%);
-      text-decoration: none;
+    &.hovered {
+      background: $color_bg_buttons;
+      border-color: transparent !important;
+      color: #fff;
+    }
+    &:active,
+    &.actived {
+      background-color: adaptive-color(#fff, $color_bg_buttons, 5%);
+      border-color: transparent;
+      color: #fff;
+    }
+    &:focus,
+    &.focused {
+      background-color: transparent;
+      border: 1px solid $color_bg_buttons;
+      color: $color_bg_buttons;
+    }
+    &.disabled {
+      pointer-events: none;
+      cursor: not-allowed;
+      border-color: transparent;
+      color: adaptive-color(#000, $color_bg_buttons, 50%);
     }
   }
   // Colors
@@ -87,7 +112,17 @@
     color: $color_buttons;
     border-bottom: 1px solid $color_buttons;
     &:hover {
+      border: 1px solid $color_buttons;
+      border-bottom: 1px solid $color_buttons;
+      padding: 10px 22px;
       text-decoration: none;
+    }
+    &:active, &.actived {
+      border: 1px solid transparent;
+      padding: 10px 22px;
+      text-decoration: none;
+      background: adaptive-color(#fff, $color_bg_buttons, 5%);
+      color: #fff;
     }
   }
   // Modifiers

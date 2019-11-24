@@ -180,7 +180,9 @@
               <span
                 class="search-icon pointer"
                 @click.prevent="actionSearch"
-              ></span>
+              >
+                <i class="material-icons">search</i>
+              </span>
             </div>
             <div
               v-if="sectionSettings.enable_search"
@@ -189,7 +191,9 @@
               <router-link
                 class="search-icon"
                 :to="$routeToPath('/search')"
-              ></router-link>
+              >
+                <i class="material-icons" style="line-height: inherit;">search</i>
+              </router-link>
             </div>
             <div
               v-if="
@@ -223,6 +227,7 @@
                 ]"
                 @click.prevent="toggleShowCart"
               >
+                <i class="material-icons-outlined" :class="sectionSettings.cart_icon !== 'bag' ? 'hidden' : ''">shopping_basket_outlined</i>
                 <no-ssr>
                   <span v-if="parseInt(cartQuantity) > 0" class="cart-number">
                     {{ cartQuantity }}

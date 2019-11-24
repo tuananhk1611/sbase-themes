@@ -185,9 +185,6 @@ export default {
           return ''
       }
     },
-  },
-  mounted() {
-    console.log(9999, this.settings, this)
   }
 }
 </script>

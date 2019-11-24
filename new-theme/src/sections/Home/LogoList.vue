@@ -2,7 +2,7 @@
   <section class="section logo-list">
     <div class="container">
       <div class="row justify-center">
-        <h2 v-if="settings.heading" class="h3 text-align-center mb24">
+        <h2 v-if="settings.heading" class="h3 text-align-center mb24 heading-section-midsleek is-capitalized">
           {{ settings.heading }}
         </h2>
       </div>

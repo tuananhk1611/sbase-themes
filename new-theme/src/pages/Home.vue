@@ -125,6 +125,7 @@ export default {
   },
   computed: {
     pageSettings() {
+      console.log(this.$getPageSettings('homepage'))
       return this.$getPageSettings('homepage')
     },
     forceSlideshowSettings() {

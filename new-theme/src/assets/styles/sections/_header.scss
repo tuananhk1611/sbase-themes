@@ -104,8 +104,6 @@
 
   .cart-col {
     .search-icon {
-      background: url('#{$asset_path}/images/icons/sprites-icon-24.svg') no-repeat -1px -448px;
-      background-size: 32px auto;
       display: inline-block;
       width: 32px;
       height: 32px;
@@ -116,7 +114,6 @@
       @include res(sm) {
         width: 40px;
         height: 40px;
-        background-position: 4px -442px;
         padding: 10px;
       }
     }
@@ -209,15 +206,9 @@
       }
     }
     .cart-icon-bag {
-      background: url('#{$asset_path}/images/icons/sprites-icon-24.svg') no-repeat -4px -543px;
-      background-size: 32px auto;
       display: inline-block;
       width: 24px;
       height: 24px;
-      @include res(xs) {
-        background: url('#{$asset_path}/images/icons/sprites-icon-24.svg') no-repeat -4px -544px;
-        background-size: 32px auto;
-      }
     }
     .cart-number {
       border-radius: 50%;
@@ -228,8 +219,8 @@
       line-height: 10px;
       position: absolute;
       padding: 3px;
-      top: 0;
-      right: 0;
+      top: -8px;
+      right: -12px;
       font-weight: bold;
     }
   }

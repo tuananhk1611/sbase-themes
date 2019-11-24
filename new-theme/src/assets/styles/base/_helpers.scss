@@ -69,7 +69,9 @@ $alignments: ('center': 'center', 'justify': 'justify', 'left': 'left', 'right':
     }
   }
 }
-
+.hidden {
+  display: none !important;
+}
 .has-text-weight-light {
   font-weight: $font-weight-light;
 }

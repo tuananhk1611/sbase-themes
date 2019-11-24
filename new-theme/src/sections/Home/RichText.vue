@@ -1,7 +1,7 @@
 <template>
   <section class="section annouce-block">
     <div class="container text-align-center">
-      <h2 v-if="settings.heading" class="h3 mb12">{{ settings.heading }}</h2>
+      <h2 v-if="settings.heading" class="h3 mb12 heading-section-midsleek is-capitalized">{{ settings.heading }}</h2>
       <div
         v-if="settings.text"
         :class="textAlignmentClass"

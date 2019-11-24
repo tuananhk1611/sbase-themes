@@ -68,6 +68,14 @@
   }
 }
 
+.section {
+  &.banner {
+    @include res(xs) {
+      background: #F7F5F0;
+    }
+  }
+}
+
 .slideshow-carousel {
   img {
     width: 100%;
@@ -177,6 +185,19 @@
         line-height: normal;
         color: $color_subheading_banner;
       }
+      @include res(xs) {
+        &.midsleek-banner-preheading {
+          font-size: 48px;
+          line-height: 48px;
+          color: #EB6449;
+        }
+        &.midsleek-banner-subheading {
+          font-size: 12px;
+          letter-spacing: 0;
+          line-height: 18px;
+          color: #000000;
+        }
+      }
     }
     .midsleek-banner-heading {
       font-size: font-size($heading_banner_size);
@@ -185,7 +206,14 @@
       line-height: normal;
       text-transform: unset;
       color: $color_heading_banner;
+      @include res(xs) {
+        color: #000000;
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 8px;
+      }
     }
+
   }
 
   .VueCarousel-slide-active {
@@ -595,7 +623,12 @@
         display: none;
       }
     }
-
+    .testimonial-img-wrapper {
+      &:before {
+        content: "";
+        position: absolute;
+      }
+    }
     .darken-background {
       background-color: $gray-50;
       background-clip: content-box;
@@ -673,6 +706,18 @@
       &:nth-child(2n + 1):nth-last-child(-n + 2) ~ .collection-wrap {
         margin-bottom: 0;
       }
+      .img-wrap {
+        overflow: hidden;
+        border-radius: 50%;
+        height: 88px;
+        margin: 0 auto;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: .75s all;
+        }
+      }
     }
     .img-wrap {
       overflow: hidden;
@@ -696,6 +741,10 @@
     font-weight: bold;
     &:hover {
       color: adaptive-color($color_background, $color_links, 20%);
+    }
+    @include res (xs) {
+      font-size: 12px;
+      line-height: 18px;
     }
   }
 }
@@ -798,7 +847,16 @@
       .override-content {
         z-index: 2;
         @include res(md) {
-          margin-top: 24px;
+          margin-top: 0;
+        }
+        &.btn {
+          padding: 10px 16px;
+          vertical-align: middle;
+          .play-icon {
+            font-size: 22px;
+            display: inline-block;
+            margin-right: 8px;
+          }
         }
       }
       .text-desktop {
@@ -898,6 +956,14 @@
     &.is-loading {
       &::after {
         border: 2px solid $color_banner_buttons_label;
+      }
+    }
+    &.btn-subline {
+      @include res(xs) {
+        font-size: 13px;
+        color: $private_main_color;
+        border-bottom-color: $private_main_color;
+        display: inline-block;
       }
     }
   }

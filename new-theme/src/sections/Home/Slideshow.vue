@@ -52,15 +52,16 @@
             <div class="content">
               <p
                 v-if="block.preheading"
-                class="is-capitalized ls-2 mt0 mb12 slideshow-preheading-midsleek"
+                class="is-capitalized ls-2 mt0 mb12 midsleek-banner-preheading"
+                :style="stylePreheading"
                 v-html="block.preheading"
               ></p>
-              <h2 v-if="block.heading" class="h2 mt0 mb12 slideshow-heading-midsleek">
+              <h2 v-if="block.heading" :style="styleHeading" class="h2 mt0 mb12 midsleek-banner-heading">
                 {{ block.heading }}
               </h2>
               <p
                 v-if="block.subheading"
-                class="ls-2 mt0 mb24 slideshow-subheading-midsleek"
+                class="ls-2 mt0 mb24 midsleek-banner-subheading"
                 v-html="block.subheading"
               ></p>
               <LinkFormatter
@@ -68,9 +69,11 @@
                 :link="block.first_button_link"
                 class="btn carousel__first-link mb12"
                 :class="{
-                  'is-text-midsleek': !block.highlight_first_button_link,
+                  'btn-outline': !block.highlight_first_button_link,
                   'btn-primary banner-button':
-                    block.highlight_first_button_link,
+                    block.highlight_first_button_link && highlightButtonType === 'primary',
+                  'btn-subline banner-button':
+                    block.highlight_first_button_link && highlightButtonType === 'subline',
                 }"
               >
                 {{ block.first_button_label }}
@@ -80,9 +83,11 @@
                 :link="block.second_button_link"
                 class="btn carousel__second-link"
                 :class="{
-                  'is-text-midsleek': !block.highlight_second_button_link,
+                  'btn-outline': !block.highlight_second_button_link,
                   'btn-primary banner-button':
-                    block.highlight_second_button_link,
+                    block.highlight_second_button_link && highlightButtonType === 'primary',
+                  'btn-subline banner-button':
+                    block.highlight_second_button_link && highlightButtonType === 'subline',
                 }"
               >
                 {{ block.second_button_label }}
@@ -137,6 +142,19 @@ export default {
     isAutoPlay() {
       return !(typeof this.forceSettings.autoplay !== 'undefined')
     },
+    styleHeading() {
+      return {
+        fontFamily: this.settings.heading_font_private ? 'Playfair Display' : 'inherit',
+      }
+    },
+    stylePreheading() {
+      return {
+        fontFamily: this.settings.preheading_font_private ? 'Harmony' : 'inherit',
+      }
+    },
+    highlightButtonType() {
+      return this.settings.slideshow_button_highlight_type ? this.settings.slideshow_button_highlight_type : 'subline'
+    },
   },
   watch: {
     forceSettings: {
@@ -187,5 +205,12 @@ export default {
       }
     },
   },
+  mounted() {
+    console.log(9999, this.settings, this)
+    // console.log(8888, this.$getThemeSettings())
+    // console.log(77777, this.$getForceSettings('header'))
+    // console.log(66666, this.$getFixedSettings('header'))
+    // console.log(55555, this.$getPageSettings('homepage'))
+  }
 }
 </script>

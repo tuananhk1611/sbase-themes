@@ -1,5 +1,5 @@
 {
-  "default_style": "roller_denmark",
+  "default_style": "midsleek_basic",
   "sections": {
     "banner": {
       "icon": "bulletin-board",
@@ -1544,6 +1544,37 @@
               "min": 0,
               "type": "slider",
               "unit": "%"
+            },
+            {
+              "comment": "this private for midsleek",
+              "default": true,
+              "id": "preheading_font_private",
+              "label": "Using Preheading Private Font",
+              "type": "checkbox"
+            },
+            {
+              "comment": "this private for midsleek",
+              "default": true,
+              "id": "heading_font_private",
+              "label": "Using Heading Private Font",
+              "type": "checkbox"
+            },
+            {
+              "comment": "this private for midsleek",
+              "default": "subline",
+              "id": "slideshow_button_highlight_type",
+              "label": "Choose highlight type",
+              "type": "select",
+              "options": [
+                {
+                  "label": "Button Primary",
+                  "value": "primary"
+                },
+                {
+                  "label": "Button Subline",
+                  "value": "subline"
+                }
+              ]
             }
           ],
           "label": "setting"
@@ -1958,7 +1989,7 @@
           "type": "color"
         },
         {
-          "default": "#1a1a1a",
+          "default": "#000000",
           "id": "color_links",
           "label": "Links",
           "type": "color"
@@ -1974,9 +2005,15 @@
           "type": "heading"
         },
         {
-          "default": "#285f8a",
+          "default": "#ffffff",
           "id": "color_buttons",
           "label": "Buttons",
+          "type": "color"
+        },
+        {
+          "default": "#2d387a",
+          "id": "color_bg_buttons",
+          "label": "Buttons background",
           "type": "color"
         },
         {
@@ -2010,26 +2047,26 @@
           "type": "color"
         },
         {
-          "content": "For Banner Section",
+          "content": "For Banner & Slideshow Section",
           "type": "heading",
           "comment": "This private for midsleek"
         },
         {
           "default": "#eb6449",
           "id": "color_preheading_banner",
-          "label": "Color for preheading of banner",
+          "label": "Color for preheading",
           "type": "color"
         },
         {
           "default": "#ffffff",
           "id": "color_heading_banner",
-          "label": "Color for heading of banner",
+          "label": "Color for heading",
           "type": "color"
         },
         {
           "default": "#ffffff",
           "id": "color_subheading_banner",
-          "label": "Color for subheading of banner",
+          "label": "Color for subheading",
           "type": "color"
         },
         {
@@ -3588,9 +3625,9 @@
   ],
   "styles": [
     {
-      "code": "roller_denmark",
+      "code": "midsleek_basic",
       "image": "https://img.shopbase.com/themes/2/assets/style-preview/denmark.jpg",
-      "name": "Roller Denmark",
+      "name": "Midsleek Basic",
       "pages": {
         "homepage": {
           "homepage_slideshow": {
@@ -3657,10 +3694,10 @@
           "color_buttons_label": "#ffffff",
           "color_compare_at_price": "#999999",
           "color_footer_background": "#ffffff",
-          "color_footer_headings": "#1a1a1a",
-          "color_footer_links": "#999999",
-          "color_footer_text": "#1a1a1a",
-          "color_links": "#1a1a1a",
+          "color_footer_headings": "#2d387a",
+          "color_footer_links": "#2d387a",
+          "color_footer_text": "#2d387a",
+          "color_links": "#000000",
           "color_logo_text": "#1a1a1a",
           "color_main_menu": "#1a1a1a",
           "color_menu_background": "#ffffff",
@@ -3687,318 +3724,6 @@
           "type_button_text_style": "regular",
           "type_header_base_size": 48,
           "type_header_family": "'Montserrat', sans-serif",
-          "type_header_style": "regular"
-        }
-      }
-    },
-    {
-      "code": "roller_egypt",
-      "image": "https://img.shopbase.com/themes/2/assets/style-preview/egypt.jpg",
-      "name": "Roller Egypt",
-      "pages": {
-        "homepage": {
-          "homepage_slideshow": {
-            "icon": "image-multiple",
-            "settings": {
-              "blocks": [
-                {
-                  "background_image": "https://img.shopbase.com/themes/2/assets/slideshow/egypt/slider_1.jpg",
-                  "first_button_label": "Shop Men",
-                  "heading": "Roller Shop Base Theme",
-                  "highlight_first_button_link": false,
-                  "highlight_second_button_link": true,
-                  "id": "slideshow-0",
-                  "preheading": "Introducing The",
-                  "second_button_label": "Shop Women",
-                  "subheading": "Exclusively From Shop Base",
-                  "text_alignment": "centre",
-                  "text_position": "centre"
-                },
-                {
-                  "background_image": "https://img.shopbase.com/themes/2/assets/slideshow/egypt/slider_2.jpg",
-                  "first_button_label": "View Detailed",
-                  "heading": "Optimize For Speed",
-                  "highlight_first_button_link": false,
-                  "highlight_second_button_link": false,
-                  "id": "slideshow-1",
-                  "preheading": "Fast Loading +Flexible",
-                  "second_button_label": "",
-                  "subheading": "Optional Text + Action Buttons On Each Slide",
-                  "text_alignment": "centre",
-                  "text_position": "centre"
-                },
-                {
-                  "background_image": "https://img.shopbase.com/themes/2/assets/slideshow/egypt/slider_3.jpg",
-                  "first_button_label": "Learn More",
-                  "heading": "A Seamless Shopping Experience",
-                  "highlight_first_button_link": false,
-                  "highlight_second_button_link": false,
-                  "id": "slideshow-2",
-                  "preheading": "Full - Width Slideshow",
-                  "second_button_label": "",
-                  "subheading": "",
-                  "text_alignment": "centre",
-                  "text_position": "centre"
-                }
-              ],
-              "change_slides_every": 6,
-              "gallery_transition": "slide",
-              "opacity": 30,
-              "text_animation": "fade_in"
-            },
-            "type": "slideshow"
-          }
-        }
-      },
-      "settings": {
-        "colors": {
-          "color_announcement_bar_background": "#d2ab2d",
-          "color_announcement_message_text": "#ffffff",
-          "color_background": "#ffffff",
-          "color_banner_buttons": "#d2ab2d",
-          "color_banner_buttons_label": "#ffffff",
-          "color_buttons": "#d2ab2d",
-          "color_buttons_label": "#ffffff",
-          "color_compare_at_price": "#1a1a1a",
-          "color_footer_background": "#ffffff",
-          "color_footer_headings": "#1a1a1a",
-          "color_footer_links": "#999999",
-          "color_footer_text": "#1a1a1a",
-          "color_links": "#1a1a1a",
-          "color_logo_text": "#1a1a1a",
-          "color_main_menu": "#1a1a1a",
-          "color_menu_background": "#ffffff",
-          "color_mini_cart_background": "#ffffff",
-          "color_mini_cart_button": "#d2ab2d",
-          "color_mini_cart_button_label": "#ffffff",
-          "color_newsletter_section_background": "#202756",
-          "color_page_content_text": "#1a1a1a",
-          "color_page_headings": "#1a1a1a",
-          "color_product_description_background": "#f4f4f4",
-          "color_sale_price": "#a62b0d",
-          "color_price": "#d2ab2d",
-          "color_top_bar_background": "#f4f4f4",
-          "color_top_menu": "#1a1a1a",
-          "menu_background_opacity": 100
-        },
-        "typography": {
-          "capitalize_buttons_text": true,
-          "capitalize_headings": true,
-          "type_base_family": "Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif",
-          "type_base_size": 14,
-          "type_base_style": "regular",
-          "type_button_base_family": "Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif",
-          "type_button_text_style": "regular",
-          "type_header_base_size": 48,
-          "type_header_family": "Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif",
-          "type_header_style": "regular"
-        }
-      }
-    },
-    {
-      "code": "roller_russia",
-      "image": "https://img.shopbase.com/themes/2/assets/style-preview/russia.jpg",
-      "name": "Roller Russia",
-      "pages": {
-        "homepage": {
-          "homepage_slideshow": {
-            "icon": "image-multiple",
-            "settings": {
-              "blocks": [
-                {
-                  "background_image": "https://img.shopbase.com/themes/2/assets/slideshow/russia/slider_1.jpg",
-                  "first_button_label": "Shop Men",
-                  "heading": "Roller Shop Base Theme",
-                  "highlight_first_button_link": false,
-                  "highlight_second_button_link": true,
-                  "id": "slideshow-0",
-                  "preheading": "Introducing The",
-                  "second_button_label": "Shop Women",
-                  "subheading": "Exclusively From Shop Base",
-                  "text_alignment": "centre",
-                  "text_position": "centre"
-                },
-                {
-                  "background_image": "https://img.shopbase.com/themes/2/assets/slideshow/russia/slider_2.jpg",
-                  "first_button_label": "View Detailed",
-                  "heading": "Optimize For Speed",
-                  "highlight_first_button_link": false,
-                  "highlight_second_button_link": false,
-                  "id": "slideshow-1",
-                  "preheading": "Fast Loading +Flexible",
-                  "second_button_label": "",
-                  "subheading": "Optional Text + Action Buttons On Each Slide",
-                  "text_alignment": "centre",
-                  "text_position": "centre"
-                },
-                {
-                  "background_image": "https://img.shopbase.com/themes/2/assets/slideshow/russia/slider_3.jpg",
-                  "first_button_label": "Learn More",
-                  "heading": "A Seamless Shopping Experience",
-                  "highlight_first_button_link": false,
-                  "highlight_second_button_link": false,
-                  "id": "slideshow-2",
-                  "preheading": "Full - Width Slideshow",
-                  "second_button_label": "",
-                  "subheading": "",
-                  "text_alignment": "centre",
-                  "text_position": "centre"
-                }
-              ],
-              "change_slides_every": 6,
-              "gallery_transition": "slide",
-              "opacity": 30,
-              "text_animation": "fade_in"
-            },
-            "type": "slideshow"
-          }
-        }
-      },
-      "settings": {
-        "colors": {
-          "color_announcement_bar_background": "#856d47",
-          "color_announcement_message_text": "#ffffff",
-          "color_background": "#ffffff",
-          "color_banner_buttons": "#a68859",
-          "color_banner_buttons_label": "#ffffff",
-          "color_buttons": "#a68859",
-          "color_buttons_label": "#ffffff",
-          "color_compare_at_price": "#999999",
-          "color_footer_background": "#ffffff",
-          "color_footer_headings": "#212121",
-          "color_footer_links": "#999999",
-          "color_footer_text": "#212121",
-          "color_links": "#b8a07a",
-          "color_logo_text": "#1a1a1a",
-          "color_main_menu": "#212121",
-          "color_menu_background": "#ffffff",
-          "color_mini_cart_background": "#f4f4f4",
-          "color_mini_cart_button": "#a68859",
-          "color_mini_cart_button_label": "#ffffff",
-          "color_newsletter_section_background": "#202756",
-          "color_page_content_text": "#212121",
-          "color_page_headings": "#856d47",
-          "color_product_description_background": "#f7f7f7",
-          "color_sale_price": "#a62b0d",
-          "color_price": "#a68859",
-          "color_top_bar_background": "#f7f7f7",
-          "color_top_menu": "#212121",
-          "menu_background_opacity": 100
-        },
-        "typography": {
-          "capitalize_buttons_text": true,
-          "capitalize_headings": true,
-          "type_base_family": "'Cabin', sans-serif",
-          "type_base_size": 14,
-          "type_base_style": "regular",
-          "type_button_base_family": "'Cabin', sans-serif",
-          "type_button_text_style": "regular",
-          "type_header_base_size": 48,
-          "type_header_family": "'Cabin', sans-serif",
-          "type_header_style": "regular"
-        }
-      }
-    },
-    {
-      "code": "roller_taly",
-      "image": "https://img.shopbase.com/themes/2/assets/style-preview/italy.jpg",
-      "name": "Roller Italy",
-      "pages": {
-        "homepage": {
-          "homepage_slideshow": {
-            "icon": "image-multiple",
-            "settings": {
-              "blocks": [
-                {
-                  "background_image": "https://img.shopbase.com/themes/2/assets/slideshow/italy/slider_1.jpg",
-                  "first_button_label": "Shop Men",
-                  "heading": "Roller Shop Base Theme",
-                  "highlight_first_button_link": false,
-                  "highlight_second_button_link": true,
-                  "id": "slideshow-0",
-                  "preheading": "Introducing The",
-                  "second_button_label": "Shop Women",
-                  "subheading": "Exclusively From Shop Base",
-                  "text_alignment": "centre",
-                  "text_position": "centre"
-                },
-                {
-                  "background_image": "https://img.shopbase.com/themes/2/assets/slideshow/italy/slider_2.jpg",
-                  "first_button_label": "View Detailed",
-                  "heading": "Optimize For Speed",
-                  "highlight_first_button_link": false,
-                  "highlight_second_button_link": false,
-                  "id": "slideshow-1",
-                  "preheading": "Fast Loading +Flexible",
-                  "second_button_label": "",
-                  "subheading": "Optional Text + Action Buttons On Each Slide",
-                  "text_alignment": "centre",
-                  "text_position": "centre"
-                },
-                {
-                  "background_image": "https://img.shopbase.com/themes/2/assets/slideshow/italy/slider_3.jpg",
-                  "first_button_label": "Learn More",
-                  "heading": "A Seamless Shopping Experience",
-                  "highlight_first_button_link": false,
-                  "highlight_second_button_link": false,
-                  "id": "slideshow-2",
-                  "preheading": "Full - Width Slideshow",
-                  "second_button_label": "",
-                  "subheading": "",
-                  "text_alignment": "centre",
-                  "text_position": "centre"
-                }
-              ],
-              "change_slides_every": 6,
-              "gallery_transition": "slide",
-              "opacity": 30,
-              "text_animation": "fade_in"
-            },
-            "type": "slideshow"
-          }
-        }
-      },
-      "settings": {
-        "colors": {
-          "color_announcement_bar_background": "#252e5a",
-          "color_announcement_message_text": "#ffffff",
-          "color_background": "#fafafa",
-          "color_banner_buttons": "#252e5a",
-          "color_banner_buttons_label": "#ffffff",
-          "color_buttons": "#252e5a",
-          "color_buttons_label": "#ffffff",
-          "color_compare_at_price": "#999999",
-          "color_footer_background": "#ffffff",
-          "color_footer_headings": "#252e5a",
-          "color_footer_links": "#4b5bb4",
-          "color_footer_text": "#252e5a",
-          "color_links": "#252e5a",
-          "color_logo_text": "#252e5a",
-          "color_main_menu": "#252e5a",
-          "color_menu_background": "#ffffff",
-          "color_mini_cart_background": "#fafafa",
-          "color_mini_cart_button": "#252e5a",
-          "color_mini_cart_button_label": "#ffffff",
-          "color_newsletter_section_background": "#202756",
-          "color_page_content_text": "#252e5a",
-          "color_page_headings": "#252e5a",
-          "color_product_description_background": "#ffffff",
-          "color_sale_price": "#8e250b",
-          "color_price": "#252e5a",
-          "color_top_bar_background": "#f4f4f4",
-          "color_top_menu": "#1a1a1a",
-          "menu_background_opacity": 100
-        },
-        "typography": {
-          "capitalize_buttons_text": true,
-          "capitalize_headings": true,
-          "type_base_family": "Verdana, Geneva, Tahoma, sans-serif",
-          "type_base_size": 14,
-          "type_base_style": "regular",
-          "type_button_base_family": "Verdana, Geneva, Tahoma, sans-serif",
-          "type_button_text_style": "regular",
-          "type_header_base_size": 48,
-          "type_header_family": "Verdana, Geneva, Tahoma, sans-serif",
           "type_header_style": "regular"
         }
       }

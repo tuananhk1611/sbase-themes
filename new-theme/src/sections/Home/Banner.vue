@@ -27,7 +27,7 @@
               </h2>
               <p
                 v-if="settings.subheading"
-                class="is-uppercase ls-2 mt0 mb24 midsleek-banner-subheading"
+                class="is-capitalized ls-2 mt0 mb24 midsleek-banner-subheading"
                 v-html="settings.subheading"
               ></p>
               <LinkFormatter
@@ -130,13 +130,6 @@ export default {
     highlightButtonType() {
       return this.settings.banner_button_highlight_type ? this.settings.banner_button_highlight_type : 'subline'
     }
-  },
-  mounted() {
-    // console.log(9999, this.settings, this)
-    // console.log(8888, this.$getThemeSettings())
-    // console.log(77777, this.$getForceSettings('header'))
-    // console.log(66666, this.$getFixedSettings('header'))
-    // console.log(55555, this.$getPageSettings('homepage'))
   }
 }
 </script>

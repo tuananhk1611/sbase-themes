@@ -9,7 +9,7 @@
           v-for="(collection, index) in collections"
           :key="`${collection.id}-${index}`"
           ref="collection"
-          class="col-6 col-md-4 collection-wrap link-initial"
+          class="col-4 col-md-4 collection-wrap link-initial"
           :to="$routeToCollection(collection)"
         >
           <div class="img-wrap">
@@ -29,7 +29,7 @@
         <a
           v-for="(image, index) in defaultImages"
           :key="index"
-          class="col-6 col-md-4 collection-wrap link-initial"
+          class="col-4 col-md-4 collection-wrap link-initial"
           target="_blank"
           :href="$themeEditorUrl"
         >

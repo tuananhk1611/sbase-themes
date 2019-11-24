@@ -23,7 +23,7 @@
           class="col-12 col-md-5 feature-content"
           :class="textAlignmentClass"
         >
-          <h2 v-if="block.heading" class="h3 mb16">{{ block.heading }}</h2>
+          <h2 v-if="block.heading" class="h3 mb16 heading-section-midsleek is-capitalized">{{ block.heading }}</h2>
           <p v-if="block.text" class="mb24" v-html="block.text"></p>
           <div v-if="block.button_label" class="btn-wrap">
             <LinkFormatter
@@ -65,7 +65,7 @@
             />
             <img v-else v-lazy="imagePlaceholder" :alt="block.alt_text" />
             <div class="content has-text-white mb4" :class="textAnimation">
-              <h2 v-if="block.heading" class="h3 has-text-white">{{
+              <h2 v-if="block.heading" class="h3 has-text-white heading-section-midsleek is-capitalized">{{
                 block.heading
               }}</h2>
               <div class="hover-content">

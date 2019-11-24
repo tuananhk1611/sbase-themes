@@ -4,6 +4,7 @@
 
   a {
     color: $color_footer_links;
+    font-size: 12px;
     &:hover {
       color: adaptive-color($color_footer_background, $color_footer_links, 20%);
     }
@@ -27,6 +28,17 @@
   .site-footer {
     &__header {
       color: $color_footer_headings;
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      @include res(xs) {
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .footer_menu {
+    @include res(xs) {
+      margin-bottom: 16px;
     }
   }
   .footer_menu,
@@ -46,7 +58,6 @@
   .footer-before {
     @include res(sm) {
       display: flex;
-      border-top: 1px solid $gray-100;
       padding-top: 30px;
     }
     & > div {
@@ -58,14 +69,18 @@
       flex: 1 0;
     }
   }
+  .footer-second-content {
+    background: #f9f9f9;
+  }
   .footer-copyright {
     p {
       color: $color_footer_text;
+      font-size: 12px;
     }
   }
   .powered-by {
     display: block;
-    background: url('#{$asset_path}/images/icons/powered-by.svg') no-repeat;
+    background: url('#{$asset_path}/images/icons/Powered_by_Shopbase.svg?v1') no-repeat;
     background-size: contain;
     width: 120px;
     height: 28px;
@@ -74,32 +89,32 @@
     &__icon {
       display: block;
       background: url('#{$asset_path}/images/icons/sprites-icon-24.svg') no-repeat;
-      background-size: 16px auto;
-      width: 16px;
-      height: 16px;
-
+      background-size: 18px auto;
+      width: 18px;
+      height: 18px;
+      opacity: .2;
       &--fb {
         background-position: 0 0;
       }
 
       &--tw {
-        background-position: 0 -22px;
+        background-position: 0 -25px;
       }
 
       &--pin {
-        background-position: 0 -44px;
+        background-position: 0 -50px;
       }
 
       &--you {
-        background-position: 0 -158px;
+        background-position: 0 -178px;
       }
 
       &--ins {
-        background-position: 0 -67px;
+        background-position: 0 -75px;
       }
 
       &--blog {
-        background-position: 0 -248px;
+        background-position: 0 -280px;
       }
     }
   }
@@ -114,28 +129,28 @@
     }
     &__icon {
       display: block;
-      background: url('#{$asset_path}/images/icons/sprites-icon-32.svg') no-repeat;
+      background: url('#{$asset_path}/images/icons/visa.svg') no-repeat;
       width: 32px;
       height: 24px;
 
       &--visa {
-        background-position: 0 0;
+        background: url('#{$asset_path}/images/icons/visa.svg') no-repeat;
       }
 
       &--master {
-        background-position: -48px 0;
+        background: url('#{$asset_path}/images/icons/mastercard.svg') no-repeat;
       }
 
       &--amex {
-        background-position: -96px 0;
+        background: url('#{$asset_path}/images/icons/amex.svg') no-repeat;
       }
 
       &--paypal {
-        background-position: -144px 0;
+        background: url('#{$asset_path}/images/icons/paypal.svg') no-repeat;
       }
 
       &--amazon {
-        background-position: -192px 0;
+        background: url('#{$asset_path}/images/icons/amazon.svg') no-repeat;
       }
     }
   }
