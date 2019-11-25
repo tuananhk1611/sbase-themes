@@ -205,12 +205,5 @@ export default {
       }
     },
   },
-  mounted() {
-    console.log(9999, this.settings, this)
-    // console.log(8888, this.$getThemeSettings())
-    // console.log(77777, this.$getForceSettings('header'))
-    // console.log(66666, this.$getFixedSettings('header'))
-    // console.log(55555, this.$getPageSettings('homepage'))
-  }
 }
 </script>
