@@ -1,6 +1,5 @@
 <template>
   <div class="default-layout">
-    <MaterialIcons />
     <CurrencyIcons />
     <MainHeader data-id="header" />
     <slot />
@@ -11,12 +10,10 @@
 </template>
 
 <script>
-import MaterialIcons from '../components/MaterialIcons'
 
 export default {
   name: 'LayoutDefault',
   components: {
-    MaterialIcons,
     CurrencyIcons: () => import('../components/CurrencyIcons'),
     MainFooter: () => import('../sections/Footer'),
     MainHeader: () => import('../sections/Header'),

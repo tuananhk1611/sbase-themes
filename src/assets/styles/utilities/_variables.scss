@@ -183,3 +183,23 @@ $sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7 $size-8 $size-9 
 $small-font-size:             80% !default;
 
 $hr-margin-y:                 $spacer !default;
+
+
+// Primary variable for midsleek
+
+//Primary font
+$midsleek-font-primary-1: "Playfair Display", serif;
+$midsleek-font-primary-2: "HelveticaNeue", sans-serif;
+$midsleek-font-primary-3: "Harmony", sans-serif;
+
+.midsleek-font-primary-1 {
+  font-family: $midsleek-font-primary-1;
+}
+
+.midsleek-font-primary-2 {
+  font-family: $midsleek-font-primary-2;
+}
+
+.midsleek-font-primary-3 {
+  font-family: $midsleek-font-primary-3;
+}
