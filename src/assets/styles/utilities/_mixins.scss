@@ -278,9 +278,6 @@
 @mixin headerFontStack {
   font-family: $type_header_family;
   font-weight: font-weight($type_header_style);
-  @if $capitalize_headings == true {
-    text-transform: uppercase;
-  }
 }
 
 @mixin buttonFontStack {

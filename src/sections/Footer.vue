@@ -251,17 +251,17 @@ export default {
   methods: {
     urlSrcSet(img) {
       // For local
-      // if (true) {
-      //   let url = `${this.$resizeImage(img, '0', '180', '')} 1x, ${this.$resizeImage(
-      //     img,
-      //     '0',
-      //     '180',
-      //     '',
-      //     'x2'
-      //   )} 2x`
-      //   url = url.replace('https://img', 'https://stag-img')
-      //   return url
-      // }
+      if (this.$shop.url && this.$shop.url.indexOf('http://localhost') !== -1) {
+        let url = `${this.$resizeImage(img, '0', '180', '')} 1x, ${this.$resizeImage(
+          img,
+          '0',
+          '180',
+          '',
+          'x2'
+        )} 2x`
+        url = url.replace('https://img', 'https://stag-img')
+        return url
+      }
       return `${this.$resizeImage(img, '0', '180', '')} 1x, ${this.$resizeImage(
         img,
         '0',
