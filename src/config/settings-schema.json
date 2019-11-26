@@ -1853,14 +1853,18 @@
       "icon": "cards-variant",
       "schema": [
         {
-          "content": "Backgrounds",
+          "content": "Body",
           "type": "heading"
         },
         {
           "default": "#ffffff",
           "id": "color_background",
-          "label": "Background",
+          "label": "Background body",
           "type": "color"
+        },
+        {
+          "content": "Header & Menu",
+          "type": "heading"
         },
         {
           "default": "#f4f4f4",
@@ -1869,9 +1873,21 @@
           "type": "color"
         },
         {
-          "default": "#ffffff",
+          "default": "#000000",
+          "id": "color_top_menu",
+          "label": "Top bar text",
+          "type": "color"
+        },
+        {
+          "default": "#f7f5f0",
           "id": "color_menu_background",
           "label": "Menu background",
+          "type": "color"
+        },
+        {
+          "default": "#2d387a",
+          "id": "color_menu_link",
+          "label": "Menu link",
           "type": "color"
         },
         {
@@ -1884,15 +1900,49 @@
           "unit": "%"
         },
         {
-          "default": "#285f8a",
+          "default": "#202756",
           "id": "color_announcement_bar_background",
           "label": "Announcement bar background",
           "type": "color"
         },
         {
+          "default": "#ffffff",
+          "id": "color_announcement_message_text",
+          "label": "Announcement message text",
+          "type": "color"
+        },
+        {
+          "default": "#2d387a",
+          "id": "color_logo_text",
+          "label": "Logo text",
+          "type": "color"
+        },
+        {
+          "content": "For Newsletter sections",
+          "type": "heading"
+        },
+        {
           "default": "#202756",
           "id": "color_newsletter_section_background",
           "label": "Newsletter section background",
+          "type": "color"
+        },
+        {
+          "default": "#ffffff",
+          "id": "color_newsletter",
+          "label": "Newsletter text color",
+          "type": "color"
+        },
+        {
+          "default": "#2d3879",
+          "id": "color_bg_input_newsletter",
+          "label": "Newsletter input background color",
+          "type": "color"
+        },
+        {
+          "default": "#4e60bd",
+          "id": "color_text_input_newsletter",
+          "label": "Newsletter input text color",
           "type": "color"
         },
         {
@@ -1916,18 +1966,6 @@
         {
           "content": "text",
           "type": "heading"
-        },
-        {
-          "default": "#ffffff",
-          "id": "color_announcement_message_text",
-          "label": "Announcement message text",
-          "type": "color"
-        },
-        {
-          "default": "#1a1a1a",
-          "id": "color_logo_text",
-          "label": "Logo text",
-          "type": "color"
         },
         {
           "default": "#1a1a1a",
@@ -1975,12 +2013,6 @@
         {
           "content": "links",
           "type": "heading"
-        },
-        {
-          "default": "#1a1a1a",
-          "id": "color_top_menu",
-          "label": "Top menu",
-          "type": "color"
         },
         {
           "default": "#1a1a1a",
@@ -2078,29 +2110,6 @@
           "default": "#2d387a",
           "id": "testimonial_text_color",
           "label": "Testimonial text color",
-          "type": "color"
-        },
-        {
-          "comment": "This private for midsleek",
-          "type": "heading",
-          "content": "For Newsletter Section"
-        },
-        {
-          "default": "#ffffff",
-          "id": "color_newsletter",
-          "label": "Newsletter text color",
-          "type": "color"
-        },
-        {
-          "default": "#2d3879",
-          "id": "color_bg_input_newsletter",
-          "label": "Newsletter input background color",
-          "type": "color"
-        },
-        {
-          "default": "#4e60bd",
-          "id": "color_text_input_newsletter",
-          "label": "Newsletter input text color",
           "type": "color"
         }
       ],
@@ -3685,7 +3694,7 @@
       },
       "settings": {
         "colors": {
-          "color_announcement_bar_background": "#285f8a",
+          "color_announcement_bar_background": "#202756",
           "color_announcement_message_text": "#ffffff",
           "color_background": "#ffffff",
           "color_banner_buttons": "#285f8a",
@@ -3698,20 +3707,24 @@
           "color_footer_links": "#2d387a",
           "color_footer_text": "#2d387a",
           "color_links": "#000000",
-          "color_logo_text": "#1a1a1a",
+          "color_logo_text": "#2d387a",
           "color_main_menu": "#1a1a1a",
-          "color_menu_background": "#ffffff",
+          "color_menu_background": "#f7f5f0",
+          "color_menu_link": "#2d387a",
           "color_mini_cart_background": "#ffffff",
           "color_mini_cart_button": "#285f8a",
           "color_mini_cart_button_label": "#ffffff",
           "color_newsletter_section_background": "#202756",
+          "color_newsletter": "#ffffff",
+          "color_bg_input_newsletter": "#2d3879",
+          "color_text_input_newsletter": "#4e60bd",
           "color_page_content_text": "#1a1a1a",
           "color_page_headings": "#1a1a1a",
           "color_product_description_background": "#f4f4f4",
           "color_sale_price": "#a62b0d",
           "color_price": "#285f8a",
           "color_top_bar_background": "#f4f4f4",
-          "color_top_menu": "#1a1a1a",
+          "color_top_menu": "#000000",
           "menu_background_opacity": 100
         },
         "typography": {

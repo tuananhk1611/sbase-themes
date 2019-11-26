@@ -389,7 +389,7 @@
       "checkout_sidebar_background_image": null
     },
     "colors": {
-      "color_announcement_bar_background": "#285f8a",
+      "color_announcement_bar_background": "#202756",
       "color_announcement_message_text": "#ffffff",
       "color_background": "#ffffff",
       "color_banner_buttons": "#285f8a",
@@ -402,7 +402,7 @@
       "color_footer_links": "#2d387a",
       "color_footer_text": "#2d387a",
       "color_links": "#000000",
-      "color_logo_text": "#1a1a1a",
+      "color_logo_text": "#2d387a",
       "color_main_menu": "#1a1a1a",
       "color_menu_background": "#ffffff",
       "color_mini_cart_background": "#ffffff",

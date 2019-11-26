@@ -42,18 +42,20 @@ $color_drawer_text: #222222;
 $color_drawer_border: #444444;
 $color_drawer_button: #222222;
 
-
+// Background body color
 $color_background: #ffffff;
+// Header & Menu color
 $color_top_bar_background: #f4f4f4;
 $color_menu_background: #f7f5f0;
+$color_menu_link: #2d387a;
 $menu_background_opacity: 100;
-$color_announcement_bar_background: $private_main_color;
+$color_announcement_bar_background: #202756;
+$color_announcement_message_text: #ffffff;
 $color_newsletter_section_background: $private_main_color;
 $color_product_description_background: #f4f4f4;
 $color_mini_cart_background: #ffffff;
 $color_footer_background: #ffffff;
-$color_announcement_message_text: #ffffff;
-$color_logo_text: #1a1a1a;
+$color_logo_text: #2d387a;
 $color_page_headings: #1a1a1a;
 $color_page_content_text: #1a1a1a;
 $color_footer_headings: #2d387a;
@@ -61,7 +63,7 @@ $color_footer_text: #2d387a;
 $color_sale_price: #a62b0d;
 $color_compare_at_price: #999999;
 $color_price: #285f8a;
-$color_top_menu: #1a1a1a;
+$color_top_menu: #000000;
 $color_main_menu: #2d387a;
 $color_links: #000000;
 $color_footer_links: #2d387a;

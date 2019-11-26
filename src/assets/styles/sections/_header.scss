@@ -9,7 +9,6 @@
 }
 
 .header {
-  border-bottom: 1px solid $gray-100;
   background-color: rgba($color_menu_background, $menu_background_opacity / 100);
   &.sticky {
     border-top: 0;
@@ -280,7 +279,7 @@
       font-size: 13px;
       text-decoration: none;
       white-space: nowrap;
-      color: $color_main_menu;
+      color: $color_menu_link;
       transition: color 0.2s;
       &.router-link-active {
         &:before {
@@ -294,11 +293,11 @@
         left: 20px;
         right: 20px;
         bottom: 16px;
-        background-color: adaptive-color($color_main_menu, $color_main_menu, 20%);
+        background-color: adaptive-color($color_menu_link, $color_menu_link, 20%);
         display: none;
       }
       &:hover {
-        color: adaptive-color($color_main_menu, $color_main_menu, 20%);
+        color: adaptive-color($color_menu_link, $color_menu_link, 20%);
         &:before {
           display: block;
         }
