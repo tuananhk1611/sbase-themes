@@ -1853,13 +1853,31 @@
       "icon": "cards-variant",
       "schema": [
         {
-          "content": "Body",
+          "content": "Body & Page",
           "type": "heading"
         },
         {
           "default": "#ffffff",
           "id": "color_background",
           "label": "Background body",
+          "type": "color"
+        },
+        {
+          "default": "#000000",
+          "id": "color_page_headings",
+          "label": "Page headings",
+          "type": "color"
+        },
+        {
+          "default": "#000000",
+          "id": "color_page_content_text",
+          "label": "Page content text",
+          "type": "color"
+        },
+        {
+          "default": "#000000",
+          "id": "color_links",
+          "label": "Page links",
           "type": "color"
         },
         {
@@ -1946,55 +1964,13 @@
           "type": "color"
         },
         {
-          "default": "#f4f4f4",
-          "id": "color_product_description_background",
-          "label": "Product description background",
-          "type": "color"
-        },
-        {
-          "default": "#ffffff",
-          "id": "color_mini_cart_background",
-          "label": "Mini cart background",
-          "type": "color"
-        },
-        {
-          "default": "#ffffff",
-          "id": "color_footer_background",
-          "label": "Footer background",
-          "type": "color"
-        },
-        {
-          "content": "text",
+          "content": "For Products",
           "type": "heading"
         },
         {
-          "default": "#1a1a1a",
-          "id": "color_page_headings",
-          "label": "Page headings",
-          "type": "color"
-        },
-        {
-          "default": "#1a1a1a",
-          "id": "color_page_content_text",
-          "label": "Page content text",
-          "type": "color"
-        },
-        {
-          "default": "#1a1a1a",
-          "id": "color_footer_headings",
-          "label": "Footer headings",
-          "type": "color"
-        },
-        {
-          "default": "#1a1a1a",
-          "id": "color_footer_text",
-          "label": "Footer text",
-          "type": "color"
-        },
-        {
-          "default": "#a62b0d",
-          "id": "color_sale_price",
-          "label": "Sale tag",
+          "default": "#f4f4f4",
+          "id": "color_product_description_background",
+          "label": "Product description background",
           "type": "color"
         },
         {
@@ -2005,65 +1981,25 @@
           "type": "color"
         },
         {
+          "default": "#a62b0d",
+          "id": "color_sale_price",
+          "label": "Sale tag",
+          "type": "color"
+        },
+        {
           "default": "#999999",
           "id": "color_compare_at_price",
           "label": "Compare at price",
           "type": "color"
         },
         {
-          "content": "links",
-          "type": "heading"
-        },
-        {
-          "default": "#1a1a1a",
-          "id": "color_main_menu",
-          "label": "Main menu",
-          "type": "color"
-        },
-        {
-          "default": "#000000",
-          "id": "color_links",
-          "label": "Links",
-          "type": "color"
-        },
-        {
-          "default": "#999999",
-          "id": "color_footer_links",
-          "label": "Footer link",
-          "type": "color"
-        },
-        {
-          "content": "buttons",
+          "content": "For Cart & Checkout",
           "type": "heading"
         },
         {
           "default": "#ffffff",
-          "id": "color_buttons",
-          "label": "Buttons",
-          "type": "color"
-        },
-        {
-          "default": "#2d387a",
-          "id": "color_bg_buttons",
-          "label": "Buttons background",
-          "type": "color"
-        },
-        {
-          "default": "#ffffff",
-          "id": "color_buttons_label",
-          "label": "Buttons label",
-          "type": "color"
-        },
-        {
-          "default": "#285f8a",
-          "id": "color_banner_buttons",
-          "label": "Banner buttons",
-          "type": "color"
-        },
-        {
-          "default": "#ffffff",
-          "id": "color_banner_buttons_label",
-          "label": "Banner buttons label",
+          "id": "color_mini_cart_background",
+          "label": "Mini cart background",
           "type": "color"
         },
         {
@@ -2076,6 +2012,50 @@
           "default": "#ffffff",
           "id": "color_mini_cart_button_label",
           "label": "Mini cart button label",
+          "type": "color"
+        },
+        {
+          "content": "For Footer",
+          "type": "heading"
+        },
+        {
+          "default": "#ffffff",
+          "id": "color_footer_background",
+          "label": "Footer background",
+          "type": "color"
+        },
+        {
+          "default": "#2d387a",
+          "id": "color_footer_headings",
+          "label": "Footer headings",
+          "type": "color"
+        },
+        {
+          "default": "#000000",
+          "id": "color_footer_text",
+          "label": "Footer text",
+          "type": "color"
+        },
+        {
+          "default": "#2d387a",
+          "id": "color_footer_links",
+          "label": "Footer link",
+          "type": "color"
+        },
+        {
+          "content": "buttons",
+          "type": "heading"
+        },
+        {
+          "default": "#ffffff",
+          "id": "color_buttons",
+          "label": "Buttons text",
+          "type": "color"
+        },
+        {
+          "default": "#2d387a",
+          "id": "color_bg_buttons",
+          "label": "Buttons background",
           "type": "color"
         },
         {
@@ -2102,6 +2082,18 @@
           "type": "color"
         },
         {
+          "default": "#285f8a",
+          "id": "color_banner_buttons",
+          "label": "Banner buttons",
+          "type": "color"
+        },
+        {
+          "default": "#ffffff",
+          "id": "color_banner_buttons_label",
+          "label": "Banner buttons label",
+          "type": "color"
+        },
+        {
           "comment": "This private for midsleek",
           "type": "heading",
           "content": "For Testimonial Section"
@@ -2123,7 +2115,7 @@
           "type": "heading"
         },
         {
-          "default": "'Montserrat', sans-serif",
+          "default": "'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif",
           "id": "type_header_family",
           "label": "Font",
           "options": [
@@ -2631,7 +2623,7 @@
           "type": "heading"
         },
         {
-          "default": "'Montserrat', sans-serif",
+          "default": "'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif",
           "id": "type_button_base_family",
           "label": "Font",
           "options": [
@@ -3699,16 +3691,14 @@
           "color_background": "#ffffff",
           "color_banner_buttons": "#285f8a",
           "color_banner_buttons_label": "#ffffff",
-          "color_buttons": "#285f8a",
-          "color_buttons_label": "#ffffff",
+          "color_buttons": "#ffffff",
           "color_compare_at_price": "#999999",
           "color_footer_background": "#ffffff",
           "color_footer_headings": "#2d387a",
           "color_footer_links": "#2d387a",
-          "color_footer_text": "#2d387a",
+          "color_footer_text": "#000000",
           "color_links": "#000000",
           "color_logo_text": "#2d387a",
-          "color_main_menu": "#1a1a1a",
           "color_menu_background": "#f7f5f0",
           "color_menu_link": "#2d387a",
           "color_mini_cart_background": "#ffffff",
@@ -3718,8 +3708,8 @@
           "color_newsletter": "#ffffff",
           "color_bg_input_newsletter": "#2d3879",
           "color_text_input_newsletter": "#4e60bd",
-          "color_page_content_text": "#1a1a1a",
-          "color_page_headings": "#1a1a1a",
+          "color_page_content_text": "#000000",
+          "color_page_headings": "#000000",
           "color_product_description_background": "#f4f4f4",
           "color_sale_price": "#a62b0d",
           "color_price": "#285f8a",
@@ -3730,13 +3720,13 @@
         "typography": {
           "capitalize_buttons_text": true,
           "capitalize_headings": true,
-          "type_base_family": "'Muli', sans-serif",
+          "type_base_family": "'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif",
           "type_base_size": 14,
           "type_base_style": "regular",
-          "type_button_base_family": "'Montserrat', sans-serif",
+          "type_button_base_family": "'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif",
           "type_button_text_style": "regular",
           "type_header_base_size": 48,
-          "type_header_family": "'Montserrat', sans-serif",
+          "type_header_family": "'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif",
           "type_header_style": "regular"
         }
       }
