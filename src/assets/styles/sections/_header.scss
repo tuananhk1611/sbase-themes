@@ -348,11 +348,11 @@
     &__dropdown-great-grandchild {
       a {
         background-color: transparent;
-        color: $color_main_menu;
+        color: $color_menu_link;
 
         &:hover {
           background-color: adaptive-color($color_menu_background, $white, 4%);
-          color: adaptive-color($color_menu_background, $color_main_menu, 20%);
+          color: adaptive-color($color_menu_background, $color_menu_link, 20%);
         }
       }
     }

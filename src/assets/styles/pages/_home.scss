@@ -943,7 +943,7 @@
   .btn {
     position: relative;
     &.btn-primary {
-      @include button-styles($color_newsletter_section_background, $color_buttons, $color_buttons_label, 10%);
+      @include button-styles($color_newsletter_section_background, $color_buttons, $color_buttons, 10%);
     }
   }
 }

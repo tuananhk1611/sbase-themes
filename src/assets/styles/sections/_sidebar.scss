@@ -72,7 +72,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        border-bottom: 1px solid rgba($color_main_menu, .2);
+        border-bottom: 1px solid rgba($color_menu_link, .2);
       }
 
       .mobile-nav__item a {
@@ -88,13 +88,13 @@
         background: none;
         border: none;
         display: inline-block;
-        color: $color_main_menu;
+        color: $color_menu_link;
         padding: 16px 0;
         text-decoration: none;
         font-size: 1.14286em;
 
         &:hover {
-          color: adaptive-color($color_menu_background, $color_main_menu, 20%);
+          color: adaptive-color($color_menu_background, $color_menu_link, 20%);
         }
       }
     }
@@ -201,7 +201,7 @@
       }
 
       span {
-        color: $color_main_menu;
+        color: $color_menu_link;
       }
     }
   }

@@ -17,7 +17,7 @@
   text-decoration: none;
   &.btn-primary {
     font-weight: 600;
-    @include button-styles(#000, $color_bg_buttons, $color_buttons_label, 20%);
+    @include button-styles(#000, $color_bg_buttons, $color_buttons, 20%);
     &:active, &.actived {
       background-color: adaptive-color(#fff, $color_bg_buttons, 5%);
       border-color: transparent;
@@ -136,7 +136,7 @@
     pointer-events: none;
     &::after {
       animation: spinAround 500ms infinite linear;
-      border: 2px solid $color_buttons_label;
+      border: 2px solid $color_buttons;
       border-radius: 50%;
       border-right-color: transparent;
       border-top-color: transparent;
