@@ -1975,7 +1975,7 @@
         },
         {
           "feature_switch": "roller_color_price",
-          "default": "#285f8a",
+          "default": "#2d3879",
           "id": "color_price",
           "label": "Price",
           "type": "color"
@@ -3698,7 +3698,7 @@
           "color_banner_buttons": "#285f8a",
           "color_banner_buttons_label": "#ffffff",
           "color_buttons": "#ffffff",
-          "color_compare_at_price": "#999999",
+          "color_compare_at_price": "#8a8a8a",
           "color_footer_background": "#ffffff",
           "color_footer_headings": "#2d387a",
           "color_footer_links": "#2d387a",
@@ -3717,9 +3717,9 @@
           "color_text_input_newsletter": "#4e60bd",
           "color_page_content_text": "#000000",
           "color_page_headings": "#000000",
-          "color_product_description_background": "#f4f4f4",
+          "color_product_description_background": "#ffffff",
           "color_sale_price": "#a62b0d",
-          "color_price": "#285f8a",
+          "color_price": "#2d3879",
           "color_top_bar_background": "#f4f4f4",
           "color_top_menu": "#000000",
           "menu_background_opacity": 100

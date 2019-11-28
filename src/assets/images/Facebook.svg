@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Icons/Social/Multi/Facebook</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Product-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-886.000000, -943.000000)">
+            <g id="Product" transform="translate(147.000000, 144.000000)">
+                <g id="Detail" transform="translate(686.000000, 0.000000)">
+                    <g id="Share" transform="translate(0.000000, 799.000000)">
+                        <g id="Icons/Social/Multi/Facebook" transform="translate(53.000000, 0.000000)">
+                            <g id="Facebook">
+                                <circle id="Oval" fill="#3B5998" cx="12" cy="12" r="12"></circle>
+                                <path d="M10.8255833,18 L10.8255833,12.4049464 L9,12.4049464 L9,10.3436109 L10.8255833,10.3436109 L10.8255833,8.81980688 C10.8255833,6.99412029 11.8859593,6 13.4347159,6 C14.1765851,6 14.814184,6.05808255 15,6.08404359 L15,7.9919922 L13.9258547,7.99250459 C13.0835544,7.99250459 12.9204631,8.41339691 12.9204631,9.03102604 L12.9204631,10.3436109 L14.8806947,10.3436109 L14.6006616,12.4049464 L12.9204631,12.4049464 L12.9204631,18 L10.8255833,18 Z" id="White_2_" fill="#FFFFFF" fill-rule="nonzero"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

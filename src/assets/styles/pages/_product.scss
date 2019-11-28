@@ -1,4 +1,4 @@
-$color_image_option_background: #F3F3F3 !default;
+$color_image_option_background: #FeFeFe !default;
 
 .product {
   &__main-content {
@@ -14,14 +14,17 @@ $color_image_option_background: #F3F3F3 !default;
   }
   &__name {
     font-weight: 500;
-    font-size: 1.14286rem;
-    letter-spacing: 2px;
+    font-size: 24px;
+    letter-spacing: 0;
   }
   &__price {
-    letter-spacing: 2px;
-    font-size: 1.71429em;
-    line-height: 1;
+    letter-spacing: 0;
+    font-size: 16px;
+    line-height: 22px;
     color: $color_price;
+    &.sale-price {
+      color: $color-sale_price;
+    }
   }
   &__price--original {
     font-size: 1.14286rem;
@@ -59,14 +62,16 @@ $color_image_option_background: #F3F3F3 !default;
   }
   &__option {
     position: relative;
-    font-size: 0.7143em;
-    line-height: 1.6;
+    font-size: 12px;
+    line-height: 18px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 7px 12px 7px 12px;
-    border: 1px solid $gray-100;
+    padding: 0 8px;
+    height: 26px;
+    border: 1px solid #eae4d7;
     color: color-control($color_background);
-
+    min-width: 48px;
+    border-radius: 4px;
     &:last-of-type {
       margin-right: 0;
     }
@@ -81,7 +86,6 @@ $color_image_option_background: #F3F3F3 !default;
       border: 1px solid adaptive-color(color-control($color_background), color-control($color_background), 20%);
       color: adaptive-color(color-control($color_background), color-control($color_background), 20%);
     }
-    min-width: 32px;
     &--out-of-stock {
       &:after {
         content: "";
@@ -106,10 +110,12 @@ $color_image_option_background: #F3F3F3 !default;
     touch-action: manipulation;
     width: calc((100% - 48px) / 4);
     border: 1px solid transparent;
-    outline: 1px solid $gray-100;
     background-color: $color_image_option_background;
     object-fit: contain;
     opacity: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 4px;
     &:focus,
     &.focused,
     &:active,
@@ -117,7 +123,7 @@ $color_image_option_background: #F3F3F3 !default;
     &.hovered,
     &.active,
     &--active {
-      outline: 1px solid adaptive-color(color-control($color_background), color-control($color_background), 20%);
+      border: 1px solid adaptive-color(color-control($color_background), color-control($color_background), 20%);
     }
     &--loaded {
       transition: opacity 0.2s ease-out;
@@ -141,32 +147,14 @@ $color_image_option_background: #F3F3F3 !default;
   }
   &__add-cart {
     white-space: nowrap;
-    padding: 20px 0;
+    padding: 0 16px;
     display: block;
     width: 100%;
-    font-size: 1.2857rem;
+    font-size: 13px;
     font-weight: 700;
+    height: 56px;
     line-height: 24px;
-    letter-spacing: 3px;
-    box-shadow: 0 4px 6px -2px rgba(#23435c, 0.32);
-    border: 1px solid rgba($black, 0.16) !important;
-    &:before,
-    &:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      width: 100%;
-      height: 2px;
-    }
-    &:before {
-      bottom: 0;
-      background: rgba($black, 0.12);
-    }
-    &:after {
-      top: 0;
-      background: rgba($white, 0.16);
-    }
+    letter-spacing: 0;
     &.is-soldout {
       background-color: $gray-100 !important;
       color: $gray-200 !important;
@@ -208,6 +196,7 @@ $color_image_option_background: #F3F3F3 !default;
     background-color: $color_product_description_background;
     padding-top: 32px;
     padding-bottom: 40px;
+    border-top: 1px solid #e6e6e6;
     p {
       //&:empty:before {
       //  content: '\a0';
@@ -539,11 +528,11 @@ $color_image_option_background: #F3F3F3 !default;
       width: 57.4236%;
     }
     &__description {
-      padding-top: 48px;
-      padding-bottom: 64px;
+      padding-top: 40px;
+      padding-bottom: 40px;
     }
     &__image-option {
-      width: calc((100% - 80px) / 6);
+      width: calc((100% - 185px) / 6);
     }
     &__image-option {
       &:nth-child(4n) {
@@ -645,8 +634,8 @@ $color_image_option_background: #F3F3F3 !default;
     }
   }
   &__block {
-    font-size: 1rem;
-    line-height: 1.43rem;
+    font-size: 16px;
+    line-height: 22px;
     font-weight: 400;
     letter-spacing: 0;
     color: $color_sale_price;
@@ -658,5 +647,22 @@ $color_image_option_background: #F3F3F3 !default;
     width: 16px;
     height: 16px;
     fill: $color_sale_price;
+  }
+}
+
+.product-private-section {
+  background: $private_main_color;
+  padding: 54px 0;
+  .product-private-section-item {
+    .product-private-section-item-heading {
+      color: #fff;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 2px;
+    }
+    p {
+      color: #fff;
+    }
   }
 }

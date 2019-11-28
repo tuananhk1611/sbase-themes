@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="62px" viewBox="0 0 50 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Icon 1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Product-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-303.000000, -2113.000000)">
+            <g id="Product-page-value" transform="translate(0.000000, 2060.000000)">
+                <g id="Item" transform="translate(147.000000, 0.000000)">
+                    <g id="Icon-1" transform="translate(145.000000, 48.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="72" height="72"></rect>
+                        <path d="M42,6 L18,6 C14.6862915,6 12,8.6862915 12,12 L12,60 C12,63.3137085 14.6862915,66 18,66 L54,66 C57.3137085,66 60,63.3137085 60,60 L60,24 L42,6 Z" id="Path" stroke="#BDD6FE" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <polyline id="Path" stroke="#BDD6FE" stroke-linecap="round" stroke-linejoin="round" points="42 6 42 24 60 24"></polyline>
+                        <line x1="34.5" y1="45" x2="21" y2="45" id="Path" stroke="#BDD6FE" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <line x1="34.5" y1="57" x2="21" y2="57" id="Path" stroke="#BDD6FE" stroke-linecap="round" stroke-linejoin="round"></line>
+                        <polyline id="Path" stroke="#BDD6FE" stroke-linecap="round" stroke-linejoin="round" points="27 33 24 33 21 33"></polyline>
+                        <g id="dollar-sign" transform="translate(43.500000, 40.500000)" stroke="#BDD6FE" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="4.5" y1="0" x2="4.5" y2="16.5" id="Path"></line>
+                            <path d="M8.25,3 L2.625,3 C1.17525253,3 -8.8817842e-16,4.17525253 -8.8817842e-16,5.625 C-8.8817842e-16,7.07474747 1.17525253,8.25 2.625,8.25 L6.375,8.25 C7.82474745,8.25000003 9,9.42525255 9,10.875 C9,12.3247474 7.82474745,13.5 6.375,13.5 L-8.8817842e-16,13.5" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

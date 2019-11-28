@@ -88,7 +88,7 @@
             >
               {{ variant.sku | htmlDecode }}
             </p>
-            <h1 class="h3 product__name is-uppercase mt0 mb12" itemprop="name">
+            <h1 class="h3 product__name is-capitalized mt0 mb12 heading-section-midsleek" itemprop="name">
               {{ product.title | htmlDecode }}
             </h1>
             <div
@@ -115,9 +115,9 @@
                   parseFloat(variant.price) <
                     parseFloat(variant.compare_at_price)
                 "
-                class="product__price mt0 mb12"
+                class="product__price sale-price mt0 mb24"
               >
-                <span>{{ variant.price | price }}</span>
+                <span class="has-text-weight-bold mr5">{{ variant.price | price }}</span>
                 <span class="product__price--original">
                   {{ variant.compare_at_price | price }}
                 </span>
@@ -128,10 +128,10 @@
                   {{ saleMessage }}
                 </span>
               </div>
-              <div v-else-if="variant.price" class="product__price mt0 mb12">
+              <div v-else-if="variant.price" class="product__price mt0 mb24 has-text-weight-bold">
                 {{ variant.price | price }}
               </div>
-              <div v-else class="product__price mt0 mb12">
+              <div v-else class="product__price mt0 mb24">
                 {{ settings.free_product_text }}
               </div>
 
@@ -161,12 +161,11 @@
                     class="product__variants-wrapper"
                   >
                     <div class="product__variant-label mb8">
-                      <span>{{ option.label }}</span>
+                      <span class="has-text-weight-bold is-uppercase">{{ option.label }}: </span>
                       <label
                         v-if="settings.options_style === 'buttons'"
                         class="mb0"
-                      >
-                        : {{ currentOption[option.code].label }}
+                      >&nbsp {{ currentOption[option.code].label }}
                       </label>
                       <template
                         v-if="
@@ -335,6 +334,7 @@
               >
                 <div id="add-to-cart-wrapper" ref="buttonAddCart">
                   <ButtonAddToCart
+                    class="is-uppercase"
                     id="add-to-cart"
                     :class="addToCartClasses"
                     name="add-to-cart"
@@ -359,8 +359,7 @@
 
             <div v-if="trustBadgeVisible" class="product__trust-badge">
               <img
-                v-lazy="$resizeImage(settings.trust_badge, '0', '540', '')"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                :src="settings.trust_badge"
                 :alt="$t('Trust badge')"
               />
             </div>
@@ -374,7 +373,7 @@
                     product.collections &&
                     product.collections.length > 0
                 "
-                class="mb0"
+                class="mb12"
               >
                 {{ $t('Collections: ') }}
                 <template v-for="(collection, index) in product.collections">
@@ -429,7 +428,7 @@
               <label>{{ $t('Share') }}:</label>
               <SocialSharing
                 id="product-social-sharing"
-                class="ml24"
+                class="ml12"
                 :product="product"
               />
             </div>
@@ -465,7 +464,48 @@
       :change-tab="changeTabStatus"
     >
     </ProductDescriptionBottom>
-
+    <div class="product-private-section text-align-center">
+      <div class="container">
+        <div class="row">
+          <!-- item 1 -->
+          <div class="col-12 col-sm-4">
+            <div class="product-private-section-item">
+              <figure class="product-private-section-item-icon">
+                <img src="" alt="">
+              </figure>
+              <h3 class="product-private-section-item-heading">DIRECT-TO-YOU</h3>
+              <p>
+                We offer the highest quality shoes without charging the traditional retail mark up.
+              </p>
+            </div>
+          </div>
+          <!-- item 2 -->
+          <div class="col-12 col-sm-4">
+            <div class="product-private-section-item">
+              <figure class="product-private-section-item-icon">
+                <img src="" alt="">
+              </figure>
+              <h3 class="product-private-section-item-heading">UNRIVALED QUALITY</h3>
+              <p>
+                MidSleek shoes are handcrafted by the artisans who make the highest quality luxury shoes in the world.
+              </p>
+            </div>
+          </div>
+          <!-- item 3 -->
+          <div class="col-12 col-sm-4">
+            <div class="product-private-section-item">
+              <figure class="product-private-section-item-icon">
+                <img src="" alt="">
+              </figure>
+              <h3 class="product-private-section-item-heading">INSPIRED BY YOU</h3>
+              <p>
+                We obsess over the details of fit and construction to make the most comfortable and durable shoes, never sacrificing an ounce of style.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <section class="container">
       <div class="row justify-space-between">
         <div class="col-12">
@@ -798,6 +838,15 @@ export default {
     },
     changeTabStatus(index) {
       this.$set(this.collapseTab, index, !this.collapseTab[index])
+    },
+    urlSrcSet(img) {
+      // For local
+      if (this.$shop.url && this.$shop.url.indexOf('http://localhost') !== -1) {
+        let url = `${this.$resizeImage(img, '0', '540', '')}`
+        url = url.replace('https://img', 'https://stag-img')
+        return url
+      }
+      return `${this.$resizeImage(img, '0', '540', '')} 2x`
     },
   },
 }
