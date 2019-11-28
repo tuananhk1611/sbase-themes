@@ -57,7 +57,7 @@
           <button
             type="button"
             name="checkout"
-            class="btn btn-primary fullwidth cart-drawer-summary__checkout"
+            class="btn btn-primary fullwidth cart-drawer-summary__checkout is-uppercase"
             @click="
               onCheckout()
               $emit('before-redirect')

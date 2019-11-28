@@ -2015,6 +2015,12 @@
           "type": "color"
         },
         {
+          "default": "#eb6449",
+          "id": "color_bg_mini_cart_number",
+          "label": "Mini cart background number",
+          "type": "color"
+        },
+        {
           "content": "For Footer",
           "type": "heading"
         },
@@ -3704,6 +3710,7 @@
           "color_mini_cart_background": "#ffffff",
           "color_mini_cart_button": "#285f8a",
           "color_mini_cart_button_label": "#ffffff",
+          "color_bg_mini_cart_number": "#eb6449",
           "color_newsletter_section_background": "#202756",
           "color_newsletter": "#ffffff",
           "color_bg_input_newsletter": "#2d3879",

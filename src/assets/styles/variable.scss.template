@@ -30,6 +30,7 @@ $color_banner_buttons: {{color_banner_buttons}};
 $color_banner_buttons_label: {{color_banner_buttons_label}};
 $color_mini_cart_button: {{color_mini_cart_button}};
 $color_mini_cart_button_label: {{color_mini_cart_button_label}};
+$color_bg_mini_cart_number: {{{color_bg_mini_cart_number}}};
 
 // Typography
 $type_base_size: {{type_base_size}};
@@ -68,8 +69,8 @@ $subheading_banner_size: {{{subheading_banner_size}}};
 $testimonial_text_color: {{{testimonial_text_color}}};
 
 //Newsletter
-$color_newsletter: {{{color_newsletter}}}
-$color_bg_input_newsletter: {{{color_bg_input_newsletter}}}
-$color_text_input_newsletter: {{{color_text_input_newsletter}}}
+$color_newsletter: {{{color_newsletter}}};
+$color_bg_input_newsletter: {{{color_bg_input_newsletter}}};
+$color_text_input_newsletter: {{{color_text_input_newsletter}}};
 
 
