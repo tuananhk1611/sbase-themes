@@ -1,35 +1,35 @@
 .social-sharing {
   .social-icon {
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 24px;
+    height: 24px;
   }
 
   .share-facebook {
     .social-icon {
-      background: url('#{$asset_path}/images/icons/sprites-icon-16.svg?v1') 0 0 no-repeat;
-      background-size: 16px auto;
+      background: url('#{$asset_path}/images/Facebook.svg?v1') center no-repeat;
+      background-size: contain;
     }
   }
 
   .share-twitter {
     .social-icon {
-      background: url('#{$asset_path}/images/icons/sprites-icon-16.svg?v1') 0 -34px no-repeat;
-      background-size: 16px auto;
+      background: url('#{$asset_path}/images/Twitter.svg?v1') center no-repeat;
+      background-size: contain;
     }
   }
 
   .share-pinterest {
     .social-icon {
-      background: url('#{$asset_path}/images/icons/sprites-icon-16.svg?v1') 0 -68px no-repeat;
-      background-size: 16px auto;
+      background: url('#{$asset_path}/images/Pinterest.svg?v1') center no-repeat;
+      background-size: contain;
     }
   }
 
   .share-email {
     .social-icon {
-      background: url('#{$asset_path}/images/icons/sprites-icon-16.svg?v1') 0 -102px no-repeat;
-      background-size: 16px auto;
+      background: url('#{$asset_path}/images/Email.svg?v1') center no-repeat;
+      background-size: contain;
     }
   }
 }

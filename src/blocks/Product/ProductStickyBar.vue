@@ -181,7 +181,7 @@
                 :product="product"
                 :loading.sync="isAddingToCart"
                 :disabled="isDisabledAddCart"
-                class="product-action__add-cart"
+                class="product-action__add-cart is-uppercase"
                 :class="{
                   'is-soldout': isDisabledAddCart,
                   'product-action__checkout': $cartSettings.type === 'checkout',

@@ -1,9 +1,7 @@
 <template>
   <div v-if="duration" class="countdown-timer">
     <div class="flex align-center countdown-timer__block">
-      <svg class="countdown-timer__icon mr5">
-        <use xlink:href="#ic_countdown_24px"></use>
-      </svg>
+      <i class="material-icons mr12">timer</i>
       <div class="countdown-timer__digit">
         {{ hours | twoDigits }}:{{ minutes | twoDigits }}:{{
           seconds | twoDigits
