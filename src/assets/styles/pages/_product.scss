@@ -652,8 +652,35 @@ $color_image_option_background: #FeFeFe !default;
 
 .product-private-section {
   background: $private_main_color;
-  padding: 54px 0;
+  padding: 50px 0;
   .product-private-section-item {
+    padding: 0 24px;
+    position: relative;
+    &.has-line {
+      &:before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        background: rgba(255,255,255, .2);
+        left: 0;
+        z-index: 2;
+        top: 6%;
+        bottom: 6%;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        background: rgba(255,255,255, .2);
+        right: 0;
+        z-index: 2;
+        top: 6%;
+        bottom: 6%;
+      }
+    }
+    .product-private-section-item-icon {
+      min-height: 70px;
+    }
     .product-private-section-item-heading {
       color: #fff;
       font-weight: 600;
@@ -663,6 +690,16 @@ $color_image_option_background: #FeFeFe !default;
     }
     p {
       color: #fff;
+    }
+    @include res(xs) {
+      &.has-line {
+        &:before {
+          display: none;
+        }
+        &:after {
+          display: none;
+        }
+      }
     }
   }
 }

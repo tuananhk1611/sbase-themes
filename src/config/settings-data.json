@@ -389,7 +389,8 @@
       "checkout_sidebar_background_image": null
     },
     "colors": {
-      "color_announcement_bar_background": "#202756",
+      "private_main_color": "#2d387a",
+      "color_announcement_bar_background": "2d387a",
       "color_announcement_message_text": "#ffffff",
       "color_background": "#ffffff",
       "color_banner_buttons": "#285f8a",
@@ -436,13 +437,13 @@
     "typography": {
       "capitalize_buttons_text": true,
       "capitalize_headings": true,
-      "type_base_family": "'Muli', sans-serif",
+      "type_base_family": "'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif",
       "type_base_size": 14,
       "type_base_style": "regular",
-      "type_button_base_family": "'Montserrat', sans-serif",
+      "type_button_base_family": "'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif",
       "type_button_text_style": "regular",
       "type_header_base_size": 48,
-      "type_header_family": "'Montserrat', sans-serif",
+      "type_header_family": "'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif",
       "type_header_style": "regular"
     }
   }

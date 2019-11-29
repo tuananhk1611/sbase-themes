@@ -118,7 +118,7 @@
                 class="product__price sale-price mt0 mb24"
               >
                 <span class="has-text-weight-bold mr5">{{ variant.price | price }}</span>
-                <span class="product__price--original">
+                <span class="product__price--original has-text-weight-bold">
                   {{ variant.compare_at_price | price }}
                 </span>
                 <span
@@ -131,7 +131,7 @@
               <div v-else-if="variant.price" class="product__price mt0 mb24 has-text-weight-bold">
                 {{ variant.price | price }}
               </div>
-              <div v-else class="product__price mt0 mb24">
+              <div v-else class="product__price mt0 mb24 has-text-weight-bold">
                 {{ settings.free_product_text }}
               </div>
 
@@ -471,7 +471,7 @@
           <div class="col-12 col-sm-4">
             <div class="product-private-section-item">
               <figure class="product-private-section-item-icon">
-                <img src="" alt="">
+                <img src="../assets/images/Icon-1.svg" alt="icon1">
               </figure>
               <h3 class="product-private-section-item-heading">DIRECT-TO-YOU</h3>
               <p>
@@ -481,9 +481,9 @@
           </div>
           <!-- item 2 -->
           <div class="col-12 col-sm-4">
-            <div class="product-private-section-item">
+            <div class="product-private-section-item has-line">
               <figure class="product-private-section-item-icon">
-                <img src="" alt="">
+                <img src="../assets/images/Icon-2.svg" alt="icon2">
               </figure>
               <h3 class="product-private-section-item-heading">UNRIVALED QUALITY</h3>
               <p>
@@ -495,7 +495,7 @@
           <div class="col-12 col-sm-4">
             <div class="product-private-section-item">
               <figure class="product-private-section-item-icon">
-                <img src="" alt="">
+                <img src="../assets/images/Icon-3.svg" alt="icon3">
               </figure>
               <h3 class="product-private-section-item-heading">INSPIRED BY YOU</h3>
               <p>
