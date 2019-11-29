@@ -1857,6 +1857,12 @@
           "type": "heading"
         },
         {
+          "default": "",
+          "id": "private_main_color",
+          "label": "Main color",
+          "type": "color"
+        },
+        {
           "default": "#ffffff",
           "id": "color_background",
           "label": "Background body",
@@ -2378,7 +2384,7 @@
           "type": "heading"
         },
         {
-          "default": "'Muli', sans-serif",
+          "default": "'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif",
           "id": "type_base_family",
           "label": "Font",
           "options": [
