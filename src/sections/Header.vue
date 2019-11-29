@@ -314,7 +314,7 @@ export default {
         return acc + cartItem.qty
       }, 0)
       if (result < 10) {
-        return '0' + result
+        return result
       } else if (result > 99) {
         return '99+'
       } else {
