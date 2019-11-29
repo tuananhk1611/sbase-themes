@@ -213,15 +213,18 @@
     .cart-number {
       border-radius: 50%;
       background-color: $color_bg_mini_cart_number;
-      color: #fff;
-      font-size: 10px;
+      color: #ffffff;
+      font-size: 13px;
       letter-spacing: 0;
-      line-height: 10px;
       position: absolute;
-      padding: 3px;
-      top: -8px;
+      padding: 0 3px;
+      top: -12px;
       right: -12px;
       font-weight: bold;
+      min-width: 18px;
+      height: 18px;
+      text-align: center;
+      line-height: 16px;
     }
   }
 
