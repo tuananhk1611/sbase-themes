@@ -176,14 +176,16 @@
         font-size: font-size($preheading_banner_size);
         text-transform: unset;
         letter-spacing: 0;
-        line-height: normal;
-        color: $color_preheading_banner;
+        line-height: 50%;
+        // color: $color_preheading_banner;
+        color: #ffffff;
       }
       &.midsleek-banner-subheading {
         font-size: font-size($subheading_banner_size);
         letter-spacing: 0;
         line-height: normal;
-        color: $color_subheading_banner;
+        // color: $color_subheading_banner;
+        color: #ffffff;
       }
       @include res(xs) {
         &.midsleek-banner-preheading {
@@ -203,7 +205,7 @@
       font-size: font-size($heading_banner_size);
       font-weight: normal;
       letter-spacing: 0;
-      line-height: normal;
+      line-height: font-size($heading_banner_size);
       text-transform: unset;
       color: $color_heading_banner;
       @include res(xs) {
@@ -643,17 +645,18 @@
       top: 50%;
       transform: translate(0, -50%);
       .using-font-private {
-        font-family: "Playfair Display";
+        font-family: "Playfair Display", serif;
+        line-height: normal;
       }
       .testimonial-head-icon {
-        font-family: "Playfair Display";
+        font-family: "Playfair Display", serif;
         font-size: 80px;
         line-height: normal;
       }
       .testimonial-name {
         span {
           display: inline-block;
-          padding-bottom: 16px;
+          padding-bottom: 8px;
           border-bottom: 1px solid;
           border-color: inherit;
           font-weight: 600;
@@ -735,12 +738,14 @@
   }
   .collection-name {
     font-size: 14px;
-    color: $color_links;
-    letter-spacing: 2px;
+    // color: $color_links;
+    color: #000000;
     line-height: 20px;
     font-weight: bold;
+    margin-bottom: 0;
     &:hover {
-      color: adaptive-color($color_background, $color_links, 20%);
+      // color: adaptive-color($color_background, $color_links, 20%);
+      color: $color-blue;
     }
     @include res (xs) {
       font-size: 12px;
@@ -886,7 +891,8 @@
 }
 
 .subscribe {
-  background: $color_newsletter_section_background;
+  // background: $color_newsletter_section_background;
+  background: $color-blue-darker;
   padding: 64px 0;
   .subscribe-wrap {
     .form-wrapper {
@@ -896,27 +902,32 @@
       > input {
         height: 56px;
         flex: 1 1 auto;
-        background: $color_bg_input_newsletter;
+        // background: $color_bg_input_newsletter;
+        background: $color-blue-dark;
         border: none;
-        color: $color_text_input_newsletter;
+        color: $color-blue;
       }
       /* Placeholder text color -- selectors need to be separate to work. */
 
       ::-webkit-input-placeholder {
-        color: $color_text_input_newsletter;
+        // color: $color_text_input_newsletter;
+        color: $color-blue;
       }
 
       :-moz-placeholder {
         color: $color_text_input_newsletter;
+        color: $color-blue;
       }
 
       ::-moz-placeholder {
-        color: $color_text_input_newsletter;
+        // color: $color_text_input_newsletter;
+        color: $color-blue;
         opacity: 1; /* Since FF19 lowers the opacity of the placeholder by default */
       }
 
       :-ms-input-placeholder {
-        color: $color_text_input_newsletter;
+        // color: $color_text_input_newsletter;
+        color: $color-blue;
       }
       *[type="submit"] {
         position: absolute;
@@ -938,7 +949,8 @@
     }
   }
   .newsletter-text-color {
-    color: $color_newsletter;
+    // color: $color_newsletter;
+    color: #ffffff;
   }
   .btn {
     position: relative;

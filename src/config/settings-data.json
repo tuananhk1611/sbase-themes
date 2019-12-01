@@ -410,7 +410,7 @@
       "color_newsletter_section_background": "#f4f4f4",
       "color_page_content_text": "#000000",
       "color_page_headings": "#000000",
-      "color_price": "#285f8a",
+      "color_price": "#000000",
       "color_product_description_background": "#ffffff",
       "color_sale_price": "#a62b0d",
       "color_top_bar_background": "#f4f4f4",
@@ -444,7 +444,8 @@
       "type_button_text_style": "regular",
       "type_header_base_size": 48,
       "type_header_family": "'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-      "type_header_style": "regular"
+      "type_header_style": "regular",
+      "preheading_banner_size": 48
     }
   }
 }

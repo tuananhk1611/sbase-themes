@@ -126,9 +126,9 @@
         margin: 0;
       }
       padding-right: 38px;
-      width: 82px;
+      width: 88px;
       background-color: $white;
-      border: 1px solid $gray-100;
+      border: 1px solid $color-blue-dark;
       height: 100%;
       line-height: normal;
       text-align: center;
@@ -137,12 +137,15 @@
       border-radius: 0;
 
       &__increase, &__decrease {
-        background-color: transparent;
+        background-color: $color-blue-lightest;
+        border-color: #ffffff;
         position: absolute;
-        right: 0;
+        right: 2px;
         width: 28px;
         text-align: center;
-        height: 50%;
+        height: 47%;
+        border-top-color: #ffffff;
+        border-bottom-color: #ffffff;
         &:disabled, &[disabled] {
           .qty-input__up, .qty-input__down {
             border-color: $gray-200;
@@ -150,10 +153,10 @@
         }
       }
       &__increase {
-        top: 0;
+        top: 2px;
       }
       &__decrease {
-        bottom: 0;
+        bottom: 2px;
       }
 
       &__up, &__down {
