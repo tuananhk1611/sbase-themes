@@ -4,7 +4,14 @@ $color_image_option_background: #FeFeFe !default;
   &__main-content {
     padding-bottom: 24px;
     .add-to-cart-form {
-      width: calc(100% - 94px);
+      width: calc(100% - 100px);
+    }
+    a {
+      color: $color-blue-dark;
+      &:hover {
+        color: $color-blue;
+        text-decoration: none;
+      }
     }
   }
   &__sale-tag {
@@ -23,7 +30,8 @@ $color_image_option_background: #FeFeFe !default;
     line-height: 22px;
     color: $color_price;
     &.sale-price {
-      color: $color-sale_price;
+      // color: $color-sale_price;
+      color: $color-orange-dark;
     }
   }
   &__price--original {
@@ -83,7 +91,8 @@ $color_image_option_background: #FeFeFe !default;
     &.hovered,
     &.active,
     &--active {
-      border: 1px solid adaptive-color(color-control($color_background), color-control($color_background), 20%);
+      // border: 1px solid adaptive-color(color-control($color_background), color-control($color_background), 20%);
+      border: 1px solid $color-blue-dark;
       color: adaptive-color(color-control($color_background), color-control($color_background), 20%);
     }
     &--out-of-stock {
@@ -108,7 +117,8 @@ $color_image_option_background: #FeFeFe !default;
   }
   &__image-option {
     touch-action: manipulation;
-    width: calc((100% - 48px) / 4);
+    width: 44px !important;
+    height: 44px !important;
     border: 1px solid transparent;
     background-color: $color_image_option_background;
     object-fit: contain;
@@ -123,7 +133,8 @@ $color_image_option_background: #FeFeFe !default;
     &.hovered,
     &.active,
     &--active {
-      border: 1px solid adaptive-color(color-control($color_background), color-control($color_background), 20%);
+      // border: 1px solid adaptive-color(color-control($color_background), color-control($color_background), 20%);
+      border: 1px solid $color-blue-dark;
     }
     &--loaded {
       transition: opacity 0.2s ease-out;

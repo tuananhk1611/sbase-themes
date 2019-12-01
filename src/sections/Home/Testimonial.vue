@@ -56,7 +56,7 @@
                 <h2 class="h3">{{ settings.title }}</h2>
                 <span class="testimonial-head-icon">“</span>
                 <div v-html="block.content" :style="`fontSize: ${testimonialFontSize}px`" :class="{'using-font-private' : settings.testimonial_font_private}"></div>
-                <p class="testimonial-name is-uppercase mt16 mb32">
+                <p class="testimonial-name is-uppercase mt32 mb32">
                   <span>
                     {{ block.customer_name }}
                   </span>

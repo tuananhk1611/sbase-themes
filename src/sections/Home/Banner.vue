@@ -18,11 +18,11 @@
             <div class="content">
               <p
                 v-if="settings.preheading"
-                class="is-uppercase ls-2 mt0 mb12 midsleek-banner-preheading"
+                class="is-uppercase ls-2 mt0 mb0 midsleek-banner-preheading"
                 :style="stylePreheading"
                 v-html="settings.preheading"
               ></p>
-              <h2 v-if="settings.heading" :style="styleHeading" class="h2 mt0 mb12 midsleek-banner-heading">
+              <h2 v-if="settings.heading" :style="styleHeading" class="h2 mt0 mb16 midsleek-banner-heading">
                 {{ settings.heading }}
               </h2>
               <p

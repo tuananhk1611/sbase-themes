@@ -32,7 +32,7 @@
           <div
             v-for="(block, index) in blocks"
             :key="index"
-            :class="`col-sm-${12 / (blocks.length || 1)}`"
+            :class="`col-sm-${12 / (blocks.length || 1)} col-md-3`"
           >
             <div
               :class="[

@@ -2883,7 +2883,7 @@
           "type": "heading"
         },
         {
-          "default": 64,
+          "default": 48,
           "id": "preheading_banner_size",
           "label": "Preheading size",
           "max": 172,
@@ -3725,7 +3725,7 @@
           "color_page_headings": "#000000",
           "color_product_description_background": "#ffffff",
           "color_sale_price": "#a62b0d",
-          "color_price": "#2d3879",
+          "color_price": "#000000",
           "color_top_bar_background": "#f4f4f4",
           "color_top_menu": "#000000",
           "menu_background_opacity": 100

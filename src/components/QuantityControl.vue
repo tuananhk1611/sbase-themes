@@ -12,7 +12,7 @@
       @blur="blurValue"
     />
     <button
-      class="qty-input__increase brdr-left-1 brdr-bottom-1 brdr-cl-whisper"
+      class="qty-input__increase brdr-left-1 brdr-bottom-1"
       :disabled="internalValue === max || disable"
       @keydown.enter="changeQuantity(1)"
       @click="changeQuantity(1)"
@@ -20,7 +20,7 @@
       <span class="qty-input__up"> </span>
     </button>
     <button
-      class="qty-input__decrease brdr-left-1 brdr-cl-whisper"
+      class="qty-input__decrease brdr-left-1"
       :disabled="internalValue === min || disable"
       @keydown.enter="changeQuantity(-1)"
       @click="changeQuantity(-1)"

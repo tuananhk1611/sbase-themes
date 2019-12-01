@@ -1,12 +1,14 @@
 .footer-section {
   background-color: $color_footer_background;
-  color: $color_footer_text;
-
+  // color: $color_footer_text;
+  color: $color-blue-dark;
   a {
-    color: $color_footer_links;
+    // color: $color_footer_links;
+    color: $color-blue-dark;
     font-size: 12px;
     &:hover {
-      color: adaptive-color($color_footer_background, $color_footer_links, 20%);
+      // color: adaptive-color($color_footer_background, $color_footer_links, 20%);
+      color: $color-blue;
     }
   }
 
@@ -27,7 +29,8 @@
 
   .site-footer {
     &__header {
-      color: $color_footer_headings;
+      // color: $color_footer_headings;
+      color: $color-blue-dark;
       font-family: 'Playfair Display', serif;
       font-size: 24px;
       @include res(xs) {

@@ -7,28 +7,29 @@
 
   .share-facebook {
     .social-icon {
-      background: url('#{$asset_path}/images/Facebook.svg?v1') center no-repeat;
+      background: url('#{$asset_path}/images/Facebook.svg?v3') center no-repeat;
       background-size: contain;
     }
   }
 
   .share-twitter {
     .social-icon {
-      background: url('#{$asset_path}/images/Twitter.svg?v1') center no-repeat;
+      background: url('#{$asset_path}/images/Twitter.svg?v3') center no-repeat;
       background-size: contain;
     }
   }
 
   .share-pinterest {
     .social-icon {
-      background: url('#{$asset_path}/images/Pinterest.svg?v1') center no-repeat;
+      opacity: 1;
+      background: url('#{$asset_path}/images/Pinterest.svg?v3') center no-repeat;
       background-size: contain;
     }
   }
 
   .share-email {
     .social-icon {
-      background: url('#{$asset_path}/images/Email.svg?v1') center no-repeat;
+      background: url('#{$asset_path}/images/Email.svg?v3') center no-repeat;
       background-size: contain;
     }
   }
