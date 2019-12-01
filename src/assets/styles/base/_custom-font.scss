@@ -2,7 +2,7 @@
   font-family: 'Harmony';
   src: url('#{$asset_path}/fonts/harmony/Harmony.eot');
   src: url('#{$asset_path}/fonts/harmony/Harmony.eot?#iefix') format('embedded-opentype'),
-  url('#{$asset_path}/fonts/harmony/Harmony.woff2') format('woff2'),
+  // url('#{$asset_path}/fonts/harmony/Harmony.woff2') format('woff2'),
   url('#{$asset_path}/fonts/harmony/Harmony.woff') format('woff'),
   url('#{$asset_path}/fonts/harmony/Harmony.ttf') format('truetype'),
   url('#{$asset_path}/fonts/harmony/Harmony.svg#besom_2regular') format('svg');
@@ -20,4 +20,11 @@
   url('#{$asset_path}/fonts/playfair/PlayfairDisplay-Regular.svg#besom_2regular') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Harmony Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Harmony Regular'), url('https://www.cufonfonts.com/cdn/webfont/harmony/Harmony.woff?token=auwiYDs91JE9QgyTolnnkwO8zxFwWu3L') format('woff');
 }

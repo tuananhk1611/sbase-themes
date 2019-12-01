@@ -270,7 +270,8 @@
 
 //Font Stack Mixins
 @mixin bodyFontStack {
-  font-family: $type_base_family;
+  // font-family: $type_base_family;
+  font-family: $midsleek-font-primary-2;
   font-size: font-size($type_base_size);
   font-weight: font-weight($type_base_style);
 }

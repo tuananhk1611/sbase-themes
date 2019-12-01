@@ -40,6 +40,24 @@ $color-aquamarine-light: #c4c4c4;
 $color-aquamarine-lighter: #eaeaea;
 $color-aquamarine-lightest: #f9f9f9;
 
+// MidSleek typo accest
+//Primary font
+$midsleek-font-primary-1: "Playfair Display", serif;
+$midsleek-font-primary-2: "HelveticaNeue", sans-serif;
+$midsleek-font-primary-3: "Harmony", sans-serif;
+
+.midsleek-font-primary-1 {
+  font-family: $midsleek-font-primary-1;
+}
+
+.midsleek-font-primary-2 {
+  font-family: $midsleek-font-primary-2;
+}
+
+.midsleek-font-primary-3 {
+  font-family: $midsleek-font-primary-3;
+}
+
 // Type
 $type_base_family: 'HelveticaNeue', sans-serif;
 $type_base_style: regular;
