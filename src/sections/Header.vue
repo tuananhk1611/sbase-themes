@@ -150,7 +150,7 @@
           >
             <div
               v-if="sectionSettings.main !== 'none'"
-              class="menu-content-desk text-align-center flex justify-center items-center w-100"
+              class="menu-content-desk flex items-center w-100"
             >
               <HeaderMenu
                 :menu-items="$getMenu(sectionSettings.main).items"

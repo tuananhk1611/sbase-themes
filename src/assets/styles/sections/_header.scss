@@ -1,10 +1,12 @@
 .announcement-bar {
-  background-color: $color_announcement_bar_background;
+  // background-color: $color_announcement_bar_background;
+  background-color: $color-blue-darker;
   .annouce-content * {
     font-size: 15px;
-    color: $color_announcement_message_text;
+    // color: $color_announcement_message_text;
+    color: #ffffff;
     margin-bottom: 0;
-    font-family: 'HelveticaNeue', sans-serif;
+    font-family: $midsleek-font-primary-2;
   }
 }
 
@@ -282,7 +284,8 @@
       font-size: 13px;
       text-decoration: none;
       white-space: nowrap;
-      color: $color_menu_link;
+      // color: $color_menu_link;
+      color: $color-blue-darker;
       transition: color 0.2s;
       &.router-link-active {
         &:before {
@@ -296,11 +299,13 @@
         left: 20px;
         right: 20px;
         bottom: 16px;
-        background-color: adaptive-color($color_menu_link, $color_menu_link, 20%);
+        // background-color: adaptive-color($color_menu_link, $color_menu_link, 20%);
+        background-color: $color-blue;
         display: none;
       }
       &:hover {
-        color: adaptive-color($color_menu_link, $color_menu_link, 20%);
+        // color: adaptive-color($color_menu_link, $color_menu_link, 20%);
+        color: $color-blue;
         &:before {
           display: block;
         }
