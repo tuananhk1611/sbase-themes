@@ -5,9 +5,6 @@
   "main": "src/index.js",
   "author": "ShopBase",
   "license": "MIT",
-  "scripts": {
-    "serve": "shopbase-theme"
-  },
   "dependencies": {
     "@jambonn/vue-carousel": "^0.0.1",
     "bezier-easing": "^2.1.0",
