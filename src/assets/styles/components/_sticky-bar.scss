@@ -295,8 +295,8 @@
       }
 
       & ~ .ln-menulabel {
-        &::after {
-          transform: rotate(-225deg);
+        .icon-adjust {
+          transform: translate(0, -50%) rotate(180deg);
         }
       }
 
@@ -334,20 +334,6 @@
       max-width: 140px;
     }
     position: relative;
-    &::after {
-      content: "";
-      position: absolute;
-      right: 12px;
-      top: 50%;
-      transition: transform 200ms ease-out;
-      transform: translateY(-50%) rotate(-45deg);
-      border: 2px solid color-control($color_background);
-      height: 8px;
-      width: 8px;
-      border-top: 0;
-      border-right: 0;
-      border-radius: 2px;
-    }
     &:focus,
     &.focused,
     &:active,
@@ -358,6 +344,13 @@
       &::after {
         border-color: adaptive-color(color-control($color_background), color-control($color_background), 20%);
       }
+    }
+    .icon-adjust {
+      position: absolute;
+      right: 8px;
+      font-size: 16px;
+      top: 50%;
+      transform: translate(0, -50%);
     }
   }
   .ln-submenu {

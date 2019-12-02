@@ -17,7 +17,7 @@
       @keydown.enter="changeQuantity(1)"
       @click="changeQuantity(1)"
     >
-      <span class="qty-input__up"> </span>
+      <i class="material-icons qty-input__up">keyboard_arrow_up</i>
     </button>
     <button
       class="qty-input__decrease brdr-left-1"
@@ -25,7 +25,7 @@
       @keydown.enter="changeQuantity(-1)"
       @click="changeQuantity(-1)"
     >
-      <span class="qty-input__down"> </span>
+      <i class="material-icons qty-input__down">keyboard_arrow_down</i>
     </button>
   </div>
 </template>

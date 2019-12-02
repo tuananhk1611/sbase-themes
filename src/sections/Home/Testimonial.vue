@@ -56,20 +56,20 @@
                 <h2 class="h3">{{ settings.title }}</h2>
                 <span class="testimonial-head-icon">“</span>
                 <div v-html="block.content" :style="`fontSize: ${testimonialFontSize}px`" :class="{'using-font-private' : settings.testimonial_font_private}"></div>
-                <p class="testimonial-name is-uppercase mt32 mb32">
+                <p v-if="block.customer_name && block.customer_name !== ''" class="testimonial-name is-uppercase mt32 mb32">
                   <span>
                     {{ block.customer_name }}
                   </span>
                 </p>
                 <LinkFormatter
                   v-if="block.store_link"
-                  class="testimonial-company"
+                  class="testimonial-company mt32 mb32 btn btn-subline"
                   target="_blank"
                   :link="block.store_link"
                 >
                   {{ block.store_name }}
                 </LinkFormatter>
-                <a v-else href="#" class="testimonial-company">
+                <a v-else href="#" class="testimonial-company mt32 mb32 btn btn-subline">
                   {{ block.store_name }}
                 </a>
               </div>

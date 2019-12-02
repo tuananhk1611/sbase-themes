@@ -9,7 +9,8 @@
       font-weight: $font-weight-bold;
     }
     .was_price {
-      color: $color_compare_at_price;
+      // color: $color_compare_at_price;
+      color: $color-neutral;
       text-decoration: line-through;
       font-size: 12px;
     }
