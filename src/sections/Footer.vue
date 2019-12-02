@@ -58,9 +58,9 @@
                   {{ page.title }}
                 </span>
                 <span
-                  class="flex-basis icon-down-arrow"
+                  class="flex-basis material-icons icon-down-arrow"
                   :class="{ 'is-active': actives[index] }"
-                ></span>
+                >keyboard_arrow_down</span>
               </h6>
               <SCollapseTransition>
                 <div v-show="actives[index]" class="toggle_content">

@@ -110,9 +110,10 @@
     line-height: 19px;
     font-weight: bold;
     color: $color_buttons;
+    border: 1px solid transparent;
     border-bottom: 1px solid $color_buttons;
     &:hover {
-      border: 1px solid $color_buttons;
+      border-color: inherit;
       border-bottom: 1px solid $color_buttons;
       padding: 10px 22px;
       text-decoration: none;

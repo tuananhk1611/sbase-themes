@@ -6,10 +6,7 @@
       :disabled="disable"
       @click="changeQuantity(-1)"
     >
-      <svg class="quantity__icon svg-14">
-        <use xlink:href="#ic_remove_24px"></use>
-      </svg>
-      <span class="fallback-text" aria-hidden="true">&minus;</span>
+      <i class="material-icons icon-adjust">keyboard_arrow_down</i>
     </button>
     <input
       type="number"
@@ -26,10 +23,7 @@
       :disabled="disable"
       @click="changeQuantity(1)"
     >
-      <svg class="quantity__icon svg-14">
-        <use xlink:href="#ic_add_24px"></use>
-      </svg>
-      <span class="fallback-text" aria-hidden="true">+</span>
+      <i class="material-icons icon-adjust">keyboard_arrow_up</i>
     </button>
   </div>
 </template>

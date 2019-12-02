@@ -95,7 +95,9 @@
                         <label
                           :for="`ln-menustate-${index}`"
                           class="ln-menulabel"
-                          >{{ currentOption[option.code].label }}</label
+                          >{{ currentOption[option.code].label }}
+                          <i class="material-icons icon-adjust">keyboard_arrow_down</i>
+                        </label
                         >
                         <div class="ln-submenu">
                           <div

@@ -50,7 +50,7 @@
             {{ product.variants[0].price | price }}
           </span>
           <span v-if="isOnSale(product.variants[0])" class="was_price ml12">
-            <span class="has-text-weight-medium money">
+            <span class="has-text-weight-bold money">
               {{ product.variants[0].compare_at_price | price }}
             </span>
           </span>

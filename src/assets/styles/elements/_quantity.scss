@@ -31,11 +31,13 @@
     user-select: none;
     backface-visibility: hidden;
     transition: all 0.2s ease-out;
-    padding: 0 13px;
+    padding: 0 12px;
     line-height: 1;
     color: color-control($color_background);
     z-index: 1;
-
+    .icon-adjust {
+      font-size: 16px;
+    }
     .fallback-text {
       clip: rect(0 0 0 0);
       clip: rect(0, 0, 0, 0);
@@ -58,6 +60,7 @@
     &:hover,
     &.hovered,
     &.active {
+      outline: none !important;
       .quantity__icon {
         fill: adaptive-color(color-control($color_background), color-control($color_background), 20%);
       }
@@ -135,7 +138,6 @@
       font-size: 1em;
       appearance: none;
       border-radius: 0;
-
       &__increase, &__decrease {
         background-color: $color-blue-lightest;
         border-color: #ffffff;
@@ -146,6 +148,7 @@
         height: 47%;
         border-top-color: #ffffff;
         border-bottom-color: #ffffff;
+        outline: none !important;
         &:disabled, &[disabled] {
           .qty-input__up, .qty-input__down {
             border-color: $gray-200;
@@ -161,22 +164,14 @@
 
       &__up, &__down {
         position: absolute;
-        right: 10px;
-        border: 2px solid $gray-800;
-        height: 7px;
-        width: 7px;
-        border-top: 0;
-        border-right: 0;
-        display: inline-block;
+        right: 0;
       }
 
       &__up {
-        top: 12px;
-        transform: rotate(135deg);
+        top: 0;
       }
       &__down {
-        bottom: 12px;
-        transform: rotate(-45deg);
+        bottom: 0;
       }
     }
   }

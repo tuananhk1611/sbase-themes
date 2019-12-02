@@ -232,7 +232,8 @@ a {
 
   &:hover {
     color: adaptive-color($color_background, $color_buttons, 20%);
-    text-decoration: $link-hover-decoration;
+    // text-decoration: $link-hover-decoration;
+    text-decoration: none;
   }
 
   &.link-initial {

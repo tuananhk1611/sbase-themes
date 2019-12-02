@@ -13,13 +13,8 @@
   }
 
   .icon-down-arrow {
-    background: url('#{$asset_path}/images/icons/sprites-icon-24.svg') 0 -204px no-repeat;
-    background-size: 24px auto;
-    width: 24px;
-    height: 24px;
-
     &.is-active {
-      background: url('#{$asset_path}/images/icons/sprites-icon-24.svg') 0 -170px no-repeat;
+      transform: rotate(180deg);
     }
 
     @include res(sm) {
