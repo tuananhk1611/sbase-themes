@@ -162,6 +162,13 @@
       width: 100%;
       @include res(xs) {
         text-align: center !important;
+        float: none !important;
+      }
+      &.pull-right {
+        float: right;
+      }
+      &.pull-left {
+        float: left;
       }
     }
     &--fade-up {
@@ -240,8 +247,6 @@
       .content {
         width: auto;
       }
-      padding-left: 150px;
-      padding-right: 150px;
       opacity: 0;
       position: absolute;
       top: 50%;
@@ -746,12 +751,12 @@
         transition: .75s all;
       }
     }
-    &:hover {
-      img {
-        transition: .5s all;
-        transform: scale(1.1);
-      }
-    }
+    //&:hover {
+    //  img {
+    //    transition: .5s all;
+    //    transform: scale(1.1);
+    //  }
+    //}
   }
   .collection-name {
     font-size: 14px;
@@ -922,7 +927,7 @@
         // background: $color_bg_input_newsletter;
         background: $color-blue-dark;
         border: none;
-        color: $color-blue;
+        color: #ffffff;
       }
       /* Placeholder text color -- selectors need to be separate to work. */
 
