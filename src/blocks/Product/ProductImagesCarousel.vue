@@ -53,7 +53,7 @@
       </Slide>
     </Carousel>
 
-    <template v-if="images.length > 10">
+    <template v-if="images.length > 5">
       <Carousel
         ref="thumbnail_carousel"
         :per-page="5"

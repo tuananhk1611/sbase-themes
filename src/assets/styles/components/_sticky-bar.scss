@@ -67,10 +67,11 @@
     }
 
     &__price {
-      letter-spacing: 2px;
-      color: $color_price;
+      color: $color-orange-dark;
+      font-weight: 600;
       &--original {
-        color: $color_compare_at_price;
+        // color: $color_compare_at_price;
+        color: $color-neutral;
         text-decoration: line-through;
       }
     }
