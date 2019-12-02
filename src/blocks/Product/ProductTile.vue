@@ -45,7 +45,7 @@
           class="jdgm-widget jdgm-preview-badge my10"
           :data-id="product.id"
         ></div>
-        <span class="d-block mt16 price">
+        <span class="d-block mt8 price">
           <span class="has-text-weight-bold money" :class="isOnSale(product.variants[0]) ? 'sale-price' : ''">
             {{ product.variants[0].price | price }}
           </span>

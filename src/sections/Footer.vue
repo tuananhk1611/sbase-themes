@@ -11,7 +11,7 @@
             <div class="logo mb32">
               <router-link
                 to="/"
-                class="logo-text justify-center items-center flex"
+                class="logo-text items-center flex"
               >
                 <img
                   v-if="getLogo"
@@ -60,7 +60,7 @@
                 <span
                   class="flex-basis material-icons icon-down-arrow"
                   :class="{ 'is-active': actives[index] }"
-                >keyboard_arrow_down</span>
+                >arrow_drop_down</span>
               </h6>
               <SCollapseTransition>
                 <div v-show="actives[index]" class="toggle_content">
@@ -96,9 +96,9 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
-              <div class="flex flex-wrap align-center pt40 footer-before">
+              <div class="flex flex-wrap align-center pt24 footer-before">
                 <div
-                  v-if="sectionSettings.show_social_media_icons"
+                  v-if="sectionSettings.show_social_media_icons && sectionSettings.show_social_media_icons > 0"
                   class="footer-social mb24"
                 >
                   <ul class="list-style-none m0 p0 flex">
