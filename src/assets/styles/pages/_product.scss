@@ -49,7 +49,7 @@ $color_image_option_background: #FeFeFe !default;
   &__gallery {
     margin-bottom: 16px;
     @include res(xs) {
-      margin-bottom: 42px;
+      margin-bottom: 32px;
     }
   }
   &__variant-label, &__quantity-label, &__vendor {
