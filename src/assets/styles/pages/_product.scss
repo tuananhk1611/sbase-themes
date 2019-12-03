@@ -498,18 +498,21 @@ $color_image_option_background: #FeFeFe !default;
     position: relative;
     width: 100vw;
     margin-left: -15px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     padding: 0;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
-    height: calc((100vw - 62px) / 5 * 1.266666667 + 3px);
+    // height: calc((100vw - 62px) / 5 * 1.266666667 + 3px);
+    height: 46px;
     -webkit-overflow-scrolling: touch;
 
     &__swatch-item {
       position: relative;
-      width: calc((100vw - 62px) / 5);
-      height: calc((100vw - 62px) / 5 * 1.266666667);
+      //width: calc((100vw - 62px) / 5);
+      //height: calc((100vw - 62px) / 5 * 1.266666667);
+      width: 44px;
+      height: 44px;
       display: inline-block;
       transition: 0.4s all cubic-bezier(0.25, 0.1, 0, 1);
       list-style: none;
@@ -529,13 +532,17 @@ $color_image_option_background: #FeFeFe !default;
       width: 100%;
       touch-action: manipulation;
       border: 1px solid transparent;
-      outline: 1px solid $gray-100;
+      padding: 4px;
+      border-radius: 50%;
+      overflow: hidden;
+      // outline: 1px solid $gray-100;
       background-color: $color_image_option_background;
       object-fit: cover;
       object-position: top;
       transition: 0.4s all cubic-bezier(0.25, 0.1, 0, 1);
       &--active {
-        outline: 1px solid adaptive-color(color-control($color_background), color-control($color_background), 20%);
+        // outline: 1px solid adaptive-color(color-control($color_background), color-control($color_background), 20%);
+        border: 1px solid $color-blue-dark;
       }
       &--out-of-stock {
         &:after {
