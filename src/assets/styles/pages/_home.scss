@@ -575,6 +575,7 @@
   .VueCarousel-slide {
     height: 400px;
     position: relative;
+
     .overlay {
       position: absolute;
       top: 0;
@@ -625,7 +626,8 @@
       position: absolute;
     }
     .VueCarousel-slide {
-      padding: 0 0 80px 0;
+      height: auto;
+      padding: 0;
     }
     .VueCarousel-navigation-button {
       top: 50% !important;
@@ -661,8 +663,8 @@
         font-family: "Playfair Display", serif;
         line-height: normal;
         @include res(xs) {
-          font-size: 16px !important;
-          line-height: 24px;
+          font-size: 26px !important;
+          line-height: 1.24;
         }
       }
       .testimonial-head-icon {
@@ -687,6 +689,18 @@
         &:hover {
           color: $color-blue-dark;
         }
+        &.button-highlight {
+          color: $color-blue-dark;
+          border-bottom: none;
+          &:after {
+            background: $color-blue-dark;
+          }
+          &:hover {
+            .line {
+              background: $color-blue-dark;
+            }
+          }
+        }
       }
       .h3 {
         display: none;
@@ -706,7 +720,17 @@
         padding-right: 5%;
       }
       @include res(xs) {
-        padding: 0 7%;
+        padding: 0 10%;
+        position: relative;
+        transform: none;
+        top: auto;
+        right: auto;
+        left: auto;
+        .testimonial-head-icon {
+          line-height: 0;
+          display: block;
+          height: 16px;
+        }
       }
       a {
         &:hover {
@@ -1003,6 +1027,15 @@
         display: inline-block;
       }
     }
+    &.button-highlight {
+      @include res(xs) {
+        color: $private_main_color;
+        display: inline-block;
+        &:after {
+          background: $private_main_color;
+        }
+      }
+    }
   }
 }
 
@@ -1029,4 +1062,131 @@
       height: auto;
     }
   }
+}
+
+
+// Custom style hight light button
+
+$thick : 1px;
+$pad : 0.7em;
+$extra : calc(#{$pad} * 1.2);
+$color-btn-high-light : #ffffff;
+
+
+.btn .line {
+  display: none;
+}
+.button-highlight {
+  color: #ffffff;
+  padding: $pad $extra;
+  display: inline-block;
+  border: $thick solid transparent;
+  position: relative;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.07em;
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: -$thick;
+    left: $extra;
+    right: $extra;
+    height: $thick;
+    background: $color-btn-high-light;
+    // z-index: -1;
+    transition:
+            transform 0.8s cubic-bezier(1,0,.37,1) 0.2s,
+            right 0.2s cubic-bezier(.04,.48,0,1) 0.6s,
+            left 0.4s cubic-bezier(.04,.48,0,1) 0.6s;
+    transform-origin: left;
+  }
+
+}
+
+.button-highlight .line {
+  display: block;
+  position: absolute;
+  background: $color-btn-high-light;
+
+  &.line-right,
+  &.line-left {
+    width: $thick;
+    bottom: -$thick;
+    top: -$thick;
+    transform: scale3d(1,0,1);
+  }
+
+  &.line-top,
+  &.line-bottom {
+    height: $thick;
+    left: -$thick;
+    right: -$thick;
+    transform: scale3d(0,1,1);
+  }
+
+  &.line-right {
+    right: -$thick;
+    transition: transform 0.1s cubic-bezier(1,0,.65,1.01) 0.23s;
+    transform-origin: top;
+  }
+
+  &.line-top {
+    top: -$thick;
+    transition: transform 0.08s linear 0.43s;
+    transform-origin: left;
+  }
+
+  &.line-left {
+    left: -$thick;
+    transition: transform 0.08s linear 0.51s;
+    transform-origin: bottom;
+  }
+
+  &.line-bottom {
+    bottom: -$thick;
+    transition: transform 0.3s cubic-bezier(1,0,.65,1.01);
+    transform-origin: right;
+  }
+}
+
+.button-highlight:hover,
+.button-highlight:active {
+  color: $color-btn-high-light;
+  &:after {
+    transform: scale3d(0,1,1);
+    right: -$thick;
+    left: -$thick;
+    transform-origin: right;
+    transition:
+            transform 0.2s cubic-bezier(1,0,.65,1.01) 0.17s,
+            right 0.2s cubic-bezier(1,0,.65,1.01),
+            left 0s 0.3s;
+  }
+
+  .line {
+    transform: scale3d(1,1,1);
+
+    &.line-right {
+      transition: transform 0.1s cubic-bezier(1,0,.65,1.01) 0.2s;
+      transform-origin: bottom;
+    }
+
+    &.line-top {
+      transition: transform 0.08s linear 0.4s;
+      transform-origin: right;
+    }
+
+    &.line-left {
+      transition: transform 0.08s linear 0.48s;
+      transform-origin: top;
+    }
+
+    &.line-bottom {
+      transition: transform 0.5s cubic-bezier(0,.53,.29,1) 0.56s;
+      transform-origin: left;
+    }
+  }
+
 }

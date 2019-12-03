@@ -72,7 +72,7 @@
                   'btn-outline': !block.highlight_first_button_link,
                   'btn-primary banner-button':
                     block.highlight_first_button_link && highlightButtonType === 'primary',
-                  'btn-subline banner-button':
+                  'button-highlight banner-button':
                     block.highlight_first_button_link && highlightButtonType === 'subline',
                 }"
                     >
@@ -86,7 +86,7 @@
                   'btn-outline': !block.highlight_second_button_link,
                   'btn-primary banner-button':
                     block.highlight_second_button_link && highlightButtonType === 'primary',
-                  'btn-subline banner-button':
+                  'button-highlight banner-button':
                     block.highlight_second_button_link && highlightButtonType === 'subline',
                 }"
                     >

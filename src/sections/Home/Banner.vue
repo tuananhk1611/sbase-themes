@@ -38,7 +38,7 @@
                   'btn-outline': !settings.highlight_first_button_link,
                   'btn-primary banner-button':
                     settings.highlight_first_button_link && highlightButtonType === 'primary',
-                  'btn-subline banner-button':
+                  'button-highlight banner-button':
                     settings.highlight_first_button_link && highlightButtonType === 'subline',
                 }"
               >
@@ -54,7 +54,7 @@
                   'btn-outline': !settings.highlight_second_button_link,
                   'btn-primary banner-button':
                     settings.highlight_second_button_link && highlightButtonType === 'primary',
-                  'btn-subline banner-button':
+                  'button-highlight banner-button':
                     settings.highlight_second_button_link && highlightButtonType === 'subline',
                 }"
               >

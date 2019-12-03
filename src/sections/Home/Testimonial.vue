@@ -63,7 +63,7 @@
                 </p>
                 <LinkFormatter
                   v-if="block.store_link"
-                  class="testimonial-company mt32 mb32 btn btn-subline"
+                  class="testimonial-company mt32 mb32 btn button-highlight"
                   target="_blank"
                   :link="block.store_link"
                 >

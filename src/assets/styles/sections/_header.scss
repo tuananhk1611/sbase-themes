@@ -31,6 +31,7 @@
     }
     .cart-col {
       order: 3;
+      padding-right: 24px;
     }
     .logo {
     }
@@ -384,10 +385,14 @@
       }
       .site-nav__dropdown-link {
         padding-right: 25px;
-        width: calc((50vw - 270px) / 3);
+        width: 100%;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+        color: $color-blue-darker;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 13px;
       }
     }
     &__dropdown-grandchild,
