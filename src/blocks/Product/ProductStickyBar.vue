@@ -159,7 +159,7 @@
                   :disabled="
                     !variant.available ||
                       unavailableVariant ||
-                      !variant.quantity
+                      !internalValue || internalValue < 1
                   "
                   @keydown.enter="decrease"
                   @click="decrease"
