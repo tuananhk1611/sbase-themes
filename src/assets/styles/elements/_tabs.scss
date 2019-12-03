@@ -16,7 +16,7 @@
       margin-bottom: 24px;
     }
     li {
-      color: $color_menu_link;
+      color: $color-blue-dark;
       font-size: 13px;
       font-weight: 600;
       white-space: nowrap;
@@ -29,11 +29,13 @@
       padding-bottom: 8px;
       border-bottom: 1px solid transparent;
       &:hover {
-        border-bottom: 1px solid $color_menu_link;
+        border-bottom: 1px solid $color-blue-dark;
         cursor: pointer;
+        color: $color-blue;
       }
       &.is-active {
-        border-bottom: 1px solid $color_menu_link;
+        border-bottom: 1px solid $color-blue-dark;
+        color: $color-blue;
       }
       a {
         text-decoration: none;

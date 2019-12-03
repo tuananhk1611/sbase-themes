@@ -210,11 +210,11 @@
       object-position: top;
       height: auto;
       max-height: 98px;
+      padding: 4px;
     }
     &--active {
       img {
         border: 1px solid $color-blue-dark;
-        padding: 4px;
       }
     }
   }

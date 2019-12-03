@@ -520,7 +520,7 @@ $color_image_option_background: #FeFeFe !default;
 @include res(md) {
   .product-page {
     &__container {
-      margin-top: 40px;
+      margin-top: 16px;
     }
     .cart__breadcrumbs {
       margin-bottom: 12px;
@@ -556,6 +556,13 @@ $color_image_option_background: #FeFeFe !default;
   }
 }
 
+@include res(xl) {
+  .product-page {
+    &__container {
+      margin-top: 40px;
+    }
+  }
+}
 .product-property {
   input {
     display: block;
