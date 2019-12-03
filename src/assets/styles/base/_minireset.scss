@@ -581,17 +581,6 @@ template {
     width: 32px;
     height: 56px;
     overflow: hidden;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background-color: rgba(0, 0, 0, 0.1) !important;
-    }
-
     &:hover {
       opacity: 0.5 !important;
     }
@@ -609,22 +598,10 @@ template {
 
     &.VueCarousel-navigation-prev {
       left: 32px !important;
-      &:before {
-        right: 0;
-      }
-      svg {
-        right: 2px;
-      }
     }
 
     &.VueCarousel-navigation-next {
       right: 32px !important;
-      &:before {
-        left: 0;
-      }
-      svg {
-        left: 2px;
-      }
     }
 
     &.VueCarousel-navigation--disabled {

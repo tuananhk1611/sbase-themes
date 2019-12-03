@@ -752,10 +752,20 @@ export default {
     window.removeEventListener('scroll', this.controlSticky)
   },
   mounted() {
-    window.onscroll = () => {
-      this.userHasScrolled = true
+    if (!this.$isServer) {
+      window.onscroll = () => {
+        let stickyBar = document.getElementById('sticky-bar')
+        let bodyEl = document.getElementsByTagName('body')
+        if (bodyEl && bodyEl.length > 0) {
+          if (stickyBar) {
+            bodyEl[0].style.marginBottom = '100px'
+          } else {
+            bodyEl[0].style.marginBottom = ''
+          }
+        }
+        this.userHasScrolled = true
+      }
     }
-
     if (this.$refs.sticky) {
       this.controlSticky()
     }
