@@ -87,7 +87,7 @@
       width: 100%;
       &.btn {
         &.btn-primary {
-          @include button-styles($color_mini_cart_background, $color_mini_cart_button, $color_mini_cart_button_label, 10%);
+          // @include button-styles($color_mini_cart_background, $color_mini_cart_button, $color_mini_cart_button_label, 10%);
         }
         &.is-loading {
           &::after {

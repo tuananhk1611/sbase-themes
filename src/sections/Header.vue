@@ -186,7 +186,7 @@
             </div>
             <div
               v-if="sectionSettings.enable_search"
-              class="search-icon-mobile items-center"
+              class="search-icon-mobile hidden-xs items-center"
             >
               <router-link
                 class="search-icon"
