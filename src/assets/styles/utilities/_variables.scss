@@ -6,9 +6,11 @@ $lg: 992px !default;
 $xl: 1200px !default;
 
 $breakpoints: (
+        'mini-xs': (max-width: $sm - 160),
         'xs' : (max-width: $sm - 1),
         'sm' : (min-width: $sm),
         'md' : (min-width: $md),
+        'max-lg': (max-width: $lg),
         'lg' : (min-width: $lg),
         'xl' : (min-width: $xl)
 );
