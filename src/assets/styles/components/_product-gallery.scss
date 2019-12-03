@@ -114,16 +114,19 @@
 
     .VueCarousel-pagination {
       position: absolute;
-      bottom: 0;
+      bottom: -24px;
       left: 0;
       right: 0;
       .VueCarousel-dot {
         margin-right: 3px;
         padding: 0 !important;
         margin-left: 3px;
-        border: 2px solid rgba($gray-1200, 0.2);
+        width: 6px !important;
+        height: 6px !important;
+        background: $color-blue-lighter !important;
+        outline: none !important;
         &--active {
-          border-color: rgba($white, 0.5);
+          background: $color-blue-dark !important;
         }
       }
       @include res(sm) {
@@ -211,6 +214,7 @@
       height: auto;
       max-height: 98px;
       padding: 4px;
+      border: 1px solid transparent;
     }
     &--active {
       img {

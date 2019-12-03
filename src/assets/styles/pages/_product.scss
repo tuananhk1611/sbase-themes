@@ -48,6 +48,9 @@ $color_image_option_background: #FeFeFe !default;
   }
   &__gallery {
     margin-bottom: 16px;
+    @include res(xs) {
+      margin-bottom: 42px;
+    }
   }
   &__variant-label, &__quantity-label, &__vendor {
     line-height: 1.42857;
@@ -725,6 +728,12 @@ $color_image_option_background: #FeFeFe !default;
           display: none;
         }
       }
+    }
+  }
+  @include res(xs) {
+    padding-bottom: 10px;
+    .product-private-section-item {
+      margin-bottom: 40px;
     }
   }
 }
