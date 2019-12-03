@@ -373,7 +373,7 @@
                     product.collections &&
                     product.collections.length > 0
                 "
-                class="mb12"
+                class="mb4"
               >
                 {{ $t('Collections: ') }}
                 <template v-for="(collection, index) in product.collections">
@@ -392,7 +392,7 @@
               </p>
               <p
                 v-if="settings.show_types && product.product_type"
-                class="mb12"
+                class="mb4"
               >
                 {{ $t('Type: ') }}
                 <router-link
@@ -473,7 +473,7 @@
               <figure class="product-private-section-item-icon">
                 <img src="../assets/images/Icon-1.svg" alt="icon1">
               </figure>
-              <h3 class="product-private-section-item-heading">DIRECT-TO-YOU</h3>
+              <h3 class="product-private-section-item-heading mb8">DIRECT-TO-YOU</h3>
               <p>
                 We offer the highest quality shoes without charging the traditional retail mark up.
               </p>
@@ -485,7 +485,7 @@
               <figure class="product-private-section-item-icon">
                 <img src="../assets/images/Icon-2.svg" alt="icon2">
               </figure>
-              <h3 class="product-private-section-item-heading">UNRIVALED QUALITY</h3>
+              <h3 class="product-private-section-item-heading mb8">UNRIVALED QUALITY</h3>
               <p>
                 MidSleek shoes are handcrafted by the artisans who make the highest quality luxury shoes in the world.
               </p>
@@ -497,7 +497,7 @@
               <figure class="product-private-section-item-icon">
                 <img src="../assets/images/Icon-3.svg" alt="icon3">
               </figure>
-              <h3 class="product-private-section-item-heading">INSPIRED BY YOU</h3>
+              <h3 class="product-private-section-item-heading mb8">INSPIRED BY YOU</h3>
               <p>
                 We obsess over the details of fit and construction to make the most comfortable and durable shoes, never sacrificing an ounce of style.
               </p>

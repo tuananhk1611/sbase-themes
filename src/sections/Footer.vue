@@ -16,9 +16,8 @@
                 <img
                   v-if="getLogo"
                   class="fit-logo"
-                  :src="$resizeImage(getLogo, '0', '180', '')"
+                  :src="getLogo"
                   :alt="$shop.name"
-                  :srcset="urlSrcSet(getLogo)"
                   :style="`width: ${sectionSettings.width}px;`"
                 />
                 <div v-else ref="logo" class="items-center flex m0">

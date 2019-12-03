@@ -98,7 +98,7 @@ export default {
       )
     },
     summaryWrapperClasses() {
-      return this.trustBadgeVisible ? 'pt32' : 'brdr-top-1 brdr-cl-whisper'
+      return this.trustBadgeVisible ? 'pt24' : 'brdr-top-1 brdr-cl-whisper'
     },
     isAllowQuantityBoxInSameLineWithAddToCartBtn() {
       return this.settings.enable_same_line_quantity_box
