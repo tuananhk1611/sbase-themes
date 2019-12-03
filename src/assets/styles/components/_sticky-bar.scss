@@ -63,7 +63,6 @@
       overflow: hidden;
       -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
-      letter-spacing: 2px;
     }
 
     &__price {
@@ -73,6 +72,7 @@
         // color: $color_compare_at_price;
         color: $color-neutral;
         text-decoration: line-through;
+        font-weight: 600;
       }
     }
 

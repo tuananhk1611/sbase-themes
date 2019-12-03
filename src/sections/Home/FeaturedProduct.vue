@@ -106,7 +106,7 @@
                     saleValue(variant) > 0 &&
                       featuredSettings.show_price_savings
                   "
-                  class="product__sale-info pl16 mt0 mb24"
+                  class="product__sale-info pl16 mt0 mb24 is-uppercase"
                 >
                   {{ saleMessage }}
                 </span>

@@ -41,10 +41,10 @@ $color_image_option_background: #FeFeFe !default;
   }
   &__sale-info {
     white-space: nowrap;
-    font-size: 1rem;
+    font-size: 16px;
     letter-spacing: 0;
     font-weight: 700;
-    color: $color_sale_price;
+    color: $color-orange-dark;
   }
   &__gallery {
     margin-bottom: 16px;
