@@ -213,7 +213,8 @@
     }
     &--active {
       img {
-        filter: brightness(90%);
+        border: 1px solid $color-blue-dark;
+        padding: 4px;
       }
     }
   }

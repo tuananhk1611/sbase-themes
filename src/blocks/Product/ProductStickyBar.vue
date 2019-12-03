@@ -37,7 +37,7 @@
               </Carousel>
             </div>
             <div class="product-detail__content">
-              <h2 class="h5 product-detail__name is-uppercase mb8 heading-section-midsleek">
+              <h2 class="h5 product-detail__name mb8 heading-section-midsleek">
                 {{ truncate(productTitle, 50) | htmlDecode }}
               </h2>
 
