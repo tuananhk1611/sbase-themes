@@ -21,7 +21,7 @@
                     <div v-html="tabBody(block)"></div>
                   </TabItem>
                 </BaseTabs>
-                <div class="hidden-sm product-column-wrapper collapse-tab">
+                <div class="hidden-sm product-column-wrapper collapse-tab collapse-tab-mobile">
                   <div
                     v-for="(block, index) in tabs"
                     :key="index"
@@ -29,11 +29,12 @@
                   >
                     <div
                       v-if="tabs.length > 1"
-                      class="is-uppercase has-text-weight-medium block__heading"
+                      class="is-uppercase has-text-weight-bold block__heading"
                       :class="{ 'block__is-inactive': !tabVisible[index] }"
                       @click.prevent="changeTab(index)"
                     >
                       {{ tabHeading(block) }}
+                      <span class="material-icons icon-down-arrow" style="float: right;">arrow_drop_down</span>
                     </div>
                     <div
                       :class="{
