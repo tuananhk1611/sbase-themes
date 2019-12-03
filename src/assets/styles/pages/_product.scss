@@ -472,43 +472,7 @@ $color_image_option_background: #FeFeFe !default;
               display: none;
             }
             &.block__heading {
-              &:before {
-                // background: url('#{$asset_path}/images/icons/sprites-icon-16.svg?v1') 0 -133px no-repeat;
-              }
-              color: $gray-400;
-            }
-          }
-          &__heading {
-            letter-spacing: 2px;
-            &, .product__description {
-              padding: 0;
-            }
-            &:before{
-              content: '';
-              // background: url('#{$asset_path}/images/icons/sprites-icon-16.svg?v1') -1px -168px no-repeat;
-              background-size: 16px auto;
-              float: right;
-              filter: contrast(0);
-              line-height: 6px;
-              height: 16px;
-              width: 16px;
-            }
-          }
-        }
-
-        .is-no-other-tabs {
-          border: 0;
-          padding-top: 0;
-          padding-bottom: 0;
-        }
-
-        &__content {
-          display: block;
-          color: $color_page_content_text;
-          padding: 8px 0;
-          figure {
-            iframe {
-              max-width: 100%;
+              color: $color-blue-dark;
             }
           }
         }
