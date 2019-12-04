@@ -995,6 +995,9 @@
           outline: none !important;
         }
       }
+      @include res(mini-xs) {
+        max-width: 100%;
+      }
     }
   }
   .announce-text {
