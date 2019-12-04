@@ -26,7 +26,6 @@
       :pagination-padding="5"
       :pagination-active-color="'#1a1a1a'"
       :pagination-color="'#e6e6e6'"
-      :max-pagination-dot-count="images.length > 9 ? 9 : -1"
       :loop="true"
       :navigate-to="navigateImgWithVariant()"
       navigation-next-label="<i class='material-icons'>keyboard_arrow_right</i>"
@@ -60,8 +59,8 @@
         class="thumbnail-carousel mt24"
         :navigation-enabled="true"
         :loop="true"
-        navigation-next-label="<svg class='svg-24' fill='#ffffff'><use xlink:href='#ic_keyboard_arrow_right_24px'></use></svg>"
-        navigation-prev-label="<svg class='svg-24' fill='#ffffff'><use xlink:href='#ic_keyboard_arrow_left_24px'></use></svg>"
+        navigation-next-label="<i class='material-icons'>keyboard_arrow_right</i>"
+        navigation-prev-label="<i class='material-icons'>keyboard_arrow_left</i>"
       >
         <Slide
           v-for="(image, index) in images"
