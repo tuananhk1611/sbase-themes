@@ -288,7 +288,7 @@
       // color: $color_menu_link;
       color: $color-blue-darker;
       transition: color 0.2s;
-      &.router-link-active {
+      &.router-link-exact-active {
         color: $color-blue;
         &:before {
           display: block;
