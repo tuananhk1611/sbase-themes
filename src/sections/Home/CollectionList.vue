@@ -12,7 +12,14 @@
           class="col-4 col-md-4 collection-wrap link-initial"
           :to="$routeToCollection(collection)"
         >
-          <div class="img-wrap">
+          <div
+            class="img-wrap"
+            :ref="`collection-list-img-${index}`"
+            :style="{
+              fontSize: getImgHeight(`collection-list-img-${index}`),
+              height: imgHeight,
+            }"
+          >
             <web-image
               :src="settings.blocks[index].image || collection.image"
               :alt="settings.blocks[index].alt_text"
@@ -59,9 +66,29 @@ export default {
       default: () => {},
     },
   },
+  data() {
+    return {
+      imgHeight: null,
+    }
+  },
   computed: {
     defaultImages() {
       return getDefaultImages('collectionList')
+    },
+  },
+  mounted() {
+    window.testRef = this.$refs
+  },
+  methods: {
+    getImgHeight(el) {
+      setTimeout(() => {
+        if (this.$refs[el][0]) {
+          this.imgHeight = `${this.$refs[el][0].clientWidth}px`
+          return `${this.$refs[el][0].clientWidth}px`
+        } else {
+          return null
+        }
+      }, 300)
     },
   },
 }
