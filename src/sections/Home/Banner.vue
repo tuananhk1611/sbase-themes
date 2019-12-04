@@ -15,51 +15,53 @@
             <div class="overlay" :style="opacityLevel"></div>
           </div>
           <div class="text-wrap px15" :class="[textAlign, textPosition]">
-            <div class="content">
-              <p
-                v-if="settings.preheading"
-                class="is-uppercase ls-2 mt0 mb0 midsleek-banner-preheading"
-                :style="stylePreheading"
-                v-html="settings.preheading"
-              ></p>
-              <h2 v-if="settings.heading" :style="styleHeading" class="h2 mt0 mb16 midsleek-banner-heading">
-                {{ settings.heading }}
-              </h2>
-              <p
-                v-if="settings.subheading"
-                class="is-capitalized ls-2 mt0 mb24 midsleek-banner-subheading"
-                v-html="settings.subheading"
-              ></p>
-              <LinkFormatter
-                v-if="settings.first_button_label && settings.first_button_link"
-                :link="settings.first_button_link"
-                class="btn carousel__first-link mb12"
-                :class="{
+            <div class="container">
+              <div class="content" :class="textPosition">
+                <p
+                  v-if="settings.preheading"
+                  class="is-uppercase ls-2 mt0 mb0 midsleek-banner-preheading"
+                  :style="stylePreheading"
+                  v-html="settings.preheading"
+                ></p>
+                <h2 v-if="settings.heading" :style="styleHeading" class="h2 mt0 mb16 midsleek-banner-heading">
+                  {{ settings.heading }}
+                </h2>
+                <p
+                  v-if="settings.subheading"
+                  class="is-capitalized ls-2 mt0 mb24 midsleek-banner-subheading"
+                  v-html="settings.subheading"
+                ></p>
+                <LinkFormatter
+                  v-if="settings.first_button_label && settings.first_button_link"
+                  :link="settings.first_button_link"
+                  class="btn carousel__first-link mb12"
+                  :class="{
                   'btn-outline': !settings.highlight_first_button_link,
                   'btn-primary banner-button':
                     settings.highlight_first_button_link && highlightButtonType === 'primary',
                   'button-highlight banner-button':
                     settings.highlight_first_button_link && highlightButtonType === 'subline',
                 }"
-              >
-                {{ settings.first_button_label }}
-              </LinkFormatter>
-              <LinkFormatter
-                v-if="
+                >
+                  {{ settings.first_button_label }}
+                </LinkFormatter>
+                <LinkFormatter
+                  v-if="
                   settings.second_button_label && settings.second_button_link
                 "
-                :link="settings.second_button_link"
-                class="btn carousel__second-link"
-                :class="{
+                  :link="settings.second_button_link"
+                  class="btn carousel__second-link"
+                  :class="{
                   'btn-outline': !settings.highlight_second_button_link,
                   'btn-primary banner-button':
                     settings.highlight_second_button_link && highlightButtonType === 'primary',
                   'button-highlight banner-button':
                     settings.highlight_second_button_link && highlightButtonType === 'subline',
                 }"
-              >
-                {{ settings.second_button_label }}
-              </LinkFormatter>
+                >
+                  {{ settings.second_button_label }}
+                </LinkFormatter>
+              </div>
             </div>
           </div>
         </div>
@@ -96,11 +98,11 @@ export default {
     textPosition() {
       switch (this.settings.text_position) {
         case 'left':
-          return 'text-wrap--left'
+          return 'pull-left'
         case 'right':
-          return 'text-wrap--right'
+          return 'pull-right'
         case 'centre':
-          return 'text-wrap--center'
+          return ''
         default:
           return 'text-wrap--left'
       }
