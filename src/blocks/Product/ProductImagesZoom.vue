@@ -10,6 +10,7 @@
           <svg class="thumbnail-media-zoom__close-icon" @click="$emit('close')">
             <use xlink:href="#ic_close_24px"></use>
           </svg>
+          <i class="material-icons" style="color: #ffffff;" @click="$emit('close')">close</i>
         </div>
         <div
           ref="thumbnailMediaZoomContainer"
@@ -89,6 +90,7 @@
           <svg class="media-zoom__close-icon svg-24" @click="$emit('close')">
             <use xlink:href="#ic_close_24px"></use>
           </svg>
+          <i class="material-icons" style="color: #ffffff;" @click="$emit('close')">close</i>
         </div>
         <div class="media-zoom__carousel">
           <Carousel

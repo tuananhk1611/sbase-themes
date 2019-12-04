@@ -5,6 +5,7 @@
         <svg class="thumbnail-media-zoom__close-icon" @click="$emit('close')">
           <use xlink:href="#ic_close_24px"></use>
         </svg>
+        <i class="material-icons" style="color: #ffffff;" @click="$emit('close')">close</i>
       </div>
       <div
         ref="thumbnailMediaZoomContainer"
