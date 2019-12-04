@@ -765,7 +765,7 @@
       .img-wrap {
         overflow: hidden;
         border-radius: 50%;
-        height: 90%;
+        height: 70%;
         margin: 0 auto;
         img {
           width: 100%;
@@ -1001,7 +1001,7 @@
   .announce-text {
     font-size: 12px;
     @include res(xs) {
-      text-align: justify;
+      text-align: center;
     }
   }
   .newsletter-text-color {
