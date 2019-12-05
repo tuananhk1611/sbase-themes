@@ -706,3 +706,7 @@ table.table-bordered {
 .sb-lazy[lazy=error] {
   animation: lazy-fade-in both 1s;
 }
+
+.__cov-progress {
+  background-color: $color-blue-light !important;
+}
