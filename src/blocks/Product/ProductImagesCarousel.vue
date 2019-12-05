@@ -49,6 +49,13 @@
           @click="openOverlay"
           @load="onImageLoaded"
         />
+        <div class="loader-balls w-100 h-100">
+          <div class="loader-balls__wrapper flex justify-space-between items-center">
+            <span class="loader-balls__item"></span>
+            <span class="loader-balls__item"></span>
+            <span class="loader-balls__item"></span>
+          </div>
+        </div>
       </Slide>
     </Carousel>
 
@@ -81,6 +88,13 @@
             :square="true"
             @click="navigate(index, image.variant_ids)"
           />
+          <div class="loader-balls w-100 h-100">
+            <div class="loader-balls__wrapper flex justify-space-between items-center">
+              <span class="loader-balls__item"></span>
+              <span class="loader-balls__item"></span>
+              <span class="loader-balls__item"></span>
+            </div>
+          </div>
         </Slide>
       </Carousel>
     </template>
@@ -106,6 +120,13 @@
             :square="true"
             @click="navigate(key, image.variant_ids)"
           />
+          <div class="loader-balls w-100 h-100">
+            <div class="loader-balls__wrapper flex justify-space-between items-center">
+              <span class="loader-balls__item"></span>
+              <span class="loader-balls__item"></span>
+              <span class="loader-balls__item"></span>
+            </div>
+          </div>
         </span>
       </li>
     </ul>
