@@ -66,10 +66,12 @@
         "
         class="sale_banner thumbnail_banner"
       >
+        Sale
       </div>
       <div v-if="isSoldOut(product)" class="soldout_banner thumbnail_banner">
+        Sold
       </div>
-      <div v-if="isNew(product)" class="new_banner thumbnail_banner"></div>
+      <div v-if="isNew(product)" class="new_banner thumbnail_banner">New</div>
     </div>
   </div>
 </template>

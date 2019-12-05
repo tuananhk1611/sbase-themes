@@ -702,6 +702,9 @@ table.table-bordered {
 }
 .sb-lazy:not(.progressive)[lazy=loaded] {
   animation: lazy-fade-in both 1s;
+  & ~ .loader-balls {
+    display: none;
+  }
 }
 .sb-lazy[lazy=error] {
   animation: lazy-fade-in both 1s;

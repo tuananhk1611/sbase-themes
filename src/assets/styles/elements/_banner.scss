@@ -10,19 +10,28 @@
   }
 
   .new_banner, .sale_banner , .soldout_banner {
-    background: url('#{$asset_path}/images/icons/sprites-icon-32.svg?v=3') no-repeat;
-    background-repeat: no-repeat;
-    transform: rotateZ(-12deg);
-    width: 32px;
-    height: 32px;
+    //background: url('#{$asset_path}/images/icons/sprites-icon-32.svg?v=3') no-repeat;
+    //background-repeat: no-repeat;
+    //transform: rotateZ(-12deg);
+    //width: 32px;
+    //height: 32px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background: transparent;
+    padding: 6px 12px;
   }
   .new_banner {
-    background-position: -240px 0;
+    background-color: $color-blue;
+    // background-position: -240px 0;
   }
   .sale_banner {
-    background-position: -288px 0;
+    background-color: $color-orange;
+    // background-position: -288px 0;
   }
   .soldout_banner {
-    background-position: -336px 0;
+    background-color: $color-neutral;
+    // background-position: -336px 0;
   }
 }
