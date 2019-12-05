@@ -534,7 +534,21 @@
     }
   }
   .view-more {
-    font-weight: $font-weight-medium;
+    &.button-highlight {
+      color: $color-blue-dark;
+      border-bottom: none;
+      &:after {
+        background: $color-blue-dark;
+      }
+      .line {
+        background: $color-blue-dark;
+      }
+      &:hover {
+        .line {
+          background: $color-blue-dark;
+        }
+      }
+    }
   }
 }
 
@@ -780,7 +794,15 @@
     }
     .img-wrap {
       overflow: hidden;
+      position: relative;
+      padding-bottom: 100%;
       img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        object-fit: contain;
         width: 100%;
         transition: .75s all;
       }

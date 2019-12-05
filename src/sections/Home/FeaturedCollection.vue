@@ -100,9 +100,13 @@
       >
         <router-link
           :to="$routeToCollection(settings.collection)"
-          class="view-more btn btn-outline"
+          class="view-more btn button-highlight"
         >
           {{ settings.view_more_button_label }}
+          <span class="line line-right"></span>
+          <span class="line line-top"></span>
+          <span class="line line-left"></span>
+          <span class="line line-bottom"></span>
         </router-link>
       </div>
     </div>
@@ -114,6 +118,7 @@ import { Carousel, Slide } from '@jambonn/vue-carousel'
 import ProductTile from '../../blocks/Product/ProductTile'
 import PlaceholderProduct from '../../blocks/Product/PlaceholderProduct'
 import getDefaultImages from '../../utils/defaultImages'
+import LinkFormatter from '../../components/LinkFormatter'
 
 export default {
   name: 'FeaturedCollection',
@@ -122,6 +127,7 @@ export default {
     Slide,
     ProductTile,
     PlaceholderProduct,
+    LinkFormatter,
   },
   props: {
     settings: {

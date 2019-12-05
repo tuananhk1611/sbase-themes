@@ -15,10 +15,6 @@
           <div
             class="img-wrap"
             :ref="`collection-list-img-${index}`"
-            :style="{
-              fontSize: getImgHeight(`collection-list-img-${index}`),
-              height: imgHeight,
-            }"
           >
             <web-image
               :src="settings.blocks[index].image || collection.image"
