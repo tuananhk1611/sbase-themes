@@ -39,6 +39,8 @@
       margin-bottom: 32px;
     }
     p {
+      font-size: 16px;
+      line-height: 24px;
       color: $color-blue-dark;
     }
     .content-text-about {
@@ -50,6 +52,17 @@
       font-size: 80px;
       line-height: 80px;
       margin-bottom: 80px;
+    }
+  }
+  @include res(xs) {
+    padding: 15px 0 0;
+    .figure-about {
+      margin: auto;
+    }
+    .about-us-content {
+      .content-text-about {
+        margin: 0 auto;
+      }
     }
   }
 }

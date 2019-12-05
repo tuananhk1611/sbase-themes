@@ -30,7 +30,7 @@
                   I decided to establish MidSleek - a brand for sleek women who were and being in the midlife period
                   but still passionate about fashion and beauty, and lust after shoes and bags.
                 </p>
-                <p class="mb32">
+                <p class="mb24">
                   MidSleek was found with a mission to inspire women and to embrace their confidence in
                   fashionable presence. Put ourselves in the minds of our customers, we understand and
                   respond to customer needs. Our own products, always exploring, devising ways to bring
