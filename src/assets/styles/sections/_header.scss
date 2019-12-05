@@ -213,6 +213,9 @@
       width: 24px;
       height: 24px;
       overflow: hidden;
+      &:hover {
+        color: inherit;
+      }
     }
     .cart-number {
       border-radius: 50%;
