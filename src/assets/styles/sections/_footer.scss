@@ -102,6 +102,9 @@
       width: 18px;
       height: 18px;
       opacity: .2;
+      &:hover {
+        opacity: .5;
+      }
       &--fb {
         background-position: 0 0;
       }

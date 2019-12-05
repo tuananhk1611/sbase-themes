@@ -17,7 +17,7 @@
               v-model="email"
               type="text"
               name="email"
-              placeholder="Enter Your Email Address"
+              placeholder="Enter your email address"
               :class="{ 'brdr-cl-red': $v.email.$error }"
             />
             <button
