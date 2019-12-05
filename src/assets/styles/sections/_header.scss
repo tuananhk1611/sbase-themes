@@ -80,6 +80,7 @@
     @include res(xs) {
       .menu-content-col {
         order: 1;
+        justify-content: flex-start;
         .menu-content-desk {
           display: none;
         }

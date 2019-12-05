@@ -150,6 +150,10 @@
   .carousel__first-link, .carousel__second-link {
     display: block;
     max-width: 100%;
+    &.button-highlight {
+      margin-right: -12px;
+      margin-left: -12px;
+    }
   }
   .text-wrap {
     display: flex;
@@ -761,7 +765,7 @@
         margin-bottom: 0;
       }
     }
-    @include res(mini-xs) {
+    @include res(xs) {
       .img-wrap {
         overflow: hidden;
         border-radius: 50%;
