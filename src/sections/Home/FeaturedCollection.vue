@@ -118,7 +118,6 @@ import { Carousel, Slide } from '@jambonn/vue-carousel'
 import ProductTile from '../../blocks/Product/ProductTile'
 import PlaceholderProduct from '../../blocks/Product/PlaceholderProduct'
 import getDefaultImages from '../../utils/defaultImages'
-import LinkFormatter from '../../components/LinkFormatter'
 
 export default {
   name: 'FeaturedCollection',
@@ -127,7 +126,6 @@ export default {
     Slide,
     ProductTile,
     PlaceholderProduct,
-    LinkFormatter,
   },
   props: {
     settings: {
