@@ -583,6 +583,7 @@ template {
     width: 32px;
     height: 64px;
     overflow: hidden;
+    outline: none !important;
     &:hover {
       opacity: 0.5 !important;
     }
