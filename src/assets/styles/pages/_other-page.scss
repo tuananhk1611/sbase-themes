@@ -24,3 +24,32 @@
     color: #d02e2e;
   }
 }
+
+#about-us-page {
+  padding: 64px 0 0;
+  .figure-about {
+    text-align: center;
+    margin: 0 33%;
+    margin-bottom: 24px;
+  }
+  .about-us-content {
+    text-align: center;
+    .h1 {
+      color: $color-blue-dark;
+      margin-bottom: 32px;
+    }
+    p {
+      color: $color-blue-dark;
+    }
+    .content-text-about {
+      margin: 0 17%;
+    }
+    .sign-text {
+      color: $color-orange;
+      font-family: Harmony;
+      font-size: 80px;
+      line-height: 80px;
+      margin-bottom: 80px;
+    }
+  }
+}
