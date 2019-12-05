@@ -1,11 +1,11 @@
 .banner_holder {
   position: absolute;
-  top: -10px;
-  left: -10px;
+  top: 8px;
+  left: 8px;
   transform: scale(.75);
   @include res(lg) {
-    top: -15px;
-    left: -15px;
+    top: 12px;
+    left: 12px;
     transform: scale(1);
   }
 
