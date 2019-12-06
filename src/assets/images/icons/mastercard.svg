@@ -1,9 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="24" viewBox="0 0 32 24">
-  <g fill="none" fill-rule="evenodd">
-    <rect width="32" height="24" fill="#EAE4D7" rx="2.087"/>
-    <ellipse cx="12.522" cy="12" fill="#FFF" rx="5.565" ry="5.647"/>
-    <ellipse cx="19.432" cy="12" fill="#F7F5F0" rx="5.565" ry="5.647"/>
-    <ellipse cx="15.977" cy="12" fill="#FBFAF8" rx="2.11" ry="4.422"/>
-    <path fill="#376BD1" d="M16,16.4047059 C16.0646957,16.3517647 16.1231304,16.2910588 16.1857391,16.2352941 L15.8142609,16.2352941 C15.8768696,16.2910588 15.9353043,16.3517647 16,16.4047059 Z"/>
-  </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="24px" viewBox="0 0 32 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>48px-mastercard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Components/Footer/Desktop" transform="translate(-1117.000000, -341.000000)">
+            <g id="Payment" transform="translate(1069.000000, 341.000000)">
+                <g id="48px-mastercard" transform="translate(48.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#D6CCB3" x="0" y="0" width="32" height="24" rx="2.08695652"></rect>
+                    <ellipse id="Oval" fill="#FFFFFF" cx="12.5217391" cy="12" rx="5.56521739" ry="5.64705882"></ellipse>
+                    <ellipse id="Oval" fill="#F7F5F0" cx="19.4323478" cy="12" rx="5.56521739" ry="5.64705882"></ellipse>
+                    <ellipse id="Oval" fill="#FBFAF8" cx="15.9770435" cy="12" rx="2.10991304" ry="4.42164706"></ellipse>
+                    <path d="M16,16.4047059 C16.0646957,16.3517647 16.1231304,16.2910588 16.1857391,16.2352941 L15.8142609,16.2352941 C15.8768696,16.2910588 15.9353043,16.3517647 16,16.4047059 Z" id="Path" fill="#376BD1"></path>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>
