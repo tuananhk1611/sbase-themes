@@ -24,6 +24,11 @@
         z-index: 1;
       }
     }
+    .sb-lazy[lazy=loaded] {
+      & ~ .loader-balls {
+        display: none;
+      }
+    }
 
     .carousel--fade {
       .VueCarousel-inner {
