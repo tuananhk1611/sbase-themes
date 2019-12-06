@@ -7,14 +7,15 @@
       .thumbnail-carousel-slide {
         .sb-lazy:not([src]) {
           &:before {
-            background-color: transparent;
+            // background-color: transparent;
+            left: 4px;
           }
         }
       }
       .product-gallery-image {
         .sb-lazy:not([src]) {
           &:before {
-            background-color: transparent;
+            // background-color: transparent;
           }
         }
       }
