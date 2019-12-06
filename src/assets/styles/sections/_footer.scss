@@ -171,28 +171,28 @@
     }
     &__icon {
       display: block;
-      background: url('#{$asset_path}/images/icons/visa.svg?v=69') no-repeat;
+      background: url('#{$asset_path}/images/icons/visa.svg?v70') no-repeat;
       width: 32px;
       height: 24px;
 
       &--visa {
-        background: url('#{$asset_path}/images/icons/visa.svg?v=69') no-repeat;
+        background: url('#{$asset_path}/images/icons/visa.svg?v70') no-repeat;
       }
 
       &--master {
-        background: url('#{$asset_path}/images/icons/mastercard.svg?v=69') no-repeat;
+        background: url('#{$asset_path}/images/icons/mastercard.svg?v70') no-repeat;
       }
 
       &--amex {
-        background: url('#{$asset_path}/images/icons/amex.svg?v=69') no-repeat;
+        background: url('#{$asset_path}/images/icons/amex.svg?v70') no-repeat;
       }
 
       &--paypal {
-        background: url('#{$asset_path}/images/icons/paypal.svg?v=69') no-repeat;
+        background: url('#{$asset_path}/images/icons/paypal.svg?v70') no-repeat;
       }
 
       &--amazon {
-        background: url('#{$asset_path}/images/icons/amazon.svg?v=69') no-repeat;
+        background: url('#{$asset_path}/images/icons/amazon.svg?v70') no-repeat;
       }
     }
   }
