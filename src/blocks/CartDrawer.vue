@@ -46,7 +46,7 @@
           </p>
           <button
             v-if="!cartSettings.mini_cart_checkout"
-            class="btn btn-outline fullwidth cart-drawer-summary__go-to-cart "
+            class="btn btn-outline fullwidth cart-drawer-summary__go-to-cart is-uppercase"
             @click="
               goToCart()
               $emit('before-redirect')
