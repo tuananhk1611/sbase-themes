@@ -368,7 +368,7 @@
       "show_total_savings": false
     },
     "checkout": {
-      "checkout_accent_color": "#0082e5",
+      "checkout_accent_color": "#2d387a",
       "checkout_body_alt_text": null,
       "checkout_body_background_color": "#ffffff",
       "checkout_body_background_image": null,
