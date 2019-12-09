@@ -74,7 +74,7 @@
         color: $checkout_accent_color;
 
         &:hover {
-          color: adaptive-color($checkout_body_background_color, $checkout_accent_color, 20%);
+          color: adaptive-color(#000000, $checkout_accent_color, 20%);
         }
       }
     }
@@ -558,6 +558,11 @@
   .step__continue-button {
     display: block;
     width: 100%;
+    background-color: $color-blue-dark;
+    font-weight: 600;
+    &:hover {
+      background-color: $color-blue;
+    }
   }
 
   .step__login-checkout-button {
