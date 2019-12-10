@@ -20,8 +20,8 @@
         :pagination-padding="3"
         pagination-color="rgba(191, 191, 191, 0.5)"
         pagination-active-color="#4d4d4d"
-        navigation-next-label="<svg class='svg-24' fill='#ffffff'><use xlink:href='#ic_keyboard_arrow_right_24px'></use></svg><div class='overlay'></div>"
-        navigation-prev-label="<svg class='svg-24' fill='#ffffff'><use xlink:href='#ic_keyboard_arrow_left_24px'></use></svg><div class='overlay'></div>"
+        navigation-next-label="<i class='material-icons'>keyboard_arrow_right</i><div class='overlay'></div>"
+        navigation-prev-label="<i class='material-icons'>keyboard_arrow_left</i><div class='overlay'></div>"
       >
         <template v-if="products.length > 0">
           <Slide v-for="(product, index) in products" :key="index">
