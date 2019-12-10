@@ -15,8 +15,8 @@
         :class="{ 'carousel--fade': settings.gallery_transition === 'fade' }"
         pagination-active-color="#1a1a1a"
         pagination-color="#e6e6e6"
-        navigation-next-label="<svg class='svg-24' fill='#ffffff'><use xlink:href='#ic_keyboard_arrow_right_24px'></use></svg><div class='overlay'></div>"
-        navigation-prev-label="<svg class='svg-24' fill='#ffffff'><use xlink:href='#ic_keyboard_arrow_left_24px'></use></svg><div class='overlay'></div>"
+        navigation-next-label="<i class='material-icons'>keyboard_arrow_right</i><div class='overlay'></div>"
+        navigation-prev-label="<i class='material-icons'>keyboard_arrow_left</i><div class='overlay'></div>"
         :autoplay-timeout="
           (settings.change_slides_every ? settings.change_slides_every : 4) *
             1000
