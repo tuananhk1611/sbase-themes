@@ -50,9 +50,6 @@
               class="btn btn-primary cart-summary__checkout cart__checkout mb16 cart-summary__checkout-new"
               @click="onNavigateCheckout()"
             >
-              <svg class="cart-summary__icon">
-                <use xlink:href="#ic_shield_24px"></use>
-              </svg>
               {{ $t('Checkout') }}
             </button>
             <div class="banner-trust">
