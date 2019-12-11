@@ -1,17 +1,16 @@
+// Anouncement Bar
 .announcement-bar {
-  // background-color: $color_announcement_bar_background;
-  background-color: $color-blue-darker;
+  background-color: $midsleek-color-announcement-bar-bg;
   .annouce-content * {
     font-size: 15px;
-    // color: $color_announcement_message_text;
-    color: #ffffff;
+    color: $midsleek-color-announcement-bar-text;
     margin-bottom: 0;
     font-family: $midsleek-font-primary-2;
   }
 }
-
+// Header
 .header {
-  background-color: rgba($color_menu_background, $menu_background_opacity / 100);
+  background-color: rgba($midsleek-color-header-bg, $menu_background_opacity / 100);
   &.sticky {
     border-top: 0;
     position: fixed;
@@ -54,9 +53,9 @@
   }
 
   .logo-text {
-    color: $color_logo_text;
+    color: $midsleek-color-header-text;
     &:hover {
-      color: adaptive-color(rgba($color_menu_background, $menu_background_opacity / 100), $color_logo_text, 20%);
+      color: $midsleek-color-header-text-hover;
     }
 
     > div {
@@ -90,6 +89,7 @@
       }
     }
   }
+
   .menu-content {
     a {
       color: $gray-1200;
@@ -160,6 +160,9 @@
       .search-icon {
         opacity: 1;
       }
+    }
+    .material-icons {
+      color: $midsleek-color-header-icon !important;
     }
   }
 
@@ -237,8 +240,6 @@
 
   .nav-customer {
     .login-icon {
-      background: url('#{$asset_path}/images/icons/sprites-icon-24.svg') no-repeat 0 -136px;
-      background-size: 24px auto;
       display: inline-block;
       width: 24px;
       height: 24px;
@@ -289,11 +290,10 @@
       font-size: 13px;
       text-decoration: none;
       white-space: nowrap;
-      // color: $color_menu_link;
-      color: $color-blue-darker;
+      color: $midsleek-color-header-text;
       transition: color 0.2s;
       &.router-link-exact-active {
-        color: $color-blue;
+        color: $midsleek-color-header-text-hover;
         &:before {
           display: block;
         }
@@ -305,13 +305,11 @@
         left: 20px;
         right: 20px;
         bottom: 16px;
-        // background-color: adaptive-color($color_menu_link, $color_menu_link, 20%);
-        background-color: $color-blue;
+        background-color: $midsleek-color-header-text-hover;
         display: none;
       }
       &:hover {
-        // color: adaptive-color($color_menu_link, $color_menu_link, 20%);
-        color: $color-blue;
+        color: $midsleek-color-header-text-hover;
         &:before {
           display: block;
         }
