@@ -196,27 +196,25 @@
         text-transform: unset;
         letter-spacing: 0;
         line-height: 50%;
-        // color: $color_preheading_banner;
-        color: #ffffff;
+        color: $midsleek-color-banner-preheading;
       }
       &.midsleek-banner-subheading {
         font-size: font-size($subheading_banner_size);
         letter-spacing: 0;
         line-height: normal;
-        // color: $color_subheading_banner;
-        color: #ffffff;
+        color: $midsleek-color-banner-subheading;
       }
       @include res(xs) {
         &.midsleek-banner-preheading {
           font-size: 48px;
           line-height: 48px;
-          color: #EB6449;
+          color: $midsleek-color-banner-preheading-mobile;
         }
         &.midsleek-banner-subheading {
           font-size: 12px;
           letter-spacing: 0;
           line-height: 18px;
-          color: #000000;
+          color: $midsleek-color-banner-subheading-mobile;
         }
       }
     }
@@ -226,9 +224,9 @@
       letter-spacing: 0;
       line-height: font-size($heading_banner_size);
       text-transform: unset;
-      color: $color_heading_banner;
+      color: $midsleek-color-banner-heading;
       @include res(xs) {
-        color: #000000;
+        color: $midsleek-color-banner-heading-mobile;
         font-size: 32px;
         line-height: 40px;
         margin-bottom: 8px;

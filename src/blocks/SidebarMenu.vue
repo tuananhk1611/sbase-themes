@@ -171,7 +171,9 @@
                 $emit('close-sidebar')
               "
             >
-              <span class="social-icon login"></span>
+              <span class="social-icon login">
+                <i class="material-icons material-icons-outlined">account_circle</i>
+              </span>
               <span class="ml8">
                 {{ currentUser ? 'My Account' : 'Sign up/Sign in' }}
               </span>

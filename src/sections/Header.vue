@@ -206,7 +206,9 @@
                 class="login-icon"
                 href="#"
                 @click.prevent="$navigateToAccount"
-              ></a>
+              >
+                <i class="material-icons material-icons-outlined">account_circle</i>
+              </a>
             </div>
             <div
               v-if="sectionSettings.show_cart"
@@ -227,7 +229,7 @@
                 ]"
                 @click.prevent="toggleShowCart"
               >
-                <i class="material-icons-outlined" :class="sectionSettings.cart_icon !== 'bag' ? 'hidden' : ''">shopping_basket_outlined</i>
+                <i class="material-icons material-icons-outlined" :class="sectionSettings.cart_icon !== 'bag' ? 'hidden' : ''">shopping_basket_outlined</i>
                 <no-ssr>
                   <span v-if="parseInt(cartQuantity) > 0" class="cart-number">
                     {{ cartQuantity }}
