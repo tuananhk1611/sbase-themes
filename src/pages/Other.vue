@@ -43,7 +43,7 @@ export default {
       }
       // About default
       if ((typeof window !== 'undefined' && window.location.pathname === '/pages/about-us' && typeof this.page.template_suffix === 'undefined') ||
-        this.page.template_suffix === 'about' || this.page.template_suffix === '') {
+        this.page.template_suffix === 'about' || this.page.handle === 'about-us') {
         return 'TemplateAboutUs'
       }
       if (this.page.template_suffix === 'contact') {
