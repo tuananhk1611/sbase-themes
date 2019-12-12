@@ -576,8 +576,7 @@ template {
 //Set default next/prev buttons for carousel
 .VueCarousel {
   .VueCarousel-navigation-button {
-    // background-color: transparent !important;
-    background-color: rgba(45, 56, 121, .4) !important;
+    background-color: rgba($midsleek-color-slide-navigator, 0.4) !important;
     color: #fff;
     padding: 0 !important;
     width: 32px;
@@ -585,7 +584,7 @@ template {
     overflow: hidden;
     outline: none !important;
     &:hover {
-      opacity: 0.5 !important;
+      background-color: $midsleek-color-slide-navigator !important;
     }
 
     i {
