@@ -159,7 +159,7 @@
                 </div>
               </div>
               <div class="flex flex-wrap align-center mb8 footer-after">
-                <div class="footer-powered-by mb24">
+                <div class="footer-powered-by mb24" v-if="false">
                   <a
                     v-if="sectionSettings.show_powered_by !== false"
                     class="powered-by"
